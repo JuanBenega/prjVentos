@@ -1,9 +1,16 @@
+import { Navbar } from 'react-bootstrap';
+import Header from './components/Header';
 import logo from './logo.svg';
+
+
 import './styles/App.scss';
 
 function App() {
   return (
     <div className="App">
+      <Navbar sticky="top">
+        <Header />
+      </Navbar>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
