@@ -1,38 +1,7 @@
 
-%flex-column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-%flex-evenly {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
- %boton-menu {
-    background-color: $color-prim;
-    border-radius: 10px;
-    color: $color-sec;
-    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.438);
-    transition: all 0.5s;
-}
-
-%boton-menu-hover {
-    background-color: $color-sec;
-    color: $color-fondo;
-    box-shadow: none;
-}
-
-%sombra-imagenes {
-    margin: 25px 0px;
-    -webkit-box-shadow: 10px 11px 12px -8px rgba(0, 0, 0, 0.36);
-    -moz-box-shadow: 10px 11px 12px -8px rgba(0, 0, 0, 0.36);
-    box-shadow: 10px 11px 12px -8px rgba(0, 0, 0, 0.36);
-}
-
-%texto-titulos {
-    text-align: center;
-    font-weight: bold;
+%bContact {
+    background: radial-gradient(50% 50% at 50% 50%, #4B4B4B 0%, rgba(0, 0, 0, 0.75) 100%);
+    border-radius: 6px;
+    width: 159px;
+    height: 42px;
 }

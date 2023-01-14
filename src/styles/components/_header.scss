@@ -1,6 +1,29 @@
 .header {
-    font-family: $fuente;
+    font-family: $font;
     font-size: 50px;
 
     background-image: linear-gradient(to left, $colorPrim, $colorWhite);
+
+    .linkGroup {
+        display: flex;
+        justify-content: end;
+        padding-right: 7rem;
+
+        .link {
+            color: $colorBlack;
+            font-weight: $fontWeight;
+            font-size: $fontSizeHeader;
+            margin: 0 0.8rem;
+        }
+
+        .bContact {
+            @extend %bContact;
+            margin-left: 3rem;
+        }
+
+    }
+
+
+
+
 }

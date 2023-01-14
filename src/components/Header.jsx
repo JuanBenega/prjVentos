@@ -1,41 +1,22 @@
-import { Container, Navbar, Nav } from "react-bootstrap"
+import { Container, Navbar, Nav, Image, Button } from "react-bootstrap"
+import logo from '../img/logo.png'
 
 
 const Header = () => {
     return (
         <>
-            <Navbar bg="dark" variant="dark" >
-                <Container>
-                    <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-                    <Nav className="me-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#features">Features</Nav.Link>
-                        <Nav.Link href="#pricing">Pricing</Nav.Link>
-                    </Nav>
-                </Container>
-            </Navbar>
-            <br />
-            <Navbar bg="primary" variant="dark">
-                <Container>
-                    <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-                    <Nav className="me-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#features">Features</Nav.Link>
-                        <Nav.Link href="#pricing">Pricing</Nav.Link>
-                    </Nav>
-                </Container>
-            </Navbar>
-
-            <br />
-            <Navbar bg="light" variant="light">
-                <Container>
-                    <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-                    <Nav className="me-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#features">Features</Nav.Link>
-                        <Nav.Link href="#pricing">Pricing</Nav.Link>
-                    </Nav>
-                </Container>
+            <Navbar collapseOnSelect expand="lg" className="header" bg="dark" variant="dark" sticky="top">
+                    <Image src={logo} />
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Collapse id="responsive-navbar-nav" className="linkGroup">
+                        <Nav >
+                            <Nav.Link href="#features" className="link">Inicio</Nav.Link>
+                            <Nav.Link href="#pricing" className="link">Nosotros</Nav.Link>
+                            <Nav.Link href="#deets" className="link">Automatización</Nav.Link>
+                            <Nav.Link href="#memes" className="link">Mecanización</Nav.Link>
+                        </Nav>
+                        <Button className="bContact">Contacto</Button>
+                    </Navbar.Collapse>
             </Navbar>
         </>
     )

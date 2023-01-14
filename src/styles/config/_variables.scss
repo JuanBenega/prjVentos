@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-$fuente: 'Poppins', sans-serif;
+$font: 'Poppins', sans-serif;
+$fontWeight: 800;
 
+$fontSizeHeader: 20px;
+$fontSizeButton: 16px;
 
-$size-fuente-header: 1.3rem;
 $size-fuente-footer: 1rem;
 $size-fuente-index: 2rem;
 $size-fuente-nosotros: 1.5rem;
@@ -19,3 +21,4 @@ $pad-bot: 10px;
 
 $colorPrim: #13A3D9;
 $colorWhite: white;
+$colorBlack: black;
