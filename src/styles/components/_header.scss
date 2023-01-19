@@ -1,29 +1,72 @@
-.header {
+.navClass {
     font-family: $font;
-    font-size: 50px;
+    background-color: $colorBlack;
+    color: $colorWhite;
+    display: block;
 
-    background-image: linear-gradient(to left, $colorPrim, $colorWhite);
+    border-bottom: 1px solid #13A3D9;
 
-    .linkGroup {
-        display: flex;
-        justify-content: end;
-        padding-right: 7rem;
+    p {
+        margin: 0;
+    }
+    .text {
+        @extend %flexEndCenter;
+    }
 
-        .link {
-            color: $colorBlack;
-            font-weight: $fontWeight;
-            font-size: $fontSizeHeader;
-            margin: 0 0.8rem;
+    .Sup {
+        font-size: $fontSizeTextSupHeader;
+        margin-bottom: 0.5rem;
+        padding-right: 8rem;
+
+        img {
+            margin: 0 0.5rem 0 5rem;
         }
+    }
 
-        .bContact {
-            @extend %bContact;
-            margin-left: 3rem;
-        }
+    .Inf {
+        @extend %flexEndCenter;
+        font-size: $fontSizeTextInfHeader;
+        margin-top: 0.5rem;
+        padding-right: 10rem;
+
+
 
     }
 
 
+    .header {
 
+        font-size: 50px;
+
+        background-image: linear-gradient(to left, $colorPrim, $colorWhite);
+        border: 1px solid #13A3D9;
+        box-shadow: inset 0px 6px 4px rgba(0, 0, 0, 0.25);
+        width: 100%;
+        height: 5rem;
+
+        .linkGroup {
+            display: flex;
+            justify-content: end;
+            padding-right: 7rem;
+
+            .link {
+                color: $colorBlack;
+                font-weight: $fontWeight;
+                font-size: $fontSizeHeader;
+                margin: 0 0.8rem;
+            }
+
+            .bContact {
+                @extend %bContact;
+                margin-left: 3rem;
+            }
+
+        }
+
+
+
+
+
+    }
 
 }

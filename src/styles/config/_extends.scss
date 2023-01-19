@@ -1,7 +1,12 @@
-
 %bContact {
     background: radial-gradient(50% 50% at 50% 50%, #4B4B4B 0%, rgba(0, 0, 0, 0.75) 100%);
     border-radius: 6px;
     width: 159px;
     height: 42px;
+}
+
+%flexEndCenter {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
 }
