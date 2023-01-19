@@ -1,3 +1,4 @@
+
 .navClass {
     font-family: $font;
     background-color: $colorBlack;
@@ -5,6 +6,11 @@
     display: block;
 
     border-bottom: 1px solid #13A3D9;
+
+
+    .blackDiv {
+        height: 1.8rem;
+    }
 
     p {
         margin: 0;
@@ -33,7 +39,6 @@
 
     }
 
-
     .header {
 
         font-size: 50px;
@@ -46,11 +51,18 @@
         position: relative;
 
         .logoHeader {
-            //padding-bottom: 3rem;
+            // background-image: url("../../img/logo.png");
+            // width: inherit;
+            // background-repeat: no-repeat;
             height: 7rem;
             position:absolute;
             bottom: -1rem;
             margin-left: 1rem;
+        }
+
+        .simple {
+            bottom: -2rem;
+            margin-left: 3rem;
         }
 
         .linkGroup {
@@ -68,6 +80,7 @@
             .bContact {
                 @extend %bContact;
                 margin-left: 3rem;
+                border: none;
             }
 
         }
@@ -76,6 +89,10 @@
 
 
 
+    }
+
+    .thin {
+        height: 42px;
     }
 
 }
