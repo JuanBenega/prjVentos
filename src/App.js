@@ -1,6 +1,6 @@
 import { Navbar } from 'react-bootstrap';
 import Header from './components/Header';
-import logo from './logo.svg';
+import logo from './img/fondo.png';
 
 
 
@@ -11,7 +11,6 @@ function App() {
     <>
         <Header />
       <div className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>

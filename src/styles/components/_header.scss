@@ -1,15 +1,17 @@
 
 .navClass {
     font-family: $font;
-    background-color: $colorBlack;
+    background-color: transparent;
     color: $colorWhite;
     display: block;
 
-    border-bottom: 1px solid #13A3D9;
+    
 
 
     .blackDiv {
         height: 1.8rem;
+        background-color: transparent;
+        border-bottom: none;
     }
 
     p {
@@ -34,7 +36,7 @@
         font-size: $fontSizeTextInfHeader;
         margin-top: 0.5rem;
         padding-right: 10rem;
-
+        border-bottom: 1px solid #13A3D9;
 
 
     }
