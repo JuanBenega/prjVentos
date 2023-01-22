@@ -10,3 +10,9 @@
     justify-content: flex-end;
     align-content: center;
 }
+
+%mediaNone {
+    @media screen and (max-width: $mobileScreen) {
+        display: none;
+    }
+}

@@ -1,4 +1,4 @@
-import { Navbar, Nav, Image, Button } from "react-bootstrap"
+import { Navbar, Nav, Image, Button, Container } from "react-bootstrap"
 import { useEffect, useState } from "react";
 import logo from '../img/logo.png'
 import logoDesarm from '../img/logoDesarm.png'
@@ -7,14 +7,10 @@ import phoneIcon from '../img/phoneIcon.svg'
 
 const Header = () => {
 
-    //const [scrollY, setScrollY] = useState(false);
-    //const styleSup = "text Sup", styleInf = "text Inf";
-
     const [offset, setOffset] = useState(0);
 
     useEffect(() => {
         const onScroll = () => setOffset(window.pageYOffset);
-        // clean up code
         window.removeEventListener('scroll', onScroll);
         window.addEventListener('scroll', onScroll, { passive: true });
         return () => window.removeEventListener('scroll', onScroll);
@@ -32,20 +28,20 @@ const Header = () => {
                 </div>
                 : <div className="blackDiv"></div>
             }
-            <Nav className={offset < 130 ? "header" : "header thin"}>
+            
+            <Container fluid className={offset < 130 ? "header" : "header thin"}>
                 <Image src={offset < 130 ? logo : logoDesarm} className={offset < 130 ? "logoHeader" : "logoHeader simple"} />
-                {/* <div className="logoHeader"></div> */}
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav" className="linkGroup">
-                    <Nav >
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" className="bMenu"/>
+                <Navbar.Collapse id="responsive-navbar-nav" className="group">
+                    <Nav className="linkGroup">
                         <Nav.Link href="#features" className="link">Inicio</Nav.Link>
                         <Nav.Link href="#pricing" className="link">Nosotros</Nav.Link>
                         <Nav.Link href="#deets" className="link">Automatización</Nav.Link>
                         <Nav.Link href="#memes" className="link">Mecanización</Nav.Link>
+                        <Button className="bContact">Contacto</Button>
                     </Nav>
-                    <Button className="bContact">Contacto</Button>
                 </Navbar.Collapse>
-            </Nav>
+            </Container>
             {offset < 130
                 ? <div className="text Inf">
                     <p>DEVELOPER INDUSTRIAL AUTOMATION</p>
