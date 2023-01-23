@@ -1,0 +1,24 @@
+.footer {
+    height: 24rem;
+    background-color: $colorPrim;
+    margin: none;
+    font-family: $font;
+
+
+    .groupFooter {
+        padding: 3rem;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1.5fr 1.5fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-template-areas: '. . . .';
+
+    }
+
+    .firmFooter {
+        border-top: 0.8px solid $colorGray;
+        text-align: center;
+        height: 4rem;
+        align-self: center;
+    }
+}
