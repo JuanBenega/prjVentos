@@ -140,6 +140,7 @@
 
     .thin {
         height: 35px;
+        border: none;
 
         @media screen and (max-width: $mobileScreen) {
             height: inherit;
