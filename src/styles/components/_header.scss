@@ -1,0 +1,150 @@
+.navClass {
+    font-family: $font;
+    background-color: transparent;
+    color: $colorWhite;
+    display: block;
+
+
+
+
+    .blackDiv {
+        height: 1.8rem;
+        background-color: transparent;
+        border-bottom: none;
+
+        @extend %mediaNone !optional;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .text {
+        @extend %flexEndCenter;
+    }
+
+    .Sup {
+        font-size: $fontSizeTextSupHeader;
+        margin-bottom: 0.5rem;
+        padding-right: 8rem;
+
+        img {
+            margin: 0 0.5rem 0 5rem;
+        }
+
+        @extend %mediaNone !optional;
+    }
+
+    .Inf {
+        @extend %flexEndCenter;
+        font-size: $fontSizeTextInfHeader;
+        margin-top: 0.5rem;
+        padding-right: 10rem;
+        border-bottom: 1px solid #13A3D9;
+
+        @extend %mediaNone !optional;
+    }
+
+    .header {
+
+        font-size: 50px;
+
+        background-image: linear-gradient(to left, $colorPrim, $colorWhite);
+        border: 1px solid #13A3D9;
+        box-shadow: inset 0px 6px 4px rgba(0, 0, 0, 0.25);
+        width: 100%;
+        height: 4rem;
+        position: relative;
+
+        .logoHeader {
+            height: 7rem;
+            position: absolute;
+            bottom: -1rem;
+            margin-left: 1rem;
+
+            @media screen and (max-width: $mobileScreen) {
+                width: 30%;
+                height: auto;
+                bottom: unset;
+                margin-left: 0;
+                position: static;
+            }
+        }
+
+        .simple {
+            bottom: -2rem;
+            margin-left: 3rem;
+
+            @media screen and (max-width: $mobileScreen) {
+                margin-left: 0;
+                width: 15%;
+            }
+        }
+
+        .bMenu {
+            border: none;
+            transition: none;
+        }
+
+        .group {
+            display: flex;
+            justify-content: flex-end;
+
+            @media screen and (max-width: $mobileScreen) {
+                display: unset;
+                justify-content: unset;
+            }
+        }
+
+        .linkGroup {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 7rem;
+
+            .link {
+                color: $colorBlack;
+                font-weight: $fontWeight;
+                font-size: $fontSizeHeader;
+                margin: 0 0.8rem;
+
+                @media screen and (max-width: $mobileScreen) {
+                    //color: $colorWhite;
+                    text-align: center;
+                }
+            }
+
+            .bContact {
+                @extend %bContact;
+                margin-left: 3rem;
+                border: none;
+
+                @extend %mediaNone !optional;
+
+            }
+
+            @media screen and (max-width: $mobileScreen) {
+                padding-right: 0;
+                justify-content: center;
+                //background-color: $colorMenu;
+            }
+
+        }
+
+        @media screen and (max-width: $mobileScreen) {
+            border: none;
+            box-shadow: none;
+            height: fit-content;
+        }
+
+    }
+
+    .thin {
+        height: 35px;
+        border: none;
+
+        @media screen and (max-width: $mobileScreen) {
+            height: inherit;
+        }
+    }
+
+}

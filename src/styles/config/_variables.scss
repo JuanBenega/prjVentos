@@ -1,24 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-$fuente: 'Poppins', sans-serif;
+$font: 'Poppins', sans-serif;
+$fontWeight: 800;
+$fontWeightResp: 500;
+
+$fontSizeHeader: 20px;
+$fontSizeButton: 16px;
+$fontSizeTextSupHeader: 10px;
+$fontSizeTextInfHeader: 14px;
 
 
-$size-fuente-header: 1.3rem;
-$size-fuente-footer: 1rem;
-$size-fuente-index: 2rem;
-$size-fuente-nosotros: 1.5rem;
-$size-fuente-responsive: 1rem;
-$size-fuente-formulario: 1rem;
-$size-fuente-mapa: 1.2rem;
+$colorPrim: #13A3D9;
+$colorWhite: white;
+$colorBlack: black;
+$colorMenu: rgba(134, 134, 134, 0.62);
 
 
-$pad-h1: 50px 0px;
-$pad-top: 50px;
-$pad-bot: 10px;
-
-
-$color-prim: #67b967;
-$color-dest: #aa79b3;
-$color-sec: lightgray;
-$color-fondo: white;
-$color-grey: grey;
+$mobileScreen: 768px;
