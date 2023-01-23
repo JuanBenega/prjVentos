@@ -12,16 +12,16 @@ const Footer = () => {
             <div className="groupFooter">
                 <div>
                     <Image src={logoFooter} className='imgFooter' />
-                    <p>@Ventos.com</p>
+                    <h6>@Ventos.com</h6>
                 </div>
-                <div>
-                    <NavLink>Inicio</NavLink>
-                    <NavLink>Automatización</NavLink>
-                    <NavLink>Mecanización</NavLink>
-                    <NavLink>Contacto</NavLink>
+                <div className="linksFooter">
+                    <NavLink className="linkFoot">Inicio</NavLink>
+                    <NavLink className="linkFoot">Automatización</NavLink>
+                    <NavLink className="linkFoot">Mecanización</NavLink>
+                    <NavLink className="linkFoot">Contacto</NavLink>
                 </div>
-                <div>
-                    <h3>Contactanos</h3>
+                <div className="contactFooter">
+                    <h5>Contactanos</h5>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit hic dolorem nobis in ullam quibusdam magni quae quos quas, dolores natus modi, consectetur deserunt placeat ipsam, quis laboriosam expedita labore.</p>
                 </div>
                 <div>

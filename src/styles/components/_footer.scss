@@ -6,12 +6,30 @@
 
 
     .groupFooter {
-        padding: 3rem;
+        padding: 2.5rem;
         display: grid;
         grid-template-columns: 2fr 1fr 1.5fr 1.5fr;
         grid-template-rows: 1fr;
         gap: 0px 0px;
         grid-template-areas: '. . . .';
+
+        h6 {
+            margin-left: 3rem;
+        }
+
+        .linksFooter {
+            padding-top: 3rem;
+            font-weight: $fontWeightResp;
+        
+            .linkFoot {
+                margin: 0.5rem 0;
+            }
+        }
+
+        .contactFooter {
+            padding-top: 3rem;
+            font-weight: $fontWeightResp;
+        }
 
     }
 
@@ -19,6 +37,7 @@
         border-top: 0.8px solid $colorGray;
         text-align: center;
         height: 4rem;
-        align-self: center;
+        padding-top: 1.2rem;
+
     }
 }
