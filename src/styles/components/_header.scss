@@ -40,7 +40,7 @@
         font-size: $fontSizeTextInfHeader;
         margin-top: 0.5rem;
         padding-right: 10rem;
-        border-bottom: 1px solid #13A3D9;
+        border-bottom: 1px solid $colorPrim;
 
         @extend %mediaNone !optional;
     }
@@ -50,7 +50,7 @@
         font-size: 50px;
 
         background-image: linear-gradient(to left, $colorPrim, $colorWhite);
-        border: 1px solid #13A3D9;
+        border: 1px solid $colorPrim;
         box-shadow: inset 0px 6px 4px rgba(0, 0, 0, 0.25);
         width: 100%;
         height: 4rem;

@@ -1,5 +1,7 @@
+import { Button } from 'react-bootstrap';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import Sidebar from './components/Sidebar';
 
 
 
@@ -10,6 +12,7 @@ function App() {
     <>
       <Header />
       <div className="App-header">
+        <Sidebar />
       </div>
       <Footer />
     </>
