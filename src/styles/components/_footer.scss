@@ -15,25 +15,42 @@
 
         h6 {
             margin-left: 3rem;
+            @extend %mediaNone;
         }
 
         .linksFooter {
             padding-top: 3rem;
             font-weight: $fontWeight;
-        
+
             .linkFoot {
                 margin: 0.5rem 0;
             }
+
+            @extend %mediaNone;
         }
 
         .contactFooter {
             padding-top: 3rem;
+
+            @extend %mediaNone;
         }
 
         .socialFooter {
-            display: flex;
+            //display: flex;
             justify-content: flex-end;
             align-items: flex-end;
+
+            @extend %mediaNone;
+
+            @media screen and (min-width: $mobileScreen) {
+                display: flex;
+            }
+        }
+
+        @media screen and (max-width: $mobileScreen) {
+            display: flex;
+            justify-content: center;
+            padding: 0;
         }
 
     }
@@ -44,5 +61,15 @@
         height: 4rem;
         padding-top: 1.2rem;
 
+        @media screen and (max-width: $mobileScreen) {
+            height: 4rem;
+            color: $colorWhite;
+        }
+
+    }
+
+    @media screen and (max-width: $mobileScreen) {
+        background-color: $colorFooterResp;
+        height: auto;
     }
 }
