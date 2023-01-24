@@ -12,7 +12,7 @@ const Sidebar = () => {
 
     return (
         <>
-            <Image src={sidebar} onClick={handleShow} className="sidebarBtn" />
+            <Image src={sidebar} onClick={handleShow} className={!show ? "sidebarBtn" : "hide"} />
             <Offcanvas show={show} onHide={handleClose} placement='end' className='sidebarCont'>
                 <Offcanvas.Header closeButton>
                     <OffcanvasTitle></OffcanvasTitle>
