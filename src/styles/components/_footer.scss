@@ -19,7 +19,7 @@
 
         .linksFooter {
             padding-top: 3rem;
-            font-weight: $fontWeightResp;
+            font-weight: $fontWeight;
         
             .linkFoot {
                 margin: 0.5rem 0;
@@ -28,7 +28,12 @@
 
         .contactFooter {
             padding-top: 3rem;
-            font-weight: $fontWeightResp;
+        }
+
+        .socialFooter {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
         }
 
     }

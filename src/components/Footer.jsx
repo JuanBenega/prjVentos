@@ -22,13 +22,14 @@ const Footer = () => {
                 </div>
                 <div className="contactFooter">
                     <h5>Contactanos</h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit hic dolorem nobis in ullam quibusdam magni quae quos quas, dolores natus modi, consectetur deserunt placeat ipsam, quis laboriosam expedita labore.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit hic dolorem nobis in ullam quibusdam magni quae.</p>
                 </div>
-                <div>
-                    <Image src={facebook}></Image>
-                    <Image src={instagram}></Image>
-                    <Image src={youtube}></Image>
-                    <Image src={linkedin}></Image>
+                <div className="socialFooter">
+                    <NavLink href="https://www.facebook.com/profile.php?id=100083334182810" target="_blank"><Image src={facebook} /></NavLink>
+                    <NavLink href="https://www.instagram.com/ventos_oficial/" target="_blank"><Image src={instagram} /></NavLink>
+                    <NavLink href="" target="_blank"><Image src={youtube} /></NavLink>
+                    <NavLink href="https://www.linkedin.com/company/ventoselect-s-r-l/" target="_blank"><Image src={linkedin} /></NavLink>
+
                 </div>
             </div>
             <p className="firmFooter">Copyright ® 2023 Company All rights Recerved</p>
