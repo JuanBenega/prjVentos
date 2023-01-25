@@ -42,5 +42,19 @@
         width: 100%;
         display: flex;
         justify-content: space-around;
+        margin: 1rem 0;
+    }
+
+    .landSeg {
+        width: 40%;
+        color: $colorWhite;
+
+        .landSegLeft {
+            padding-left: 5rem;
+        }
+
+        .landSegRight {
+            padding-right: 5rem;
+        }
     }
 }

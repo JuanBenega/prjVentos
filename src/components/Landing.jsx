@@ -4,6 +4,8 @@ import landing1 from '../img/landing1.jpg'
 import landing2 from '../img/landing2.jpg'
 import landing3 from '../img/landing3.jpg'
 import arrow from '../img/landArrow.png'
+import autom from '../img/landAutom.png'
+import mecan from '../img/landMecan.png'
 
 
 const Landing = () => {
@@ -44,6 +46,22 @@ const Landing = () => {
             <div className="landArrow">
                 <Image src={arrow} />
                 <Image src={arrow} />
+            </div>
+            <div className="landArrow">
+                <div className="landSeg">
+                    <div className="landSegLeft">
+                        <h3>AUTOMATIZACIÓN</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem aliquam non illum, odio obcaecati numquam qui. Animi, sit a inventore dolores perspiciatis earum minima sunt quidem culpa atque aut commodi.</p>
+                    </div>
+                    <Image src={autom} />
+                </div>
+                <div className="landSeg">
+                    <div className="landSegRight">
+                        <h3>MECANIZACIÓN</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem aliquam non illum, odio obcaecati numquam qui. Animi, sit a inventore dolores perspiciatis earum minima sunt quidem culpa atque aut commodi.</p>
+                    </div>
+                    <Image src={mecan} />
+                </div>
             </div>
         </div>
     )
