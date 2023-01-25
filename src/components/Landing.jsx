@@ -1,8 +1,9 @@
 
-import { Carousel } from 'react-bootstrap'
+import { Carousel, Image } from 'react-bootstrap'
 import landing1 from '../img/landing1.jpg'
 import landing2 from '../img/landing2.jpg'
 import landing3 from '../img/landing3.jpg'
+import arrow from '../img/landArrow.png'
 
 
 const Landing = () => {
@@ -16,7 +17,7 @@ const Landing = () => {
                         alt="First slide"
                     />
                     <Carousel.Caption className='carouText'>
-                        <h1>Somos una empresa apasionada por lo que hacemos</h1>
+                        <p className='carouTitle'>Somos una empresa apasionada por lo que hacemos</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className='carouItem'>
@@ -26,7 +27,7 @@ const Landing = () => {
                         alt="Second slide"
                     />
                     <Carousel.Caption className='carouText'>
-                        <h1>La innovación es nuestra premisa</h1>
+                        <p className='carouTitle'>La innovación es nuestra premisa</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className='carouItem'>
@@ -36,10 +37,14 @@ const Landing = () => {
                         alt="Third slide"
                     />
                     <Carousel.Caption className='carouText'>
-                        <h1>Crecemos cuando crecen nuestros clientes</h1>
+                        <p className='carouTitle'>Trabajamos para darle lo mejor a nuestros clientes</p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
+            <div className="landArrow">
+                <Image src={arrow} />
+                <Image src={arrow} />
+            </div>
         </div>
     )
 }
