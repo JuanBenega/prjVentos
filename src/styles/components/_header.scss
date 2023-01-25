@@ -6,7 +6,6 @@
 
 
 
-
     .blackDiv {
         height: 1.8rem;
         background-color: transparent;
@@ -117,6 +116,7 @@
                 @extend %bContact;
                 margin-left: 3rem;
                 border: none;
+                align-self: center;
 
                 @extend %mediaNone !optional;
 
@@ -139,7 +139,7 @@
     }
 
     .thin {
-        height: 35px;
+        height: 42px;
         border: none;
 
         @media screen and (max-width: $mobileScreen) {

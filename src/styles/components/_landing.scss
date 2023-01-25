@@ -1,0 +1,60 @@
+.landing {
+    font-family: $font;
+    background-image: url("../../img/fondo.png");
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding-top: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .landCarousel {
+        width: 80%;
+        //height: 30rem;
+
+        .carouItem {}
+
+        //modifico la ubicación del captio en el carousel
+        .carousel-caption {
+            right: 50%;
+            left: 5%;
+            top: 8rem;
+            bottom: auto;
+            text-align: start;
+            padding-left: 1.25rem;
+        }
+
+        .carouText {
+            background-color: $colorBackCarouTitle;
+            border-radius: 22px;
+
+            .carouTitle {
+                font-weight: $fontWeightCarousel;
+                font-size: $fontSizeCarouselTitle;
+                color: $colorWhite;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+        }
+    }
+
+    .landArrow {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin: 1rem 0;
+    }
+
+    .landSeg {
+        width: 40%;
+        color: $colorWhite;
+
+        .landSegLeft {
+            padding-left: 5rem;
+        }
+
+        .landSegRight {
+            padding-right: 5rem;
+        }
+    }
+}

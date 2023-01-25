@@ -35,7 +35,6 @@ const Header = () => {
                 <Navbar.Collapse id="responsive-navbar-nav" className="group">
                     <Nav className="linkGroup">
                         <Nav.Link href="#features" className="link">Inicio</Nav.Link>
-                        <Nav.Link href="#pricing" className="link">Nosotros</Nav.Link>
                         <Nav.Link href="#deets" className="link">Automatización</Nav.Link>
                         <Nav.Link href="#memes" className="link">Mecanización</Nav.Link>
                         <Button className="bContact">Contacto</Button>
