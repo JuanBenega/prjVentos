@@ -1,0 +1,11 @@
+.landing {
+    background-image: url("../../img/fondo.png");
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 150px;
+
+    .landCarousel{ 
+        width: 90%;
+    }
+}
