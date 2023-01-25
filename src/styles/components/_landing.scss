@@ -1,11 +1,26 @@
 .landing {
+    font-family: $font;
     background-image: url("../../img/fondo.png");
     background-size: cover;
-    width: 100%;
+    background-attachment: fixed;
     min-height: 100vh;
     padding-top: 150px;
+    display: flex;
+    justify-content: center;
 
     .landCarousel{ 
-        width: 90%;
+        width: 80%;
+        //height: 30rem;
+
+        .carouItem {
+
+        }
+
+        .carouText {
+
+            h1  {
+            font-weight: 1000;
+        }
+        }
     }
 }
