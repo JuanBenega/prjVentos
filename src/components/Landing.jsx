@@ -13,6 +13,10 @@ import landIcon3 from '../img/landIcon3.png'
 import landIcon4 from '../img/landIcon4.png'
 import landIcon5 from '../img/landIcon5.png'
 import landIcon6 from '../img/landIcon6.png'
+import landUs1 from '../img/landUs1.png'
+import landUs2 from '../img/landUs2.png'
+import landUs3 from '../img/landUs3.png'
+import landUs4 from '../img/landUs4.png'
 
 
 const Landing = () => {
@@ -43,6 +47,29 @@ const Landing = () => {
             descrip:'Implementación de control de procesos por intermedio de pantallas HMI'
         },
     ];
+
+    const us = [
+        {
+            pic: landUs1,
+            name: 'Arnaldo Dimuro',
+            job: 'CEO'
+        },
+        {
+            pic: landUs1,
+            name: 'Franco Berrone',
+            job: 'CEO'
+        },
+        {
+            pic: landUs1,
+            name: 'Danilo Quiroga',
+            job: 'CEO'
+        },
+        {
+            pic: landUs1,
+            name: 'Patricio Pulitano',
+            job: 'CEO'
+        },
+    ]
 
     return (
         <div className="landing">
@@ -121,6 +148,14 @@ const Landing = () => {
             <div className="landArrow">
                 <Image src={arrow} />
                 <Image src={arrow} />
+            </div>
+            <div className="us">
+                <h1 className="usTitle">Nosotros</h1>
+                <div className="landUsCards">
+                    {
+                        
+                    }
+                </div>
             </div>
         </div>
     )
