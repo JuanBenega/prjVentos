@@ -1,14 +1,49 @@
 
 import { Carousel, Image } from 'react-bootstrap'
+import ServiceCard from './ServiceCard'
 import landing1 from '../img/landing1.jpg'
 import landing2 from '../img/landing2.jpg'
 import landing3 from '../img/landing3.jpg'
 import arrow from '../img/landArrow.png'
 import autom from '../img/landAutom.png'
 import mecan from '../img/landMecan.png'
+import landIcon1 from '../img/landIcon1.png'
+import landIcon2 from '../img/landIcon2.png'
+import landIcon3 from '../img/landIcon3.png'
+import landIcon4 from '../img/landIcon4.png'
+import landIcon5 from '../img/landIcon5.png'
+import landIcon6 from '../img/landIcon6.png'
 
 
 const Landing = () => {
+
+    const services = [
+        {
+            icon: landIcon1,
+            descrip:'Fabricación de maquinaria industrial'
+        },
+        {
+            icon: landIcon2,
+            descrip:'Desarrollo de sistemas de automatización con implementación de VLT y Soft Starter'
+        },
+        {
+            icon: landIcon3,
+            descrip:'Trabajos con sistemas SCADA'
+        },
+        {
+            icon: landIcon4,
+            descrip:'Instalación y control de actuadores eléctricos para válvulas de procesos'
+        },
+        {
+            icon: landIcon5,
+            descrip:'Montaje de tableros eléctricos estancos, aptos para exterior'
+        },
+        {
+            icon: landIcon6,
+            descrip:'Implementación de control de procesos por intermedio de pantallas HMI'
+        },
+    ];
+
     return (
         <div className="landing">
             <Carousel fade className='landCarousel'>
@@ -73,7 +108,14 @@ const Landing = () => {
                     <p className='landServDescrip'>Somos una empresa joven en constante crecimiento que integra conocimientos de ingeniería, fabricación, construcción y mantenimiento</p>
                 </div>
                 <div className="landServIcons">
-
+                    {
+                        services.map ((service) =>
+                            <ServiceCard 
+                                icon={service.icon}
+                                descrip={service.descrip}
+                            />
+                        )
+                    }
                 </div>
             </div>
         </div>

@@ -80,5 +80,15 @@
                 margin: 4rem 0;
             }
         }
+
+        .landServIcons {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            column-gap: 10rem;
+            row-gap: 5rem;
+            
+        }
     }
 }
