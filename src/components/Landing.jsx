@@ -118,6 +118,10 @@ const Landing = () => {
                     }
                 </div>
             </div>
+            <div className="landArrow">
+                <Image src={arrow} />
+                <Image src={arrow} />
+            </div>
         </div>
     )
 }
