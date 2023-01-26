@@ -63,6 +63,19 @@ const Landing = () => {
                     <Image src={mecan} />
                 </div>
             </div>
+            <div className="landArrow">
+                <Image src={arrow} />
+                <Image src={arrow} />
+            </div>
+            <div className="landServices">
+                <div className="landServText">
+                    <h1 className='landServTitle'>Nuestros servicios</h1>
+                    <p className='landServDescrip'>Somos una empresa joven en constante crecimiento que integra conocimientos de ingeniería, fabricación, construcción y mantenimiento</p>
+                </div>
+                <div className="landServIcons">
+
+                </div>
+            </div>
         </div>
     )
 }
