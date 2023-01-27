@@ -8,4 +8,8 @@
         font-weight: $fontWeightResp;
         text-align: center;
     }
+
+    &:hover {
+        @extend %hover110;
+    }
 }

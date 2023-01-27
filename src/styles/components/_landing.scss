@@ -48,8 +48,7 @@
   //      color: $colorWhite;
 
         &:hover {
-            scale: 110%;
-            transition: scale 0.5s;
+            @extend %hover110;
         }
 
         .landSegLeft {
