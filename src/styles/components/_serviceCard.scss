@@ -1,0 +1,15 @@
+.iconCard {
+    width: 10rem;
+    @extend %flexColumnCenter;
+
+    .iconText {
+        color: $colorWhite;
+        font-size: $fontSizeButton;
+        font-weight: $fontWeightResp;
+        text-align: center;
+    }
+
+    &:hover {
+        @extend %hover110;
+    }
+}

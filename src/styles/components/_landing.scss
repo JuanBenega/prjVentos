@@ -1,13 +1,12 @@
 .landing {
     font-family: $font;
+    color: $colorWhite;
     background-image: url("../../img/fondo.png");
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;
     padding-top: 150px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    @extend %flexColumnCenter;
 
     .landCarousel {
         width: 80%;
@@ -30,9 +29,8 @@
             border-radius: 22px;
 
             .carouTitle {
-                font-weight: $fontWeightCarousel;
-                font-size: $fontSizeCarouselTitle;
-                color: $colorWhite;
+                @extend %fontTitle;
+//                color: $colorWhite;
                 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             }
         }
@@ -47,7 +45,11 @@
 
     .landSeg {
         width: 40%;
-        color: $colorWhite;
+  //      color: $colorWhite;
+
+        &:hover {
+            @extend %hover110;
+        }
 
         .landSegLeft {
             padding-left: 5rem;
@@ -55,6 +57,81 @@
 
         .landSegRight {
             padding-right: 5rem;
+        }
+    }
+
+    .landServices {
+        @extend %flexColumnCenter;
+        width: 80%;
+
+        .landServText {
+            text-align: center;
+            justify-content: center;
+            width: 70%;
+
+            .landServTitle {
+                @extend %fontTitle;
+                margin-bottom: 2rem;
+            }
+
+            .landServDescrip {
+                font-size: $fontSizeButton;
+                margin: 4rem 0;
+            }
+        }
+
+        .landServIcons {
+            width: 100%;
+            @extend %flexWrap;
+            column-gap: 10rem;
+            row-gap: 5rem;
+            
+        }
+
+    }
+
+    .landUs {
+        width: 90%;
+        margin-bottom: 2rem;
+        
+        .usTitle {
+            font-weight: $fontWeightTitle;
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .landUsCards {
+            @extend %flexWrap;
+            column-gap: 10rem;
+            row-gap: 5rem;
+        }
+    }
+
+    .landClients {
+        width: 100%;
+        background: linear-gradient(180deg, $colorWhite 0%, rgba(231, 231, 231, 0) 100%);
+        margin-bottom: 5rem;
+
+        .clientsTitle {
+            margin-top: 5rem;
+            margin-left: 15rem;
+            color: $colorPrim;
+            font-weight: $fontWeightTitle;
+        }
+
+        .clientsText {
+            margin-left: 15rem;
+            color: $colorBlack;
+            font-weight: $fontWeightResp;
+            font-size: $fontSizeHeader;
+        }
+
+        .clientsCards {
+            width: 100%;
+            margin-top: 3rem;
+            @extend %flexWrap;
+            column-gap: 5rem;
+            row-gap: 5rem;
         }
     }
 }

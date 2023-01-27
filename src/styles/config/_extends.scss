@@ -11,8 +11,30 @@
     align-content: center;
 }
 
+%flexColumnCenter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+%flexWrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 %mediaNone {
     @media screen and (max-width: $mobileScreen) {
         display: none;
     }
+}
+
+%fontTitle {
+    font-weight: $fontWeightTitle;
+    font-size: $fontSizeTitle;
+}
+
+%hover110 {
+        scale: 110%;
+        transition: scale 0.5s;
 }
