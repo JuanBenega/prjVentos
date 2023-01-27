@@ -17,6 +17,12 @@
     flex-direction: column;
 }
 
+%flexWrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 %mediaNone {
     @media screen and (max-width: $mobileScreen) {
         display: none;

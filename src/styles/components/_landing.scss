@@ -83,12 +83,46 @@
 
         .landServIcons {
             width: 100%;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
+            @extend %flexWrap;
             column-gap: 10rem;
             row-gap: 5rem;
             
+        }
+
+    }
+
+    .landUs {
+        width: 90%;
+        margin-bottom: 2rem;
+        
+        .usTitle {
+            font-weight: $fontWeightTitle;
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .landUsCards {
+            @extend %flexWrap;
+            column-gap: 10rem;
+            row-gap: 5rem;
+        }
+    }
+
+    .landClients {
+        width: 100%;
+        background: linear-gradient(180deg, $colorWhite 0%, rgba(231, 231, 231, 0) 100%);
+
+        .clientsTitle {
+            margin-left: 15rem;
+            color: $colorPrim;
+            font-weight: $fontWeightTitle;
+        }
+
+        .clientsText {
+            margin-left: 15rem;
+            color: $colorBlack;
+            font-weight: $fontWeightResp;
+            font-size: $fontSizeHeader;
         }
     }
 }

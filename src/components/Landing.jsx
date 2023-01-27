@@ -1,6 +1,7 @@
 
 import { Carousel, Image } from 'react-bootstrap'
 import ServiceCard from './ServiceCard'
+import UsCard from './UsCard'
 
 import landing1 from '../img/landing1.jpg'
 import landing2 from '../img/landing2.jpg'
@@ -61,17 +62,17 @@ const Landing = () => {
             job: 'CEO'
         },
         {
-            pic: landUs1,
+            pic: landUs2,
             name: 'Franco Berrone',
             job: 'CEO'
         },
         {
-            pic: landUs1,
+            pic: landUs3,
             name: 'Danilo Quiroga',
             job: 'CEO'
         },
         {
-            pic: landUs1,
+            pic: landUs4,
             name: 'Patricio Pulitano',
             job: 'CEO'
         },
@@ -155,13 +156,27 @@ const Landing = () => {
                 <Image src={arrow} />
                 <Image src={arrow} />
             </div>
-            <div className="us">
+            <div className="landUs">
                 <h1 className="usTitle">Nosotros</h1>
                 <div className="landUsCards">
                     {
-                        
+                        us.map ((person) =>
+                        <UsCard 
+                            pic={person.pic}
+                            name={person.name}
+                            job={person.job}
+                        />
+                    )
                     }
                 </div>
+            </div>
+            <div className="landArrow">
+                <Image src={arrow} />
+                <Image src={arrow} />
+            </div>
+            <div className="landClients">
+                <h1 className="clientsTitle">Nuestros clientes</h1>
+                <p className="clientsText">Confiaron y confían en nosotros, brindandosle el mejor servicio siempre</p>
             </div>
         </div>
     )

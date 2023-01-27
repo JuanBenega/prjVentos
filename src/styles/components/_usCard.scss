@@ -1,0 +1,24 @@
+.usCard {
+    width: 15rem;
+    @extend %flexColumnCenter;
+
+    .usCardPic {
+        //background-color: $colorWhite;
+        box-shadow: inset 0px 20px 20px rgba(19, 164, 217, 0.678);
+        border-radius: 125px;
+    }
+
+    .usCardTitle {
+        color: $colorWhite;
+        font-weight: $fontWeightTitle;
+        font-size: $fontSizeCardTitle;
+        margin-top: 1rem;
+    }
+
+    .usCardText {
+        color: $colorPrim;
+        font-weight: $fontWeightResp;
+        font-size: $fontSizeButton;
+    }
+
+}
