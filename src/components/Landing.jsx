@@ -1,6 +1,7 @@
 
 import { Carousel, Image } from 'react-bootstrap'
 import ServiceCard from './ServiceCard'
+
 import landing1 from '../img/landing1.jpg'
 import landing2 from '../img/landing2.jpg'
 import landing3 from '../img/landing3.jpg'
@@ -13,6 +14,7 @@ import landIcon3 from '../img/landIcon3.png'
 import landIcon4 from '../img/landIcon4.png'
 import landIcon5 from '../img/landIcon5.png'
 import landIcon6 from '../img/landIcon6.png'
+import landIcon7 from '../img/landIcon7.png'
 import landUs1 from '../img/landUs1.png'
 import landUs2 from '../img/landUs2.png'
 import landUs3 from '../img/landUs3.png'
@@ -24,28 +26,32 @@ const Landing = () => {
     const services = [
         {
             icon: landIcon1,
-            descrip:'Fabricación de maquinaria industrial'
+            descrip:'Diseño e ingeniería'
         },
         {
             icon: landIcon2,
-            descrip:'Desarrollo de sistemas de automatización con implementación de VLT y Soft Starter'
+            descrip:'Instalación y puesta en marcha'
         },
         {
             icon: landIcon3,
-            descrip:'Trabajos con sistemas SCADA'
+            descrip:'Tanques y trabajos especiales'
         },
         {
             icon: landIcon4,
-            descrip:'Instalación y control de actuadores eléctricos para válvulas de procesos'
+            descrip:'Pipping y revamping'
         },
         {
             icon: landIcon5,
-            descrip:'Montaje de tableros eléctricos estancos, aptos para exterior'
+            descrip:'Mantenimiento industrial'
         },
         {
             icon: landIcon6,
-            descrip:'Implementación de control de procesos por intermedio de pantallas HMI'
+            descrip:'Automatización industrial'
         },
+        {
+            icon: landIcon7,
+            descrip:'Electricidad industrial'
+        }
     ];
 
     const us = [
