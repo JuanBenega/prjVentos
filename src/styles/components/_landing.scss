@@ -111,8 +111,10 @@
     .landClients {
         width: 100%;
         background: linear-gradient(180deg, $colorWhite 0%, rgba(231, 231, 231, 0) 100%);
+        margin-bottom: 5rem;
 
         .clientsTitle {
+            margin-top: 5rem;
             margin-left: 15rem;
             color: $colorPrim;
             font-weight: $fontWeightTitle;
@@ -123,6 +125,14 @@
             color: $colorBlack;
             font-weight: $fontWeightResp;
             font-size: $fontSizeHeader;
+        }
+
+        .clientsCards {
+            width: 100%;
+            margin-top: 3rem;
+            @extend %flexWrap;
+            column-gap: 5rem;
+            row-gap: 5rem;
         }
     }
 }

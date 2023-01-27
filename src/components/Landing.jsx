@@ -20,6 +20,10 @@ import landUs1 from '../img/landUs1.png'
 import landUs2 from '../img/landUs2.png'
 import landUs3 from '../img/landUs3.png'
 import landUs4 from '../img/landUs4.png'
+import client1 from '../img/client1.png'
+import client2 from '../img/client2.png'
+import client3 from '../img/client3.png'
+import ClientCard from './ClientCard'
 
 
 const Landing = () => {
@@ -27,31 +31,31 @@ const Landing = () => {
     const services = [
         {
             icon: landIcon1,
-            descrip:'Diseño e ingeniería'
+            descrip: 'Diseño e ingeniería'
         },
         {
             icon: landIcon2,
-            descrip:'Instalación y puesta en marcha'
+            descrip: 'Instalación y puesta en marcha'
         },
         {
             icon: landIcon3,
-            descrip:'Tanques y trabajos especiales'
+            descrip: 'Tanques y trabajos especiales'
         },
         {
             icon: landIcon4,
-            descrip:'Pipping y revamping'
+            descrip: 'Pipping y revamping'
         },
         {
             icon: landIcon5,
-            descrip:'Mantenimiento industrial'
+            descrip: 'Mantenimiento industrial'
         },
         {
             icon: landIcon6,
-            descrip:'Automatización industrial'
+            descrip: 'Automatización industrial'
         },
         {
             icon: landIcon7,
-            descrip:'Electricidad industrial'
+            descrip: 'Electricidad industrial'
         }
     ];
 
@@ -75,6 +79,27 @@ const Landing = () => {
             pic: landUs4,
             name: 'Patricio Pulitano',
             job: 'CEO'
+        },
+    ]
+
+    const clients = [
+        {
+            name: 'CARREFOUR',
+            pic: client1,
+            title: 'Automatización en depósitos',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nobis veniam ab sint laboriosam quos amet inventore magnam cumque. Dolores eos veniam doloribus qui reiciendis, blanditiis vitae dolore perferendis quod.'
+        },
+        {
+            name: 'COLOSHOP',
+            pic: client2,
+            title: 'Fabrica de llave en mano',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nobis veniam ab sint laboriosam quos amet inventore magnam cumque. Dolores eos veniam doloribus qui reiciendis, blanditiis vitae dolore perferendis quod.'
+        },
+        {
+            name: 'FARMACITY',
+            pic: client3,
+            title: 'Adecuación tableros eléctricos',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nobis veniam ab sint laboriosam quos amet inventore magnam cumque. Dolores eos veniam doloribus qui reiciendis, blanditiis vitae dolore perferendis quod.'
         },
     ]
 
@@ -143,8 +168,8 @@ const Landing = () => {
                 </div>
                 <div className="landServIcons">
                     {
-                        services.map ((service) =>
-                            <ServiceCard 
+                        services.map((service) =>
+                            <ServiceCard
                                 icon={service.icon}
                                 descrip={service.descrip}
                             />
@@ -160,13 +185,13 @@ const Landing = () => {
                 <h1 className="usTitle">Nosotros</h1>
                 <div className="landUsCards">
                     {
-                        us.map ((person) =>
-                        <UsCard 
-                            pic={person.pic}
-                            name={person.name}
-                            job={person.job}
-                        />
-                    )
+                        us.map((person) =>
+                            <UsCard
+                                pic={person.pic}
+                                name={person.name}
+                                job={person.job}
+                            />
+                        )
                     }
                 </div>
             </div>
@@ -177,6 +202,18 @@ const Landing = () => {
             <div className="landClients">
                 <h1 className="clientsTitle">Nuestros clientes</h1>
                 <p className="clientsText">Confiaron y confían en nosotros, brindandosle el mejor servicio siempre</p>
+                <div className="clientsCards">
+                    {
+                        clients.map((client) =>
+                            <ClientCard
+                                name={client.name}
+                                pic={client.pic}
+                                title={client.title}
+                                text={client.text}
+                            />
+                        )
+                    }
+                </div>
             </div>
         </div>
     )
