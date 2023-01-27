@@ -10,11 +10,8 @@
 
     .landCarousel {
         width: 80%;
-        //height: 30rem;
 
-        .carouItem {}
-
-        //modifico la ubicación del captio en el carousel
+        //modifico la ubicación del caption en el carousel
         .carousel-caption {
             right: 50%;
             left: 5%;
@@ -22,6 +19,10 @@
             bottom: auto;
             text-align: start;
             padding-left: 1.25rem;
+
+            @media screen and (max-width: $mobileScreen) {
+                display: none;
+            }
         }
 
         .carouText {
@@ -30,9 +31,23 @@
 
             .carouTitle {
                 @extend %fontTitle;
-//                color: $colorWhite;
                 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             }
+        }
+    }
+
+    .textMobile {
+        display: none;
+        margin: 2rem;
+
+        h2 {
+            font-size: $fontSizeTitleResp;
+            font-weight: $fontWeightTitle;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        @media screen and (max-width: $mobileScreen) {
+            display: unset;
         }
     }
 
@@ -41,23 +56,56 @@
         display: flex;
         justify-content: space-around;
         margin: 1rem 0;
+
+
+        @media screen and (max-width: $mobileScreen) {
+            display: none;
+        }
     }
 
-    .landSeg {
-        width: 40%;
-  //      color: $colorWhite;
+    .landSegments {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin: 1rem 0;
 
-        &:hover {
-            @extend %hover110;
+        .landSeg {
+            width: 40%;
+            //      color: $colorWhite;
+
+            &:hover {
+                @extend %hover110;
+            }
+
+            .landSegLeft {
+                padding-left: 5rem;
+
+                @media screen and (max-width: $mobileScreen) {
+                    padding-left: 0;
+                }
+            }
+
+            .landSegRight {
+                padding-right: 5rem;
+
+                @media screen and (max-width: $mobileScreen) {
+                    padding-right: 0;
+                    padding-top: 2rem;
+                }
+            }
+
+            @media screen and (max-width: $mobileScreen) {
+                width: 80%;
+                flex-wrap: wrap;
+                align-content: center;
+            }
         }
 
-        .landSegLeft {
-            padding-left: 5rem;
+        @media screen and (max-width: $mobileScreen) {
+            flex-direction: column;
+            justify-content: center;
         }
 
-        .landSegRight {
-            padding-right: 5rem;
-        }
     }
 
     .landServices {
@@ -85,7 +133,7 @@
             @extend %flexWrap;
             column-gap: 10rem;
             row-gap: 5rem;
-            
+
         }
 
     }
@@ -93,7 +141,7 @@
     .landUs {
         width: 90%;
         margin-bottom: 2rem;
-        
+
         .usTitle {
             font-weight: $fontWeightTitle;
             text-align: center;

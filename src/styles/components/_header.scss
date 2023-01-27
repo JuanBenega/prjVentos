@@ -85,13 +85,7 @@
         }
 
         .group {
-            //display: flex;
             justify-content: flex-end;
-
-            @media screen and (max-width: $mobileScreen) {
-                //display: unset;
-                //justify-content: unset;
-            }
         }
 
         .linkGroup {
@@ -106,7 +100,6 @@
                 margin: 0 0.8rem;
 
                 @media screen and (max-width: $mobileScreen) {
-                    //color: $colorWhite;
                     text-align: center;
                 }
             }
@@ -124,7 +117,6 @@
             @media screen and (max-width: $mobileScreen) {
                 padding-right: 0;
                 justify-content: center;
-                //background-color: $colorMenu;
             }
 
         }

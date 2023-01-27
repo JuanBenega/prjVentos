@@ -114,6 +114,7 @@ const Landing = () => {
                     />
                     <Carousel.Caption className='carouText'>
                         <p className='carouTitle'>Somos una empresa apasionada por lo que hacemos</p>
+                        <h4>Desarrollamos nuevos sistemas de automatizacion y mecanica para empresas relacionadas al rubro industrial con toda la tecnologia de vanguardia </h4>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className='carouItem'>
@@ -137,24 +138,28 @@ const Landing = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
+            <div className="textMobile">
+                <h2 className='carouTitle'>Somos una empresa apasionada por lo que hacemos</h2>
+                <h5>Desarrollamos nuevos sistemas de automatizacion y mecanica para empresas relacionadas al rubro industrial con toda la tecnologia de vanguardia </h5>
+            </div>
             <div className="landArrow">
                 <Image src={arrow} />
                 <Image src={arrow} />
             </div>
-            <div className="landArrow">
+            <div className="landSegments">
                 <div className="landSeg">
                     <div className="landSegLeft">
                         <h3>AUTOMATIZACIÓN</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem aliquam non illum, odio obcaecati numquam qui. Animi, sit a inventore dolores perspiciatis earum minima sunt quidem culpa atque aut commodi.</p>
                     </div>
-                    <Image src={autom} />
+                    <Image src={autom} fluid />
                 </div>
                 <div className="landSeg">
                     <div className="landSegRight">
                         <h3>MECANIZACIÓN</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem aliquam non illum, odio obcaecati numquam qui. Animi, sit a inventore dolores perspiciatis earum minima sunt quidem culpa atque aut commodi.</p>
                     </div>
-                    <Image src={mecan} />
+                    <Image src={mecan} fluid />
                 </div>
             </div>
             <div className="landArrow">
