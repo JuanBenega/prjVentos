@@ -47,7 +47,6 @@
     .header {
 
         font-size: 50px;
-
         background-image: linear-gradient(to left, $colorPrim, $colorWhite);
         border: 1px solid $colorPrim;
         box-shadow: inset 0px 6px 4px rgba(0, 0, 0, 0.25);
@@ -86,12 +85,12 @@
         }
 
         .group {
-            display: flex;
+            //display: flex;
             justify-content: flex-end;
 
             @media screen and (max-width: $mobileScreen) {
-                display: unset;
-                justify-content: unset;
+                //display: unset;
+                //justify-content: unset;
             }
         }
 
@@ -133,7 +132,7 @@
         @media screen and (max-width: $mobileScreen) {
             border: none;
             box-shadow: none;
-            height: fit-content;
+            height: auto;
         }
 
     }
