@@ -5,16 +5,13 @@
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;
-    padding-top: 150px;
+    padding-top: 10rem;
     @extend %flexColumnCenter;
 
     .landCarousel {
         width: 80%;
-        //height: 30rem;
 
-        .carouItem {}
-
-        //modifico la ubicación del captio en el carousel
+        //modifico la ubicación del caption en el carousel
         .carousel-caption {
             right: 50%;
             left: 5%;
@@ -22,6 +19,10 @@
             bottom: auto;
             text-align: start;
             padding-left: 1.25rem;
+
+            @media screen and (max-width: $mobileScreen) {
+                display: none;
+            }
         }
 
         .carouText {
@@ -30,34 +31,71 @@
 
             .carouTitle {
                 @extend %fontTitle;
-//                color: $colorWhite;
                 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             }
         }
     }
 
-    .landArrow {
+    .textMobile {
+        display: none;
+        margin: 2rem;
+
+        h2 {
+            font-size: $fontSizeTitleResp;
+            font-weight: $fontWeightTitle;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        @media screen and (max-width: $mobileScreen) {
+            display: unset;
+        }
+    }
+
+    .landSegments {
         width: 100%;
         display: flex;
         justify-content: space-around;
         margin: 1rem 0;
-    }
 
-    .landSeg {
-        width: 40%;
-  //      color: $colorWhite;
+        .landSeg {
+            width: 40%;
+            //      color: $colorWhite;
 
-        &:hover {
-            @extend %hover110;
+            &:hover {
+                @extend %hover110;
+            }
+
+            .landSegLeft {
+                padding-left: 5rem;
+
+                @media screen and (max-width: $mobileScreen) {
+                    padding-left: 0;
+
+                }
+            }
+
+            .landSegRight {
+                padding-right: 5rem;
+
+                @media screen and (max-width: $mobileScreen) {
+                    padding-right: 0;
+                    padding-top: 2rem;
+                }
+            }
+
+            @media screen and (max-width: $mobileScreen) {
+                width: 80%;
+                flex-wrap: wrap;
+                align-content: center;
+                margin-left: 2rem;
+            }
         }
 
-        .landSegLeft {
-            padding-left: 5rem;
+        @media screen and (max-width: $mobileScreen) {
+            flex-direction: column;
+            justify-content: center;
         }
 
-        .landSegRight {
-            padding-right: 5rem;
-        }
     }
 
     .landServices {
@@ -77,6 +115,15 @@
             .landServDescrip {
                 font-size: $fontSizeButton;
                 margin: 4rem 0;
+
+                @media screen and (max-width: $mobileScreen) {
+                    margin-top: 0;
+                    margin-bottom: 2rem;
+                }
+            }
+
+            @media screen and (max-width: $mobileScreen) {
+                width: 90%;
             }
         }
 
@@ -85,7 +132,15 @@
             @extend %flexWrap;
             column-gap: 10rem;
             row-gap: 5rem;
-            
+
+            @media screen and (max-width: $mobileScreen) {
+                row-gap: 1rem;
+            }
+
+        }
+
+        @media screen and (max-width: $mobileScreen) {
+            margin-top: 3rem;
         }
 
     }
@@ -93,17 +148,29 @@
     .landUs {
         width: 90%;
         margin-bottom: 2rem;
-        
+
         .usTitle {
             font-weight: $fontWeightTitle;
             text-align: center;
             margin-bottom: 4rem;
+
+            @media screen and (max-width: $mobileScreen) {
+                margin-bottom: 2rem;
+            }
         }
 
         .landUsCards {
             @extend %flexWrap;
             column-gap: 10rem;
             row-gap: 5rem;
+
+            @media screen and (max-width: $mobileScreen) {
+                row-gap: 1rem;
+            }
+        }
+
+        @media screen and (max-width: $mobileScreen) {
+            margin-top: 3rem;
         }
     }
 
@@ -117,6 +184,11 @@
             margin-left: 15rem;
             color: $colorPrim;
             font-weight: $fontWeightTitle;
+
+            @media screen and (max-width: $mobileScreen) {
+                margin-top: 2rem;
+                margin-left: 2rem;
+            }
         }
 
         .clientsText {
@@ -124,6 +196,10 @@
             color: $colorBlack;
             font-weight: $fontWeightResp;
             font-size: $fontSizeHeader;
+
+            @media screen and (max-width: $mobileScreen) {
+                margin-left: 2rem;
+            }
         }
 
         .clientsCards {
@@ -132,6 +208,18 @@
             @extend %flexWrap;
             column-gap: 5rem;
             row-gap: 5rem;
+
+            @media screen and (max-width: $mobileScreen) {
+                width: 90%;
+                margin-top: 2rem;
+                row-gap: 2rem;
+                margin-left: 1rem;
+            }
         }
     }
+
+    @media screen and (max-width: $mobileScreen) {
+        padding-top: 5rem;
+    }
+
 }
