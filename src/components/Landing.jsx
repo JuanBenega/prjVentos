@@ -6,7 +6,6 @@ import UsCard from './UsCard'
 import landing1 from '../img/landing1.jpg'
 import landing2 from '../img/landing2.jpg'
 import landing3 from '../img/landing3.jpg'
-import arrow from '../img/landArrow.png'
 import autom from '../img/landAutom.png'
 import mecan from '../img/landMecan.png'
 import landIcon1 from '../img/landIcon1.png'
@@ -24,6 +23,7 @@ import client1 from '../img/client1.png'
 import client2 from '../img/client2.png'
 import client3 from '../img/client3.png'
 import ClientCard from './ClientCard'
+import Arrows from './Arrows'
 
 
 const Landing = () => {
@@ -142,10 +142,7 @@ const Landing = () => {
                 <h2 className='carouTitle'>Somos una empresa apasionada por lo que hacemos</h2>
                 <h5>Desarrollamos nuevos sistemas de automatizacion y mecanica para empresas relacionadas al rubro industrial con toda la tecnologia de vanguardia </h5>
             </div>
-            <div className="landArrow">
-                <Image src={arrow} />
-                <Image src={arrow} />
-            </div>
+            <Arrows />
             <div className="landSegments">
                 <div className="landSeg">
                     <div className="landSegLeft">
@@ -162,10 +159,7 @@ const Landing = () => {
                     <Image src={mecan} fluid />
                 </div>
             </div>
-            <div className="landArrow">
-                <Image src={arrow} />
-                <Image src={arrow} />
-            </div>
+            <Arrows />
             <div className="landServices">
                 <div className="landServText">
                     <h1 className='landServTitle'>Nuestros servicios</h1>
@@ -182,10 +176,7 @@ const Landing = () => {
                     }
                 </div>
             </div>
-            <div className="landArrow">
-                <Image src={arrow} />
-                <Image src={arrow} />
-            </div>
+            <Arrows />
             <div className="landUs">
                 <h1 className="usTitle">Nosotros</h1>
                 <div className="landUsCards">
@@ -200,10 +191,7 @@ const Landing = () => {
                     }
                 </div>
             </div>
-            <div className="landArrow">
-                <Image src={arrow} />
-                <Image src={arrow} />
-            </div>
+            <Arrows />
             <div className="landClients">
                 <h1 className="clientsTitle">Nuestros clientes</h1>
                 <p className="clientsText">Confiaron y confían en nosotros, brindandosle el mejor servicio siempre</p>
