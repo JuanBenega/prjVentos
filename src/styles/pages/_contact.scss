@@ -1,0 +1,36 @@
+.contact {
+    background-color: $colorBlack;
+    padding-top: 10rem;
+    height: 170vh;
+    display: flex;
+    justify-content: center;
+    // flex-direction: column;
+    // align-items: center;
+
+    font-family: $font;
+    font-weight: $fontWeightTitle;
+    color: $colorWhite;
+    text-align: center;
+
+    .map {
+        
+        .contactMap {
+            width: 30rem;
+            position: absolute;
+            left: 37rem;
+
+        }
+
+        .location1 {
+            position: relative;
+            left: 10rem;
+            top: 25rem
+        }
+
+        .location2 {
+            position: relative;
+            left: -8rem;
+            top: 22rem
+        }
+    }
+}

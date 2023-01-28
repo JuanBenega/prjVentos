@@ -15,10 +15,10 @@ const Footer = () => {
                     <h6>@Ventos.com</h6>
                 </div>
                 <div className="linksFooter">
-                    <NavLink className="linkFoot">Inicio</NavLink>
+                    <NavLink className="linkFoot" href="/">Inicio</NavLink>
                     <NavLink className="linkFoot">Automatización</NavLink>
                     <NavLink className="linkFoot">Mecanización</NavLink>
-                    <NavLink className="linkFoot">Contacto</NavLink>
+                    <NavLink className="linkFoot" href="/contact">Contacto</NavLink>
                 </div>
                 <div className="contactFooter">
                     <h5>Contactanos</h5>
