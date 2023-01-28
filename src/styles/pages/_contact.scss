@@ -1,7 +1,7 @@
 .contact {
     background-color: $colorBlack;
     padding-top: 10rem;
-    height: 170vh;
+    height: 230vh;
     display: flex;
     justify-content: center;
     // flex-direction: column;
@@ -24,13 +24,68 @@
         .location1 {
             position: relative;
             left: 10rem;
-            top: 25rem
+            top: 25rem;
         }
 
         .location2 {
             position: relative;
             left: -8rem;
-            top: 22rem
+            top: 22rem;
+        }
+
+        .tooltip {
+            display:inline-block;
+            position:relative;
+            border-bottom:1px dotted #666;
+            text-align:left;
+            opacity: 1;
+        }
+        
+        .tooltip .right {
+            min-width:200px; 
+            max-width:209px;
+            top:50%;
+            left:100%;
+            margin-left:20px;
+            transform:translate(0, -50%);
+            padding:10px 20px;
+            color:#E7E7E7;
+            background-color:transparent;
+            font-weight:normal;
+            font-size:13px;
+            border-radius:8px;
+            position:absolute;
+            z-index:99999999;
+            box-sizing:border-box;
+            border:2px solid #13A3D9;
+            border-radius: 25px;
+            visibility:hidden; opacity:0; transition:opacity 0.8s;
+        }
+        
+        .tooltip:hover .right {
+            visibility:visible; opacity:1;
+        }
+        
+        .tooltip .right i {
+            position:absolute;
+            top:50%;
+            right:100%;
+            margin-top:-90px;
+            width:90px;
+            height:180px;
+            overflow:hidden;
+        }
+        
+        .tooltip .right i::after {
+            content:'';
+            position:absolute;
+            width:90px;
+            height:90px;
+            left:0;
+            top:50%;
+            transform:translate(50%,-50%) rotate(-45deg);
+            background-color:transparent;
+            border:2px solid #13A3D9;
         }
     }
 }
