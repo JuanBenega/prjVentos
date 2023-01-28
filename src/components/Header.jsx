@@ -34,10 +34,10 @@ const Header = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" className="bMenu"/>
                 <Navbar.Collapse id="responsive-navbar-nav" className="group">
                     <Nav className="linkGroup">
-                        <Nav.Link href="#features" className="link">Inicio</Nav.Link>
+                        <Nav.Link href="/" className="link">Inicio</Nav.Link>
                         <Nav.Link href="#deets" className="link">Automatización</Nav.Link>
                         <Nav.Link href="#memes" className="link">Mecanización</Nav.Link>
-                        <Button className="bContact">Contacto</Button>
+                        <Button className="bContact" onClick={event =>  window.location.href='/contact'}>Contacto</Button>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
