@@ -1,9 +1,19 @@
-import { Image } from 'react-bootstrap'
+import { Image, Nav } from 'react-bootstrap'
+
+
 import mapa from '../img/mapa.png'
 import locationPin from '../img/locationPin.png'
 import contactPhone from '../img/contactPhone.png'
 import contactGps from '../img/contactGps.png'
 import contactMail from '../img/contactMail.png'
+import contactFace from '../img/contactFace.png'
+import contactInst from '../img/contactInst.png'
+import contactTwit from '../img/contactTwit.png'
+import contactLinkedin from '../img/contactLinkedin.png'
+import contactLinkGps from '../img/contactLinkGps.png'
+import contactLinkPhone from '../img/contactLinkPhone.png'
+import { NavLink } from 'react-router-dom'
+
 
 const Contact = () => {
     return (
@@ -36,7 +46,11 @@ const Contact = () => {
                         <i></i>
                     </div>
                 </div>
-                {/* <Image src={locationPin} className='location2' /> */}
+            </div>
+            <div className="contactLinks">
+                <div className="contactSocial">
+                    <Nav.Link href=''><Image src={contactFace} /></Nav.Link>
+                </div>
             </div>
         </div>
     )
