@@ -23,7 +23,7 @@ const Contact = () => {
                 <h4 className="contactText">Somos una empresa en continua expansión</h4>
                 {/* <Image src={mapa} className='contactMap' /> */}
                 <div className="location1 tooltip">
-                    <Image src={locationPin} />
+                    <Image src={locationPin} className='locationPin'/>
                     <div className="right">
                         <Image src={contactGps} />
                         <h6>Perdriel 2875, La Tablada, Buenos Aires</h6>
@@ -35,7 +35,7 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className="location2 tooltip">
-                    <Image src={locationPin} />
+                    <Image src={locationPin} className='locationPin'/>
                     <div className="right">
                         <Image src={contactGps} />
                         <h6>Arenales 872, Villa Mercedes, San Luis</h6>
