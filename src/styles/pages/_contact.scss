@@ -9,10 +9,10 @@
 
     .map {
         width: 100%;
-        height: 80rem;
+        height: 60rem;
         //position: absolute;
         background-image: url('../../img/mapa.png');
-        background-size: 30rem;
+        background-size: 20rem;
         background-repeat: no-repeat;
         background-position-x: center;
         background-position-y: 60%;
@@ -21,7 +21,7 @@
         .location1 {
             //position: absolute;
             left: 7rem;
-            top: 25rem;
+            top: 19rem;
 
             //z-index: 2;
             @media screen and (max-width: $mobileScreen) {
@@ -32,8 +32,8 @@
 
         .location2 {
             //position: absolute;
-            left: -10rem;
-            top: 22rem;
+            left: -7.5rem;
+            top: 16.5rem;
 
             //z-index: 2;
             @media screen and (max-width: $mobileScreen) {
@@ -43,6 +43,8 @@
         }
 
         .locationPin {
+            width: 75%;
+
             @media screen and (max-width: $mobileScreen) {
                 width: 50%;
             }
@@ -84,6 +86,12 @@
                 ". ."
                 ". .";
             align-items: center;
+
+            @media screen and (max-width: $mobileScreen) {
+                top: 200%;
+                left: -80%;
+                width: 15rem;
+            }
         }
 
         .tooltip:hover .right {
@@ -111,6 +119,10 @@
             transform: translate(50%, -50%) rotate(-45deg);
             background-color: transparent;
             border: 2px solid #13A3D9;
+
+            @media screen and (max-width: $mobileScreen) {
+                display: none;
+            }
         }
 
 
@@ -130,12 +142,43 @@
         .contactItem {
             @extend %contactItem;
             border-right: 1px solid #C2C2C2;
+
+            .contactSocialTitle {
+                @media screen and (max-width: $mobileScreen) {
+                    display: none;
+                }
+            }
+            @media screen and (max-width: $mobileScreen) {
+                width: 90%;
+                border-right: none;
+                justify-content: center;
+                column-gap: 1rem;
+                margin-left: 1rem;
+                //border-bottom: 1px solid #C2C2C2;
+            }
         }
 
         .contactItem2 {
             @extend %contactItem;
 
+            @media screen and (max-width: $mobileScreen) {
+                width: 90%;
+                border-right: none;
+                margin-left: 1rem;
+                margin-bottom: 1rem;
+                //border-bottom: 1px solid #C2C2C2;
+            }
+
         }
 
+        @media screen and (max-width: $mobileScreen) {
+            flex-direction: column-reverse;
+
+        }
+
+    }
+
+    @media screen and (max-width: $mobileScreen) {
+        padding-top: 5rem;
     }
 }
