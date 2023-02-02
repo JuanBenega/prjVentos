@@ -1,4 +1,4 @@
-import { Image, NavLink } from "react-bootstrap"
+import { Image, Nav, NavLink } from "react-bootstrap"
 import logoFooter from '../img/logoFooter.png'
 import facebook from '../img/facebook.png'
 import instagram from '../img/instagram.png'
@@ -11,7 +11,9 @@ const Footer = () => {
         <div className="footer">
             <div className="groupFooter">
                 <div>
-                    <Image src={logoFooter} className='imgFooter' />
+                    <NavLink href="/">
+                        <Image src={logoFooter} className='imgFooter' />
+                    </NavLink>
                     <h6>@Ventos.com</h6>
                 </div>
                 <div className="linksFooter">
