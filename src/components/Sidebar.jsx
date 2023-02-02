@@ -19,7 +19,7 @@ const Sidebar = () => {
                 </Offcanvas.Header>
                 <Offcanvas.Body className='sidebarText'>
                     <h5>Telefóno</h5>
-                    <h6>Buenos aires: +54-911-0000-0000</h6>
+                    <h6>Buenos aires: +54-911-4174-3095</h6>
                     <h6>Mendoza: +54-9261-0000-0000</h6>
                     <h6>San Luis: +54-9000-0000-0000</h6>
                     <br />

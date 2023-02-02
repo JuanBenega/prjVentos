@@ -1,14 +1,18 @@
 @import "~bootstrap/scss/bootstrap";
 @import './config/variables';
 @import './config/extends';
+
+@import './pages/landing';
+@import './pages/contact';
+
 @import './components/header';
 @import './components/footer';
 @import './components/sidebar';
-@import './components/landing';
 @import './components/serviceCard';
 @import './components/usCard';
 @import './components/clientCard';
 @import './components/arrows';
+
   
 
 

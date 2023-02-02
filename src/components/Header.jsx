@@ -28,16 +28,18 @@ const Header = () => {
                 </div>
                 : <div className="blackDiv"></div>
             }
-            
+
             <Container fluid className={offset < 130 ? "header" : "header thin"}>
-                <Image src={offset < 130 ? logo : logoDesarm} className={offset < 130 ? "logoHeader" : "logoHeader simple"} />
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" className="bMenu"/>
+                <Nav.Link href="/">
+                    <Image src={offset < 130 ? logo : logoDesarm} className={offset < 130 ? "logoHeader" : "logoHeader simple"} />
+                </Nav.Link>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" className="bMenu" />
                 <Navbar.Collapse id="responsive-navbar-nav" className="group">
                     <Nav className="linkGroup">
-                        <Nav.Link href="#features" className="link">Inicio</Nav.Link>
+                        <Nav.Link href="/" className="link">Inicio</Nav.Link>
                         <Nav.Link href="#deets" className="link">Automatización</Nav.Link>
                         <Nav.Link href="#memes" className="link">Mecanización</Nav.Link>
-                        <Button className="bContact">Contacto</Button>
+                        <Button className="bContact" onClick={event => window.location.href = '/contact'}>Contacto</Button>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

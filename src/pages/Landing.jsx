@@ -1,7 +1,7 @@
 
 import { Carousel, Image } from 'react-bootstrap'
-import ServiceCard from './ServiceCard'
-import UsCard from './UsCard'
+import ServiceCard from '../components/ServiceCard'
+import UsCard from '../components/UsCard'
 
 import landing1 from '../img/landing1.jpg'
 import landing2 from '../img/landing2.jpg'
@@ -22,8 +22,8 @@ import landUs4 from '../img/landUs4.png'
 import client1 from '../img/client1.png'
 import client2 from '../img/client2.png'
 import client3 from '../img/client3.png'
-import ClientCard from './ClientCard'
-import Arrows from './Arrows'
+import ClientCard from '../components/ClientCard'
+import Arrows from '../components/Arrows'
 
 
 const Landing = () => {
