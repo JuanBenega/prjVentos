@@ -44,6 +44,7 @@
 
         .locationPin {
             width: 75%;
+            z-index: 1;
 
             @media screen and (max-width: $mobileScreen) {
                 width: 50%;
@@ -88,7 +89,7 @@
             align-items: center;
 
             @media screen and (max-width: $mobileScreen) {
-                top: 200%;
+                top: 250%;
                 left: -80%;
                 width: 15rem;
             }
@@ -118,7 +119,7 @@
             top: 50%;
             transform: translate(50%, -50%) rotate(-45deg);
             background-color: transparent;
-            border: 2px solid #13A3D9;
+            border: 2px solid $colorPrim;
 
             @media screen and (max-width: $mobileScreen) {
                 display: none;
