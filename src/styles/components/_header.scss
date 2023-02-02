@@ -110,8 +110,10 @@
                 border: none;
                 align-self: center;
 
-                @extend %mediaNone !optional;
-
+                @media screen and (max-width: $mobileScreen) {
+                    margin-left: 0;
+                    width: 100%;
+                }
             }
 
             @media screen and (max-width: $mobileScreen) {
