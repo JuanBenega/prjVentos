@@ -149,6 +149,11 @@
                     display: none;
                 }
             }
+
+            .contactSocialIcon:hover {
+                @extend %hover110;
+            }
+            
             @media screen and (max-width: $mobileScreen) {
                 width: 90%;
                 border-right: none;

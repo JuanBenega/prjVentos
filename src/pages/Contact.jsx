@@ -50,10 +50,10 @@ const Contact = () => {
             <div className="contactLinks">
                 <div className="contactItem">
                     <h6 className='contactSocialTitle'>Seguinos</h6>
-                    <Nav.Link href='https://www.facebook.com/profile.php?id=100083334182810'><Image src={contactFace} /></Nav.Link>
-                    <Nav.Link href='https://www.instagram.com/ventos_oficial/'><Image src={contactInst} /></Nav.Link>
-                    <Nav.Link href=''><Image src={contactTwit} /></Nav.Link>
-                    <Nav.Link href='https://www.linkedin.com/company/ventoselect-s-r-l/'><Image src={contactLinkedin} /></Nav.Link>
+                    <Nav.Link className='contactSocialIcon' href='https://www.facebook.com/profile.php?id=100083334182810'><Image src={contactFace} /></Nav.Link>
+                    <Nav.Link className='contactSocialIcon' href='https://www.instagram.com/ventos_oficial/'><Image src={contactInst} /></Nav.Link>
+                    <Nav.Link className='contactSocialIcon' href=''><Image src={contactTwit} /></Nav.Link>
+                    <Nav.Link className='contactSocialIcon' href='https://www.linkedin.com/company/ventoselect-s-r-l/'><Image src={contactLinkedin} /></Nav.Link>
                 </div>
                 <div className="contactItem">
                     <Image src={contactLinkPhone} />
