@@ -186,6 +186,10 @@
 
     .contactChat {
         padding: 4rem 0;
+
+        @media screen and (max-width: $mobileScreen) {
+            padding: 4rem 2rem;
+        }
     }
 
     @media screen and (max-width: $mobileScreen) {

@@ -62,7 +62,7 @@ const Contact = () => {
                 </div>
             </div>
             <div className="contactChat">
-                <Image src={contactChat} />
+                <Image fluid src={contactChat} />
             </div>
         </div>
     )
