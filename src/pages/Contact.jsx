@@ -1,7 +1,5 @@
 import { Image, Nav } from 'react-bootstrap'
 
-
-import mapa from '../img/mapa.png'
 import locationPin from '../img/locationPin.png'
 import contactPhone from '../img/contactPhone.png'
 import contactGps from '../img/contactGps.png'
@@ -12,7 +10,7 @@ import contactTwit from '../img/contactTwit.png'
 import contactLinkedin from '../img/contactLinkedin.png'
 import contactLinkGps from '../img/contactLinkGps.png'
 import contactLinkPhone from '../img/contactLinkPhone.png'
-import { NavLink } from 'react-router-dom'
+import contactChat from '../img/contactChat.png'
 
 
 const Contact = () => {
@@ -21,7 +19,6 @@ const Contact = () => {
             <div className="map">
                 <h1 className="contactTitle">Nos podés encontrar a través del país</h1>
                 <h4 className="contactText">Somos una empresa en continua expansión</h4>
-                {/* <Image src={mapa} className='contactMap' /> */}
                 <div className="location1 tooltip">
                     <Image src={locationPin} className='locationPin' />
                     <div className="right">
@@ -50,10 +47,10 @@ const Contact = () => {
             <div className="contactLinks">
                 <div className="contactItem">
                     <h6 className='contactSocialTitle'>Seguinos</h6>
-                    <Nav.Link href='https://www.facebook.com/profile.php?id=100083334182810'><Image src={contactFace} /></Nav.Link>
-                    <Nav.Link href='https://www.instagram.com/ventos_oficial/'><Image src={contactInst} /></Nav.Link>
-                    <Nav.Link href=''><Image src={contactTwit} /></Nav.Link>
-                    <Nav.Link href='https://www.linkedin.com/company/ventoselect-s-r-l/'><Image src={contactLinkedin} /></Nav.Link>
+                    <Nav.Link className='contactSocialIcon' href='https://www.facebook.com/profile.php?id=100083334182810'><Image src={contactFace} /></Nav.Link>
+                    <Nav.Link className='contactSocialIcon' href='https://www.instagram.com/ventos_oficial/'><Image src={contactInst} /></Nav.Link>
+                    <Nav.Link className='contactSocialIcon' href=''><Image src={contactTwit} /></Nav.Link>
+                    <Nav.Link className='contactSocialIcon' href='https://www.linkedin.com/company/ventoselect-s-r-l/'><Image src={contactLinkedin} /></Nav.Link>
                 </div>
                 <div className="contactItem">
                     <Image src={contactLinkPhone} />
@@ -63,6 +60,9 @@ const Contact = () => {
                     <Image src={contactLinkGps} />
                     <h6>Perdriel 2875, La Tablada, Buenos Aires</h6>
                 </div>
+            </div>
+            <div className="contactChat">
+                <Image src={contactChat} />
             </div>
         </div>
     )

@@ -1,4 +1,4 @@
-import { Image, Nav, NavLink } from "react-bootstrap"
+import { Image, NavLink } from "react-bootstrap"
 import logoFooter from '../img/logoFooter.png'
 import facebook from '../img/facebook.png'
 import instagram from '../img/instagram.png'
@@ -23,14 +23,15 @@ const Footer = () => {
                     <NavLink className="linkFoot" href="/contact">Contacto</NavLink>
                 </div>
                 <div className="contactFooter">
-                    <h5>Contactanos</h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit hic dolorem nobis in ullam quibusdam magni quae.</p>
+                    <h5 className="contactFooterTitle">Contactanos</h5>
+                    <p>Perdriel 2875, La Tablada, Buenos Aires</p>
+                    <p>(011) 15-4174-3095</p>
                 </div>
                 <div className="socialFooter">
-                    <NavLink href="https://www.facebook.com/profile.php?id=100083334182810" target="_blank"><Image src={facebook} /></NavLink>
-                    <NavLink href="https://www.instagram.com/ventos_oficial/" target="_blank"><Image src={instagram} /></NavLink>
-                    <NavLink href="" target="_blank"><Image src={youtube} /></NavLink>
-                    <NavLink href="https://www.linkedin.com/company/ventoselect-s-r-l/" target="_blank"><Image src={linkedin} /></NavLink>
+                    <NavLink className="footerSocialIcon" href="https://www.facebook.com/profile.php?id=100083334182810" target="_blank"><Image src={facebook} /></NavLink>
+                    <NavLink className="footerSocialIcon" href="https://www.instagram.com/ventos_oficial/" target="_blank"><Image src={instagram} /></NavLink>
+                    <NavLink className="footerSocialIcon" href="" target="_blank"><Image src={youtube} /></NavLink>
+                    <NavLink className="footerSocialIcon" href="https://www.linkedin.com/company/ventoselect-s-r-l/" target="_blank"><Image src={linkedin} /></NavLink>
 
                 </div>
             </div>
