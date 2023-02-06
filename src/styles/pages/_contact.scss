@@ -20,8 +20,8 @@
 
         .location1 {
             //position: absolute;
-            left: 7rem;
-            top: 19rem;
+            left: 10.5rem;
+            top: 18rem;
 
             //z-index: 2;
             @media screen and (max-width: $mobileScreen) {
@@ -32,7 +32,19 @@
 
         .location2 {
             //position: absolute;
-            left: -7.5rem;
+            left: -3rem;
+            top: 18.5rem;
+
+            //z-index: 2;
+            @media screen and (max-width: $mobileScreen) {
+                left: -5.5rem;
+                top: 11rem;
+            }
+        }
+
+        .location3 {
+            //position: absolute;
+            left: -14rem;
             top: 16.5rem;
 
             //z-index: 2;
@@ -70,7 +82,7 @@
             font-weight: normal;
             font-size: 13px;
             position: absolute;
-            z-index: 99999999;
+            z-index: 1;
             box-sizing: border-box;
             border: 2px solid $colorPrim;
             border-radius: 25px;

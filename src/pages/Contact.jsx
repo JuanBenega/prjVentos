@@ -43,6 +43,18 @@ const Contact = () => {
                         <i></i>
                     </div>
                 </div>
+                <div className="location3 tooltip">
+                    <Image src={locationPin} className='locationPin' />
+                    <div className="right">
+                        <Image src={contactGps} />
+                        <h6>Callejón Vidoza 55, Maipú, Mendoza</h6>
+                        <Image src={contactPhone} />
+                        <h6>(011) 15-41743095</h6>
+                        <Image src={contactMail} />
+                        <h6>abc@ventos.com.ar</h6>
+                        <i></i>
+                    </div>
+                </div>
             </div>
             <div className="contactLinks">
                 <div className="contactItem">
