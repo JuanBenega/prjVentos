@@ -18,8 +18,8 @@ const Footer = () => {
                 </div>
                 <div className="linksFooter">
                     <NavLink className="linkFoot" href="/">Inicio</NavLink>
-                    <NavLink className="linkFoot">Automatización</NavLink>
-                    <NavLink className="linkFoot">Mecanización</NavLink>
+                    <NavLink className="linkFoot" href="/autom">Automatización</NavLink>
+                    <NavLink className="linkFoot" href="/mecaniz">Mecanización</NavLink>
                     <NavLink className="linkFoot" href="/contact">Contacto</NavLink>
                 </div>
                 <div className="contactFooter">
