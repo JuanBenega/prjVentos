@@ -46,3 +46,11 @@
     justify-content: space-evenly;
     align-items: center;
 }
+
+%imageBackground {
+    background-image: url("../../img/fondo.png");
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding-top: 10rem;
+}

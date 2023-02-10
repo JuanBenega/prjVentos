@@ -1,0 +1,22 @@
+.autom {
+    @extend %imageBackground;
+
+
+
+    .automAnimation {
+        height: 60vh;
+    }
+
+    .automCarouselDiv {
+        background-color: rgb(44, 44, 44);
+        display: flex;
+        justify-content: center;
+
+        .automCarousel {
+            width: 85%;
+
+            .automCarouItem {
+            }
+        }
+    }
+}
