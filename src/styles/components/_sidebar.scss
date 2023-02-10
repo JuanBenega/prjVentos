@@ -5,6 +5,10 @@
     height: 15rem;
     left: calc(100% - 3rem);
     top: calc(50% - 7rem);
+
+    &:hover {
+        @extend %hover110;
+    }
 }
 
 .hide {
