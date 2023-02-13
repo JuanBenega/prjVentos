@@ -34,6 +34,11 @@
     font-size: $fontSizeTitle;
 }
 
+%fontTitleSection {
+    font-weight: $fontWeightTitle;
+    font-size: $fontSizeTitleSection;
+}
+
 %hover110 {
     scale: 110%;
     transition: scale 0.5s;
