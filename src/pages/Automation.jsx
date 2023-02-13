@@ -1,5 +1,6 @@
-import { Button, Carousel, Tab, Tabs } from "react-bootstrap"
+import { Button, Carousel, Image, Tab, Tabs } from "react-bootstrap"
 
+import autoAnimation from '../img/autoAnimation.gif'
 import autom01 from '../img/autom01.png'
 import autom02 from '../img/autom02.png'
 import autom03 from '../img/autom03.png'
@@ -9,7 +10,7 @@ const Automation = () => {
     return (
         <div className="autom">
             <div className="automAnimation">
-
+                <Image src={autoAnimation} />
             </div>
             <div className="automCarouselDiv">
                 <Carousel fade className='automCarousel'>
