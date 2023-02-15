@@ -10,7 +10,7 @@ const Automation = () => {
     return (
         <div className="autom">
             <div className="automAnimation">
-                <Image src={autoAnimation} />
+                {/* <Image src={autoAnimation} /> */}
             </div>
             <div className="automCarouselDiv">
                 <Carousel fade className='automCarousel'>

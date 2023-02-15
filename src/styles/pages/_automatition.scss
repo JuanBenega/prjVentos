@@ -1,12 +1,22 @@
 .autom {
     @extend %imageBackground;
-
+    //@extend %flexColumnCenter;
 
 
     .automAnimation {
-        height: 60vh;
+        //height: 60vh;
+        background-image: url('../../img/autoAnimation.gif');
+        background-size: cover;
+        height: 80vh;
+        transition: height 2s;
+
+        &:hover {
+            height: 0;
+        }
+    
     }
 
+    
     .automCarouselDiv {
         background-color: rgb(44, 44, 44);
         display: flex;
