@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react"
 import { Button, Carousel, Image, Tab, Tabs } from "react-bootstrap"
 
 import autoAnimation from '../img/autoAnimation.gif'
@@ -7,9 +8,24 @@ import autom03 from '../img/autom03.png'
 
 
 const Automation = () => {
+
+const [animationDone, setAnimationDone] = useState(false);
+
+useEffect(() => {
+  let timeAnimation = setTimeout(() => { setAnimationDone(true)
+    
+  }, 3000);
+
+  return () => {
+    clearTimeout(timeAnimation);
+  }
+}, [])
+
+
+
     return (
         <div className="autom">
-            <div className="automAnimation">
+            <div className={animationDone ? "automAnimation animCollapse" : "automAnimation"}>
                 {/* <Image src={autoAnimation} /> */}
             </div>
             <div className="automCarouselDiv">
