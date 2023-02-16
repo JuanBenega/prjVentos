@@ -8,6 +8,11 @@ import autom03 from '../img/autom03.png'
 import industrial1 from '../img/industrial1.png'
 import scada1 from '../img/scada1.png'
 import elec1 from '../img/elec1.png'
+import marlew from '../img/marlew.png'
+import furukawa from '../img/furukawa.png'
+import schneider from '../img/schneider.svg'
+import phoenix from '../img/phoenix.png'
+
 
 
 const Automation = () => {
@@ -142,7 +147,7 @@ const Automation = () => {
                             • Cálculo de selectividad y protecciones<br />
                             • Desarrollo de automatizaciones<br />
                             • Planos y Documentación del proyecto<br />
-                            <strong> Montajes</strong> <br />
+                            <strong> Montajes</strong> <br /> 
                             • Montaje de FM en Líneas de producción<br />
                             • Instalaciones en baja y media tensión<br />
                             • Sistemas de Iluminación interior y extreriorv
@@ -163,6 +168,12 @@ const Automation = () => {
                             • Mto UPS</p>
                     </Tab>
                 </Tabs>
+            </div>
+            <div className="partners">
+                <Image src={schneider} className='partImage' />
+                <Image src={phoenix} className='partImage' />
+                <Image src={marlew} className='partImage' />
+                <Image src={furukawa} className='partImage' />
             </div>
         </div>
     )
