@@ -30,6 +30,29 @@ const Automation = () => {
         }
     }, [])
 
+    const scroll = (sect) => {
+        const section = document.querySelector( `#justify-tab-example-tabpane-${sect}` );
+        const industrial = document.querySelector( `#justify-tab-example-tabpane-industrial` );
+        const industrialTab = document.querySelector( `#justify-tab-example-tab-industrial` );
+        const elec = document.querySelector( `#justify-tab-example-tabpane-elec` );
+        const elecTab = document.querySelector( `#justify-tab-example-tab-elec` );
+        const scada = document.querySelector( `#justify-tab-example-tabpane-scada` );
+        const scadaTab = document.querySelector( `#justify-tab-example-tab-scada` );
+        switch (sect) {
+            case 'industrial':
+                industrial.className = 'fade\ tabContent\ tab-pane\ active\ show';
+                elec.className = 'fade\ tabContent\ tab-pane';
+                scada.className = 'fade\ tabContent\ tab-pane';
+                industrialTab.className = 'nav-link\ active'
+                elecTab.className = 'nav-link'
+                scadaTab.className = 'nav-link'
+                break;
+            default:
+                break;
+        }
+        section.scrollIntoView( { behavior: 'smooth', block: 'nearest' } );
+      };
+
 
 
     return (
@@ -50,7 +73,7 @@ const Automation = () => {
                                 4.0. Resolvemos los problemas de forma rápida y
                                 eficaz, manteniendo el mejor costo-beneficio para
                                 nuestros clientes.</h6>
-                            <Button className="sectionButton">Mas información...</Button>
+                            <Button className="sectionButton" onClick={()=>scroll('industrial')}>Mas información...</Button>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item className='automCarouItem'>
@@ -123,7 +146,7 @@ const Automation = () => {
                             básico, dirigiendo los proyectos hacia la mejor combinación
                             técnico-económica.</p>
                     </Tab>
-                    <Tab eventKey="sacada" title="CONTROL DE PROCESOS - SISTEMA SCADA" className="tabContent">
+                    <Tab eventKey="scada" title="CONTROL DE PROCESOS - SISTEMA SCADA" className="tabContent">
                         <Image src={scada1} className='tabImage' />
                         <p> - Los sistemas SCADA (Supervisión, Control y
                             Adquisición de Datos) que implementamos son la mejor
