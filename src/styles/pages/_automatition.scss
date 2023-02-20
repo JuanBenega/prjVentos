@@ -7,14 +7,15 @@
     .automAnimation {
         background-image: url('../../img/autoAnimation.gif');
         background-size: cover;
+        background-position: center;
         height: 100vh;
         transition: height 3s;
-        margin-top: -5rem;
+        //padding-bottom: 15rem;
     }
 
     .animCollapse {
         height: 0;
-        margin-top: 0;
+        //padding-bottom: 0;
     }
 
 

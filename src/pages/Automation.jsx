@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react"
 import { Button, Carousel, Image, Tab, Tabs } from "react-bootstrap"
 
-import autoAnimation from '../img/autoAnimation.gif'
 import autom01 from '../img/autom01.png'
 import autom02 from '../img/autom02.png'
 import autom03 from '../img/autom03.png'
@@ -88,6 +87,8 @@ const Automation = () => {
             default:
                 break;
         }
+
+        // Scroleo a la sección de pestañas
         section.scrollIntoView( { behavior: 'smooth', block: 'start' } );
       };
 
