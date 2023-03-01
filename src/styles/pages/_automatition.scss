@@ -105,59 +105,64 @@
     }
 
     .automProjects {
-        width: 80%;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
+        margin: 5rem 0;
 
-        .automProjImg {
-            width: 45%;
-            height: 10rem;
-            border-radius: 20px;
-            margin: 0.25rem;
-            //background-size: 50%;
-            //background-repeat: no-repeat;
-            //height: 3rem;
+        .automProj {
+            @extend %flexWrap;
+
+            .automProjImg {
+                width: 45%;
+                height: 10rem;
+                border-radius: 20px;
+                margin: 0.25rem;
+                background-size: cover;
+                background-clip: border-box;
+                background-repeat: no-repeat;
+                //height: 3rem;
 
 
-        }
-
-        .auPrIm1 {
-            background-image: url('../../img/automProj01.jpg');
-        }
-
-        .auPrIm2 {
-            background-image: url('../../img/automProj02.png');
-        }
-
-        .auPrIm3 {
-            background-image: url('../../img/automProj03.png');
-        }
-
-        .auPrIm4 {
-            background-image: url('../../img/automProj04.jpg');
-        }
-
-        .automProjCartel {
-            width: 70%;
-            background: $colorBackProjCartel;
-            border: 5px solid #13A3D9;
-            border-radius: 22px;
-            height: 10rem;
-
-            .automProjTitle {
-                font-weight: $fontWeightTitle;
-                margin-top: 2rem;
-                margin-left: 3rem;
             }
 
-            .automProjDescrip {
-                text-align: center;
-                margin-left: 3rem;
-                margin-right: 3rem;
-                margin-top: 1.5rem;
-                margin-bottom: 3rem;
+            .auPrIm1 {
+                background-image: url('../../img/automProj01.jpg');
+            }
+
+            .auPrIm2 {
+                background-image: url('../../img/automProj02.png');
+            }
+
+            .auPrIm3 {
+                background-image: url('../../img/automProj03.png');
+            }
+
+            .auPrIm4 {
+                background-image: url('../../img/automProj04.jpg');
+            }
+
+            .automProjCartel {
+                width: 70%;
+                background: $colorBackProjCartel;
+                border: 5px solid #13A3D9;
+                border-radius: 22px;
+                height: 10rem;
+
+                .automProjTitle {
+                    font-weight: $fontWeightTitle;
+                    margin-top: 2rem;
+                    margin-left: 3rem;
+                }
+
+                .automProjDescrip {
+                    text-align: center;
+                    margin-left: 3rem;
+                    margin-right: 3rem;
+                    margin-top: 1.5rem;
+                    margin-bottom: 3rem;
+                }
             }
         }
     }

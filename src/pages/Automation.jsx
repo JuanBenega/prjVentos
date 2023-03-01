@@ -35,15 +35,15 @@ const Automation = () => {
 
     const scroll = (sect) => {
         // establezco la sección a visualizar
-        const section = document.querySelector( `#justify-tab-example-tabpane-${sect}` );
+        const section = document.querySelector(`#justify-tab-example-tabpane-${sect}`);
         // Levanto las diferentes secciones
-        const industrial = document.querySelector( `#justify-tab-example-tabpane-industrial` );
-        const industrialTab = document.querySelector( `#justify-tab-example-tab-industrial` );
-        const elec = document.querySelector( `#justify-tab-example-tabpane-elec` );
+        const industrial = document.querySelector(`#justify-tab-example-tabpane-industrial`);
+        const industrialTab = document.querySelector(`#justify-tab-example-tab-industrial`);
+        const elec = document.querySelector(`#justify-tab-example-tabpane-elec`);
         // Identifico los encabezados de las distintas secciones
-        const elecTab = document.querySelector( `#justify-tab-example-tab-elec` );
-        const scada = document.querySelector( `#justify-tab-example-tabpane-scada` );
-        const scadaTab = document.querySelector( `#justify-tab-example-tab-scada` );
+        const elecTab = document.querySelector(`#justify-tab-example-tab-elec`);
+        const scada = document.querySelector(`#justify-tab-example-tabpane-scada`);
+        const scadaTab = document.querySelector(`#justify-tab-example-tab-scada`);
 
         switch (sect) {
             case 'industrial':
@@ -56,11 +56,11 @@ const Automation = () => {
                 elecTab.className = 'nav-link';
                 scadaTab.className = 'nav-link';
                 // Establezco la pestaña activa
-                industrialTab.setAttribute ('aria-selected','true');
-                elecTab.setAttribute ('aria-selected','false');
-                scadaTab.setAttribute ('aria-selected','false');
+                industrialTab.setAttribute('aria-selected', 'true');
+                elecTab.setAttribute('aria-selected', 'false');
+                scadaTab.setAttribute('aria-selected', 'false');
                 break;
-                case 'scada':
+            case 'scada':
                 // Doy visualización a la pestaña seleccionada
                 industrial.className = 'fade tabContent tab-pane';
                 elec.className = 'fade tabContent tab-pane';
@@ -70,11 +70,11 @@ const Automation = () => {
                 elecTab.className = 'nav-link';
                 scadaTab.className = 'nav-link active';
                 // Establezco la pestaña activa
-                industrialTab.setAttribute ('aria-selected','false');
-                elecTab.setAttribute ('aria-selected','false');
-                scadaTab.setAttribute ('aria-selected','true');
+                industrialTab.setAttribute('aria-selected', 'false');
+                elecTab.setAttribute('aria-selected', 'false');
+                scadaTab.setAttribute('aria-selected', 'true');
                 break;
-                case 'elec':
+            case 'elec':
                 // Doy visualización a la pestaña seleccionada
                 industrial.className = 'fade tabContent tab-pane';
                 elec.className = 'fade tabContent tab-pane active show';
@@ -84,17 +84,17 @@ const Automation = () => {
                 elecTab.className = 'nav-link active';
                 scadaTab.className = 'nav-link';
                 // Establezco la pestaña activa
-                industrialTab.setAttribute ('aria-selected','false');
-                elecTab.setAttribute ('aria-selected','true');
-                scadaTab.setAttribute ('aria-selected','false');
+                industrialTab.setAttribute('aria-selected', 'false');
+                elecTab.setAttribute('aria-selected', 'true');
+                scadaTab.setAttribute('aria-selected', 'false');
                 break;
             default:
                 break;
         }
 
         // Scroleo a la sección de pestañas
-        section.scrollIntoView( { behavior: 'smooth', block: 'start' } );
-      };
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    };
 
 
 
@@ -116,7 +116,7 @@ const Automation = () => {
                                 4.0. Resolvemos los problemas de forma rápida y
                                 eficaz, manteniendo el mejor costo-beneficio para
                                 nuestros clientes.</h6>
-                            <Button className="sectionButton" onClick={()=>scroll('industrial')}>Mas información...</Button>
+                            <Button className="sectionButton" onClick={() => scroll('industrial')}>Mas información...</Button>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item className='automCarouItem'>
@@ -133,7 +133,7 @@ const Automation = () => {
                                 través de dispositivos que controlan la lógica del
                                 funcionamiento de la maquina / planta / Pulse y
                                 displays proceso</h6>
-                            <Button className="sectionButton" onClick={()=>scroll('scada')}>Mas información...</Button>
+                            <Button className="sectionButton" onClick={() => scroll('scada')}>Mas información...</Button>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item className='automCarouItem'>
@@ -149,7 +149,7 @@ const Automation = () => {
                                 en servicio de Ingeniería, instalación, montaje y
                                 automatización complementando la actividad
                                 ofreciendo mantenimiento preventivo y correctivo.</h6>
-                            <Button className="sectionButton" onClick={()=>scroll('elec')}>Mas información...</Button>
+                            <Button className="sectionButton" onClick={() => scroll('elec')}>Mas información...</Button>
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
@@ -236,14 +236,16 @@ const Automation = () => {
                 </Tabs>
             </div>
             <div className="automProjects">
-                <div className="automProjImg auPrIm1"></div>
-                <div className="automProjImg auPrIm2"></div>
-                <div className="automProjCartel">
-                    <h3 className="automProjTitle">Nuestros proyectos más importantes</h3>
-                    <p className="automProjDescrip">Trabajando siempre para cumplir con la calidad en cada proyecto, poniendo prioridad en la necesidad el cliente.</p>
+                <div className="automProj">
+                    <div className="automProjImg auPrIm1"></div>
+                    <div className="automProjImg auPrIm2"></div>
+                    <div className="automProjCartel">
+                        <h3 className="automProjTitle">Nuestros proyectos más importantes</h3>
+                        <p className="automProjDescrip">Trabajando siempre para cumplir con la calidad en cada proyecto, poniendo prioridad en la necesidad el cliente.</p>
+                    </div>
+                    <div className="automProjImg auPrIm3"></div>
+                    <div className="automProjImg auPrIm4"></div>
                 </div>
-                <div className="automProjImg auPrIm3"></div>
-                <div className="automProjImg auPrIm4"></div>
             </div>
             <div className="partners">
                 <h3>Nuestros socios y proveedores</h3>
