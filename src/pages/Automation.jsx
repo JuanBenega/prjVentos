@@ -7,6 +7,10 @@ import autom03 from '../img/autom03.png'
 import industrial1 from '../img/industrial1.png'
 import scada1 from '../img/scada1.png'
 import elec1 from '../img/elec1.png'
+import automProj01 from '../img/automProj01.jpg'
+import automProj02 from '../img/automProj02.png'
+import automProj03 from '../img/automProj03.png'
+import automProj04 from '../img/automProj04.jpg'
 import marlew from '../img/marlew.png'
 import furukawa from '../img/furukawa.png'
 import schneider from '../img/schneider.png'
@@ -230,6 +234,16 @@ const Automation = () => {
                             • Mto UPS</p>
                     </Tab>
                 </Tabs>
+            </div>
+            <div className="automProjects">
+                <div className="automProjImg auPrIm1"></div>
+                <div className="automProjImg auPrIm2"></div>
+                <div className="automProjCartel">
+                    <h3 className="automProjTitle">Nuestros proyectos más importantes</h3>
+                    <p className="automProjDescrip">Trabajando siempre para cumplir con la calidad en cada proyecto, poniendo prioridad en la necesidad el cliente.</p>
+                </div>
+                <div className="automProjImg auPrIm3"></div>
+                <div className="automProjImg auPrIm4"></div>
             </div>
             <div className="partners">
                 <h3>Nuestros socios y proveedores</h3>
