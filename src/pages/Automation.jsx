@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Button, Carousel, Image, Tab, Tabs } from "react-bootstrap"
+import { Button, Carousel, Image, Tab, Tabs, Modal } from "react-bootstrap"
 
 import autom01 from '../img/autom01.png'
 import autom02 from '../img/autom02.png'
@@ -7,10 +7,6 @@ import autom03 from '../img/autom03.png'
 import industrial1 from '../img/industrial1.png'
 import scada1 from '../img/scada1.png'
 import elec1 from '../img/elec1.png'
-import automProj01 from '../img/automProj01.jpg'
-import automProj02 from '../img/automProj02.png'
-import automProj03 from '../img/automProj03.png'
-import automProj04 from '../img/automProj04.jpg'
 import marlew from '../img/marlew.png'
 import furukawa from '../img/furukawa.png'
 import schneider from '../img/schneider.png'
@@ -21,6 +17,8 @@ import phoenix from '../img/phoenix.png'
 const Automation = () => {
 
     const [animationDone, setAnimationDone] = useState(false);
+    const [modalShow, setModalShow] = useState(false);
+
 
     useEffect(() => {
         let timeAnimation = setTimeout(() => {
@@ -96,7 +94,33 @@ const Automation = () => {
         section.scrollIntoView({ behavior: 'smooth', block: 'start' });
     };
 
-
+    // function ModalAutomProjects(props) {
+    //     return (
+    //         <Modal
+    //             {...props}
+    //             size="lg"
+    //             aria-labelledby="contained-modal-title-vcenter"
+    //             centered
+    //         >
+    //             <Modal.Header closeButton>
+    //                 <Modal.Title id="contained-modal-title-vcenter">
+    //                     Modal heading
+    //                 </Modal.Title>
+    //             </Modal.Header>
+    //             <Modal.Body>
+    //                 <h4>Centered Modal</h4>
+    //                 <p>
+    //                     Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+    //                     dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
+    //                     consectetur ac, vestibulum at eros.
+    //                 </p>
+    //             </Modal.Body>
+    //             <Modal.Footer>
+    //                 <Button onClick={props.onHide}>Close</Button>
+    //             </Modal.Footer>
+    //         </Modal>
+    //     );
+    // }
 
     return (
         <div className="autom">
@@ -237,7 +261,7 @@ const Automation = () => {
             </div>
             <div className="automProjects">
                 <div className="automProj">
-                    <div className="automProjImg auPrIm1"></div>
+                    <div className="automProjImg auPrIm1" onClick={() => setModalShow(true)}></div>
                     <div className="automProjImg auPrIm2"></div>
                     <div className="automProjCartel">
                         <h3 className="automProjTitle">Nuestros proyectos más importantes</h3>
@@ -256,6 +280,11 @@ const Automation = () => {
                     <Image src={furukawa} className='partImage' />
                 </div>
             </div>
+
+            {/* <ModalAutomProjects
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+            /> */}
         </div>
     )
 }
