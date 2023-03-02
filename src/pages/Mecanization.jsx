@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react"
 import { Button, Carousel, Image, Tab, Tabs, Modal } from "react-bootstrap"
 
-import autom01 from '../img/autom01.png'
-import autom02 from '../img/autom02.png'
-import autom03 from '../img/autom03.png'
+import mech01 from '../img/mech01.png'
+import mech02 from '../img/mech02.png'
+import mech03 from '../img/mech03.png'
 import industrial1 from '../img/industrial1.png'
 import scada1 from '../img/scada1.png'
 import elec1 from '../img/elec1.png'
@@ -15,8 +15,6 @@ import phoenix from '../img/phoenix.png'
 
 const Mecanization = () => {
     const [animationDone, setAnimationDone] = useState(false);
-    const [modalShow, setModalShow] = useState(false);
-
 
     useEffect(() => {
         let timeAnimation = setTimeout(() => {
@@ -92,86 +90,66 @@ const Mecanization = () => {
         section.scrollIntoView({ behavior: 'smooth', block: 'start' });
     };
 
-    // function ModalAutomProjects(props) {
-    //     return (
-    //         <Modal
-    //             {...props}
-    //             size="lg"
-    //             aria-labelledby="contained-modal-title-vcenter"
-    //             centered
-    //         >
-    //             <Modal.Header closeButton>
-    //                 <Modal.Title id="contained-modal-title-vcenter">
-    //                     Modal heading
-    //                 </Modal.Title>
-    //             </Modal.Header>
-    //             <Modal.Body>
-    //                 <h4>Centered Modal</h4>
-    //                 <p>
-    //                     Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-    //                     dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-    //                     consectetur ac, vestibulum at eros.
-    //                 </p>
-    //             </Modal.Body>
-    //             <Modal.Footer>
-    //                 <Button onClick={props.onHide}>Close</Button>
-    //             </Modal.Footer>
-    //         </Modal>
-    //     );
-    // }
 
     return (
         <div className="autom">
-            <div className={animationDone ? "automAnimation animCollapse" : "automAnimation"}></div>
+            <div className={animationDone ? "mechAnimation animCollapse" : "mechAnimation"}></div>
             <div className="automCarouselDiv">
                 <Carousel fade className='automCarousel'>
                     <Carousel.Item className='automCarouItem'>
                         <img
                             className="d-block w-100"
-                            src={autom01}
+                            src={mech01}
                             alt="First slide"
                         />
                         <Carousel.Caption className='automCarouText'>
-                            <p className='automCarouTitle'>Automatización Industrial</p>
-                            <h6>Nos enfocamos en la implementación de soluciones
-                                originales de automatización Industrial e Industria
-                                4.0. Resolvemos los problemas de forma rápida y
-                                eficaz, manteniendo el mejor costo-beneficio para
-                                nuestros clientes.</h6>
-                            <Button className="sectionButton" onClick={() => scroll('industrial')}>Mas información...</Button>
+                            <p className='automCarouTitle'>Tanques & trabajos especiales</p>
+                            <h6>Desde el simple recipiente de
+                                almacenamiento móvil hasta el reactor más
+                                complejo, podemos satisfacer sus
+                                necesidades en una amplia gama de tanques
+                                con diferentes funciones y características
+                                dependiendo del proceso o procesos que se
+                                vayan a implementar y de sus requisitos
+                                específicos.</h6>
+                            <Button className="sectionButton" onClick={() => scroll('tanks')}>Mas información...</Button>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item className='automCarouItem'>
                         <img
                             className="d-block w-100"
-                            src={autom02}
+                            src={mech02}
                             alt="Second slide"
                         />
                         <Carousel.Caption className='automCarouText'>
-                            <p className='automCarouTitle'>Control de Procesos – Sistemas SCADA
-                                Automatización de Procesos Industriales</p>
-                            <h6>Nuestros sistemas posibilitan la integración y la
-                                comunicación de todos los procesos industriales a
-                                través de dispositivos que controlan la lógica del
-                                funcionamiento de la maquina / planta / Pulse y
-                                displays proceso</h6>
-                            <Button className="sectionButton" onClick={() => scroll('scada')}>Mas información...</Button>
+                            <p className='automCarouTitle'>Pipping & Revamping</p>
+                            <h6>Una instalación eficaz depende en gran medida
+                                de su capacidad para transportar el fluido a
+                                través del sistema de tuberías hasta los
+                                distintos equipos que funcionan en conjunto.
+                                Un sistema de tuberías bien diseñado es, por
+                                tanto, crucial para cualquier instalación
+                                industrial y su creación requiere un análisis
+                                sistémico y experiencia en diversos métodos de
+                                ingeniería.</h6>
+                            <Button className="sectionButton" onClick={() => scroll('pipe')}>Mas información...</Button>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item className='automCarouItem'>
                         <img
                             className="d-block w-100"
-                            src={autom03}
+                            src={mech03}
                             alt="Third slide"
                         />
                         <Carousel.Caption className='automCarouText'>
-                            <p className='automCarouTitle'>Electricidad Industrial</p>
-                            <h6>Contamos con profesionales con vasta experiencia
-                                en el rubro eléctrico, abarcando un amplio espectro
-                                en servicio de Ingeniería, instalación, montaje y
-                                automatización complementando la actividad
-                                ofreciendo mantenimiento preventivo y correctivo.</h6>
-                            <Button className="sectionButton" onClick={() => scroll('elec')}>Mas información...</Button>
+                            <p className='automCarouTitle'>Mantenimiento Industrial</p>
+                            <h6>Nuestros equipos pueden asistir en el
+                                mantenimiento, la reparación, la
+                                modernización y la puesta en
+                                conformidad legal de sus unidades de
+                                producción para optimizar y
+                                aumentar su rendimiento.</h6>
+                            <Button className="sectionButton" onClick={() => scroll('mant')}>Mas información...</Button>
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
@@ -184,82 +162,93 @@ const Mecanization = () => {
                     justify
                     variant="tabs"
                 >
-                    <Tab eventKey="industrial" title="AUTOMATIZACION INDUSTRIAL" className="tabContent">
+                    <Tab eventKey="tanks" title="Tanques & trabajos especiales" className="tabContent">
                         <Image src={industrial1} className='tabImage' />
-                        <p> <strong>Proveemos soluciones llave en mano en Automatización de
-                            máquinas y Procesos incluyendo la ingeniería. </strong><br />
-                            - Provisión e integración de materiales. <br />
-                            - Desarrollos de software para PLC, HMI y SCADA. <br />
-                            - Desarrollo de planos. <br />
-                            - Armado de tableros de control y puesta en servicio. <br />
-                            <strong>Ofrecemos toda nuestra experiencia para realizar el diseño y la
-                                implementación de circuitos electrónicos en general:</strong> <br />
-                            - Sistemas de medición y adquisición de datos. <br />
-                            - Acondicionamiento de señal <br />
-                            - Manejo de entradas y salidas analógicas y digitales, fuentes de
-                            alimentación, etc. <br />
-                            Realizamos también el mantenimiento preventivo y la reparación
-                            de sistemas de control basados en PC, PLC o micro procesados. <br />
-                            <strong>Diseño y Desarrollo de máquinas automáticas y
-                                desarrollo de proyectos electrónicos </strong><br />
-                            - Ampliaciones o modificaciones de instalaciones y equipos
-                            existentes. <br />
-                            - Máquinas para procesos industriales. <br />
-                            - Soluciones ingeniosas con estudio de alternativas que
-                            buscan la eficiencia energética y la incorporación del
-                            concepto de seguridad y ergonomía desde el diseño
-                            básico, dirigiendo los proyectos hacia la mejor combinación
-                            técnico-económica.</p>
+                        <p> <strong>ProRecipientes de proceso y sistemas de agitación
+                            (con o sin intercambio de calor) </strong><br />
+                            - Reactores
+                            - Biorreactores<br />
+                            - Fermentadores / Bio-fermentadores
+                            - Tanques móviles<br />
+                            - Tanques de preparación
+                            - Fundidores y mezcladores<br />
+                            - Cristalizadores
+                            - Cocinas<br />
+                            - Tanques de fermentación
+                            - Maduradores<br />
+                            - Tanques CIP
+                            - Tanques ATEX<br />
+                            - Cámaras de vacío
+                            - Tanques de autoclave<br />
+                            - Depósitos compartimentados
+                            - Hornos, calderas<br />
+                            - Tanques de ebullición
+                            - Tanques de almacenamiento y mezcla (integración del proceso)<br />
+                            - Tanques de almacenamiento
+                            - Tanques de mezcla<br />
+                            - Mobiliario en acero inoxidable
+                            - Equipo sanitario( piletones, mesadas, mingitorio, etc.) en acero
+                            inoxidable</p>
                     </Tab>
-                    <Tab eventKey="scada" title="CONTROL DE PROCESOS - SISTEMA SCADA" className="tabContent">
+                    <Tab eventKey="pipe" title="Pipping & Revamping" className="tabContent">
                         <Image src={scada1} className='tabImage' />
-                        <p> - Los sistemas SCADA (Supervisión, Control y
-                            Adquisición de Datos) que implementamos son la mejor
-                            alternativa para las industrias. A través de interfaces
-                            gráficas, centralizan la información para que sea
-                            accesible a todos los niveles organización en tiempo
-                            real. <br />
-                            - La automatización de procesos industriales es hoy la
-                            mejor forma de evitar riesgos en la cadena de
-                            producción. <br />
-                            Contamos con todas las soluciones para que las
-                            industrias se desarrollen y crezcan al ritmo del mercado.
-                            Nos comprometemos con la seguridad de nuestros
-                            clientes y tenemos las herramientas para hacerla
-                            efectiva.</p>
+                        <p> - El Revamping no es una simple alternativa a
+                            una nueva instalación, sino una oferta a la
+                            medida adaptada a la instalación existente.
+                            Nos caracterizamos por tener una
+                            experiencia probada en proyectos de
+                            renovación.<br />
+                            - Nuestros equipos pueden acompañarle, sea
+                            cual sea su sector de actividad y las normas
+                            vigentes o las limitaciones relativas a la
+                            continuidad de su instalación.<br />
+                            - Intervenimos en cualquier tipo de
+                            proyecto, desde el simple Revamping de
+                            equipos hasta la modernización completa
+                            de su centro de producción. También
+                            realizamos paradas de unidades,
+                            especialmente para las industrias química,
+                            petroquímica y de ciencias de la vida.</p>
                     </Tab>
-                    <Tab eventKey="elec" title="ELECTRICIDAD INDUSTRIAL" className="tabContent">
+                    <Tab eventKey="mant" title="Mantenimiento Industrial" className="tabContent">
                         <Image src={elec1} className='tabImage' />
-                        <p><strong> Ingeniería</strong> <br />
-                            • Ingeniería de nuevas instalaciones <br />
-                            • Cálculo de selectividad y protecciones<br />
-                            • Desarrollo de automatizaciones<br />
-                            • Planos y Documentación del proyecto<br />
-                            <strong> Montajes</strong> <br />
-                            • Montaje de FM en Líneas de producción<br />
-                            • Instalaciones en baja y media tensión<br />
-                            • Sistemas de Iluminación interior y extreriorv
-                            • Montajes de sistemas de Detección de Incendio,
-                            Control de Acceso, Voz y Datos.<br />
-                            <strong>Tableros</strong> <br />
-                            • Diseño, construcción y montaje de tableros a medida.<br />
-                            • Tableros de control y potencia<br />
-                            • Tableros Generales de Baja Tensión<br />
-                            • Tableros de transferencia con grupos electrógenos y
-                            UPS.<br />
-                            <strong>Mantenimiento</strong> <br />
-                            • Medición de puesta a Tierra según SRT Res. 900/15<br />
-                            • Termografías<br />
-                            • Mto Iluminación<br />
-                            • Calidad de Energía<br />
-                            • Servicio Técnico Grupos Electrógenos<br />
-                            • Mto UPS</p>
+                        <p> <strong> Ofrecemos una serie de servicios de
+                            estudio y diseño para garantizar el éxito
+                            de sus proyectos con total seguridad y en
+                            estricto cumplimiento de los reglamentos
+                            y normas vigentes en sus industrias:</strong><br />
+                            - Ingeniería de mantenimiento integrada
+                            adaptada a cada contrato para el desarrollo
+                            de una política de mantenimiento desde la
+                            fase de diseño.<br />
+                            - Contratos de mantenimiento preventivo y
+                            correctivo personalizados para la mejora
+                            continua de: la automatización, la ingeniería
+                            eléctrica, la instrumentación, la mecánica y
+                            las tuberías.<br />
+                            - Servicios de mantenimiento: asistencia y
+                            análisis de fallos, mantenimiento y revisión,
+                            inspección y recalificación periódica.
+                            Reparaciones mecánicas: análisis de
+                            degradación, experiencia en el mecanizado,
+                            recomendaciones de reparaciones y
+                            mejoras.<br />
+                            - Mantenimiento mecánico que incorpora
+                            iniciativas de mejora continua.
+                            Mantenimiento de tuberías para apoyar sus
+                            redes de fluidos.<br />
+                            - Mantenimiento en la empresa en general
+                            para una consideración global.
+                            Paradas importantes: contratos de parada o
+                            de mantenimiento anual con una plantilla
+                            media.
+                        </p>
                     </Tab>
                 </Tabs>
             </div>
             <div className="automProjects">
                 <div className="automProj">
-                    <div className="automProjImg auPrIm1" onClick={() => setModalShow(true)}></div>
+                    <div className="automProjImg auPrIm1"></div>
                     <div className="automProjImg auPrIm2"></div>
                     <div className="automProjCartel">
                         <h3 className="automProjTitle">Nuestros proyectos más importantes</h3>
@@ -279,10 +268,6 @@ const Mecanization = () => {
                 </div>
             </div>
 
-            {/* <ModalAutomProjects
-                show={modalShow}
-                onHide={() => setModalShow(false)}
-            /> */}
         </div>
     )
 }

@@ -17,7 +17,6 @@ import phoenix from '../img/phoenix.png'
 const Automation = () => {
 
     const [animationDone, setAnimationDone] = useState(false);
-    const [modalShow, setModalShow] = useState(false);
 
 
     useEffect(() => {
@@ -94,33 +93,7 @@ const Automation = () => {
         section.scrollIntoView({ behavior: 'smooth', block: 'start' });
     };
 
-    // function ModalAutomProjects(props) {
-    //     return (
-    //         <Modal
-    //             {...props}
-    //             size="lg"
-    //             aria-labelledby="contained-modal-title-vcenter"
-    //             centered
-    //         >
-    //             <Modal.Header closeButton>
-    //                 <Modal.Title id="contained-modal-title-vcenter">
-    //                     Modal heading
-    //                 </Modal.Title>
-    //             </Modal.Header>
-    //             <Modal.Body>
-    //                 <h4>Centered Modal</h4>
-    //                 <p>
-    //                     Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-    //                     dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-    //                     consectetur ac, vestibulum at eros.
-    //                 </p>
-    //             </Modal.Body>
-    //             <Modal.Footer>
-    //                 <Button onClick={props.onHide}>Close</Button>
-    //             </Modal.Footer>
-    //         </Modal>
-    //     );
-    // }
+
 
     return (
         <div className="autom">
@@ -261,7 +234,7 @@ const Automation = () => {
             </div>
             <div className="automProjects">
                 <div className="automProj">
-                    <div className="automProjImg auPrIm1" onClick={() => setModalShow(true)}></div>
+                    <div className="automProjImg auPrIm1"></div>
                     <div className="automProjImg auPrIm2"></div>
                     <div className="automProjCartel">
                         <h3 className="automProjTitle">Nuestros proyectos más importantes</h3>
@@ -281,10 +254,6 @@ const Automation = () => {
                 </div>
             </div>
 
-            {/* <ModalAutomProjects
-                show={modalShow}
-                onHide={() => setModalShow(false)}
-            /> */}
         </div>
     )
 }

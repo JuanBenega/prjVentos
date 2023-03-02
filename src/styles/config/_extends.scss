@@ -65,3 +65,10 @@
     margin-top: 5rem;
     padding-bottom: 2rem;
 }
+
+%sectionAnim {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    transition: height 3s;
+}

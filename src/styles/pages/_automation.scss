@@ -6,10 +6,12 @@
 
     .automAnimation {
         background-image: url('../../img/autoAnimation.gif');
-        background-size: cover;
-        background-position: center;
-        height: 100vh;
-        transition: height 3s;
+        @extend %sectionAnim;
+    }
+
+    .mechAnimation {
+        background-image: url('../../img/mecAnimation.gif');
+        @extend %sectionAnim;
     }
 
     .animCollapse {
