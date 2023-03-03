@@ -30,64 +30,13 @@ const Mecanization = () => {
     const scroll = (sect) => {
         // establezco la sección a visualizar
         const section = document.querySelector(`#justify-tab-example-tabpane-${sect}`);
-        // Levanto las diferentes secciones
-        const tanks = document.querySelector(`#justify-tab-example-tabpane-tanks`);
-        const tanksTab = document.querySelector(`#justify-tab-example-tab-tanks`);
-        const pipe = document.querySelector(`#justify-tab-example-tabpane-pipe`);
-        // Identifico los encabezados de las distintas secciones
-        const pipeTab = document.querySelector(`#justify-tab-example-tab-pipe`);
-        const mant = document.querySelector(`#justify-tab-example-tabpane-mant`);
-        const mantTab = document.querySelector(`#justify-tab-example-tab-mant`);
-
-        switch (sect) {
-            case 'tanks':
-                // Doy visualización a la pestaña seleccionada
-                tanks.className = 'fade tabContent tab-pane active show';
-                pipe.className = 'fade tabContent tab-pane';
-                mant.className = 'fade tabContent tab-pane';
-                // Indico las pestañas cual debe mostrarse como activa
-                tanksTab.className = 'nav-link active';
-                pipeTab.className = 'nav-link';
-                mantTab.className = 'nav-link';
-                // Establezco la pestaña activa
-                tanksTab.setAttribute('aria-selected', 'true');
-                pipeTab.setAttribute('aria-selected', 'false');
-                mantTab.setAttribute('aria-selected', 'false');
-                break;
-            case 'mant':
-                // Doy visualización a la pestaña seleccionada
-                tanks.className = 'fade tabContent tab-pane';
-                pipe.className = 'fade tabContent tab-pane';
-                mant.className = 'fade tabContent tab-pane active show';
-                // Indico las pestañas cual debe mostrarse como activa
-                tanksTab.className = 'nav-link';
-                pipeTab.className = 'nav-link';
-                mantTab.className = 'nav-link active';
-                // Establezco la pestaña activa
-                tanksTab.setAttribute('aria-selected', 'false');
-                pipeTab.setAttribute('aria-selected', 'false');
-                mantTab.setAttribute('aria-selected', 'true');
-                break;
-            case 'pipe':
-                // Doy visualización a la pestaña seleccionada
-                tanks.className = 'fade tabContent tab-pane';
-                pipe.className = 'fade tabContent tab-pane active show';
-                mant.className = 'fade tabContent tab-pane';
-                // Indico las pestañas cual debe mostrarse como activa
-                tanksTab.className = 'nav-link';
-                pipeTab.className = 'nav-link active';
-                mantTab.className = 'nav-link';
-                // Establezco la pestaña activa
-                tanksTab.setAttribute('aria-selected', 'false');
-                pipeTab.setAttribute('aria-selected', 'true');
-                mantTab.setAttribute('aria-selected', 'false');
-                break;
-            default:
-                break;
-        }
-
+        const sectionButton = document.querySelector(`#justify-tab-example-tab-${sect}`);
         // Scroleo a la sección de pestañas
         section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // Simulo un click en la pestaña para mostrar la correspondiente
+        sectionButton.click();
+
+
     };
 
 

@@ -33,64 +33,11 @@ const Automation = () => {
     const scroll = (sect) => {
         // establezco la sección a visualizar
         const section = document.querySelector(`#justify-tab-example-tabpane-${sect}`);
-        // Levanto las diferentes secciones
-        const industrial = document.querySelector(`#justify-tab-example-tabpane-industrial`);
-        const industrialTab = document.querySelector(`#justify-tab-example-tab-industrial`);
-        const elec = document.querySelector(`#justify-tab-example-tabpane-elec`);
-        // Identifico los encabezados de las distintas secciones
-        const elecTab = document.querySelector(`#justify-tab-example-tab-elec`);
-        const scada = document.querySelector(`#justify-tab-example-tabpane-scada`);
-        const scadaTab = document.querySelector(`#justify-tab-example-tab-scada`);
-
-        switch (sect) {
-            case 'industrial':
-                // Doy visualización a la pestaña seleccionada
-                industrial.className = 'fade tabContent tab-pane active show';
-                elec.className = 'fade tabContent tab-pane';
-                scada.className = 'fade tabContent tab-pane';
-                // Indico las pestañas cual debe mostrarse como activa
-                industrialTab.className = 'nav-link active';
-                elecTab.className = 'nav-link';
-                scadaTab.className = 'nav-link';
-                // Establezco la pestaña activa
-                industrialTab.setAttribute('aria-selected', 'true');
-                elecTab.setAttribute('aria-selected', 'false');
-                scadaTab.setAttribute('aria-selected', 'false');
-                break;
-            case 'scada':
-                // Doy visualización a la pestaña seleccionada
-                industrial.className = 'fade tabContent tab-pane';
-                elec.className = 'fade tabContent tab-pane';
-                scada.className = 'fade tabContent tab-pane active show';
-                // Indico las pestañas cual debe mostrarse como activa
-                industrialTab.className = 'nav-link';
-                elecTab.className = 'nav-link';
-                scadaTab.className = 'nav-link active';
-                // Establezco la pestaña activa
-                industrialTab.setAttribute('aria-selected', 'false');
-                elecTab.setAttribute('aria-selected', 'false');
-                scadaTab.setAttribute('aria-selected', 'true');
-                break;
-            case 'elec':
-                // Doy visualización a la pestaña seleccionada
-                industrial.className = 'fade tabContent tab-pane';
-                elec.className = 'fade tabContent tab-pane active show';
-                scada.className = 'fade tabContent tab-pane';
-                // Indico las pestañas cual debe mostrarse como activa
-                industrialTab.className = 'nav-link';
-                elecTab.className = 'nav-link active';
-                scadaTab.className = 'nav-link';
-                // Establezco la pestaña activa
-                industrialTab.setAttribute('aria-selected', 'false');
-                elecTab.setAttribute('aria-selected', 'true');
-                scadaTab.setAttribute('aria-selected', 'false');
-                break;
-            default:
-                break;
-        }
-
+        const sectionButton = document.querySelector(`#justify-tab-example-tab-${sect}`);
         // Scroleo a la sección de pestañas
         section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // Simulo un click en la pestaña para mostrar la correspondiente
+        sectionButton.click();
     };
 
 
