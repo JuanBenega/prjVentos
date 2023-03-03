@@ -120,7 +120,7 @@
                 width: 45%;
                 height: 10rem;
                 border-radius: 20px;
-                margin: 0.25rem;
+                margin: 0.5rem;
                 background-size: cover;
                 background-repeat: no-repeat;
 
@@ -151,6 +151,7 @@
                 border: 5px solid $colorPrim;
                 border-radius: 22px;
                 height: 10rem;
+                text-align: center;
 
                 .automProjTitle {
                     font-weight: $fontWeightTitle;
@@ -159,7 +160,6 @@
                 }
 
                 .automProjDescrip {
-                    text-align: center;
                     margin-left: 3rem;
                     margin-right: 3rem;
                     margin-top: 1.5rem;

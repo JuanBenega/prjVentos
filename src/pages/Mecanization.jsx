@@ -31,56 +31,56 @@ const Mecanization = () => {
         // establezco la sección a visualizar
         const section = document.querySelector(`#justify-tab-example-tabpane-${sect}`);
         // Levanto las diferentes secciones
-        const industrial = document.querySelector(`#justify-tab-example-tabpane-industrial`);
-        const industrialTab = document.querySelector(`#justify-tab-example-tab-industrial`);
-        const elec = document.querySelector(`#justify-tab-example-tabpane-elec`);
+        const tanks = document.querySelector(`#justify-tab-example-tabpane-tanks`);
+        const tanksTab = document.querySelector(`#justify-tab-example-tab-tanks`);
+        const pipe = document.querySelector(`#justify-tab-example-tabpane-pipe`);
         // Identifico los encabezados de las distintas secciones
-        const elecTab = document.querySelector(`#justify-tab-example-tab-elec`);
-        const scada = document.querySelector(`#justify-tab-example-tabpane-scada`);
-        const scadaTab = document.querySelector(`#justify-tab-example-tab-scada`);
+        const pipeTab = document.querySelector(`#justify-tab-example-tab-pipe`);
+        const mant = document.querySelector(`#justify-tab-example-tabpane-mant`);
+        const mantTab = document.querySelector(`#justify-tab-example-tab-mant`);
 
         switch (sect) {
-            case 'industrial':
+            case 'tanks':
                 // Doy visualización a la pestaña seleccionada
-                industrial.className = 'fade tabContent tab-pane active show';
-                elec.className = 'fade tabContent tab-pane';
-                scada.className = 'fade tabContent tab-pane';
+                tanks.className = 'fade tabContent tab-pane active show';
+                pipe.className = 'fade tabContent tab-pane';
+                mant.className = 'fade tabContent tab-pane';
                 // Indico las pestañas cual debe mostrarse como activa
-                industrialTab.className = 'nav-link active';
-                elecTab.className = 'nav-link';
-                scadaTab.className = 'nav-link';
+                tanksTab.className = 'nav-link active';
+                pipeTab.className = 'nav-link';
+                mantTab.className = 'nav-link';
                 // Establezco la pestaña activa
-                industrialTab.setAttribute('aria-selected', 'true');
-                elecTab.setAttribute('aria-selected', 'false');
-                scadaTab.setAttribute('aria-selected', 'false');
+                tanksTab.setAttribute('aria-selected', 'true');
+                pipeTab.setAttribute('aria-selected', 'false');
+                mantTab.setAttribute('aria-selected', 'false');
                 break;
-            case 'scada':
+            case 'mant':
                 // Doy visualización a la pestaña seleccionada
-                industrial.className = 'fade tabContent tab-pane';
-                elec.className = 'fade tabContent tab-pane';
-                scada.className = 'fade tabContent tab-pane active show';
+                tanks.className = 'fade tabContent tab-pane';
+                pipe.className = 'fade tabContent tab-pane';
+                mant.className = 'fade tabContent tab-pane active show';
                 // Indico las pestañas cual debe mostrarse como activa
-                industrialTab.className = 'nav-link';
-                elecTab.className = 'nav-link';
-                scadaTab.className = 'nav-link active';
+                tanksTab.className = 'nav-link';
+                pipeTab.className = 'nav-link';
+                mantTab.className = 'nav-link active';
                 // Establezco la pestaña activa
-                industrialTab.setAttribute('aria-selected', 'false');
-                elecTab.setAttribute('aria-selected', 'false');
-                scadaTab.setAttribute('aria-selected', 'true');
+                tanksTab.setAttribute('aria-selected', 'false');
+                pipeTab.setAttribute('aria-selected', 'false');
+                mantTab.setAttribute('aria-selected', 'true');
                 break;
-            case 'elec':
+            case 'pipe':
                 // Doy visualización a la pestaña seleccionada
-                industrial.className = 'fade tabContent tab-pane';
-                elec.className = 'fade tabContent tab-pane active show';
-                scada.className = 'fade tabContent tab-pane';
+                tanks.className = 'fade tabContent tab-pane';
+                pipe.className = 'fade tabContent tab-pane active show';
+                mant.className = 'fade tabContent tab-pane';
                 // Indico las pestañas cual debe mostrarse como activa
-                industrialTab.className = 'nav-link';
-                elecTab.className = 'nav-link active';
-                scadaTab.className = 'nav-link';
+                tanksTab.className = 'nav-link';
+                pipeTab.className = 'nav-link active';
+                mantTab.className = 'nav-link';
                 // Establezco la pestaña activa
-                industrialTab.setAttribute('aria-selected', 'false');
-                elecTab.setAttribute('aria-selected', 'true');
-                scadaTab.setAttribute('aria-selected', 'false');
+                tanksTab.setAttribute('aria-selected', 'false');
+                pipeTab.setAttribute('aria-selected', 'true');
+                mantTab.setAttribute('aria-selected', 'false');
                 break;
             default:
                 break;
@@ -129,7 +129,7 @@ const Mecanization = () => {
                                 distintos equipos que funcionan en conjunto.
                                 Un sistema de tuberías bien diseñado es, por
                                 tanto, crucial para cualquier instalación
-                                industrial y su creación requiere un análisis
+                                tanks y su creación requiere un análisis
                                 sistémico y experiencia en diversos métodos de
                                 ingeniería.</h6>
                             <Button className="sectionButton" onClick={() => scroll('pipe')}>Mas información...</Button>
@@ -142,7 +142,7 @@ const Mecanization = () => {
                             alt="Third slide"
                         />
                         <Carousel.Caption className='automCarouText'>
-                            <p className='automCarouTitle'>Mantenimiento Industrial</p>
+                            <p className='automCarouTitle'>Mantenimiento tanks</p>
                             <h6>Nuestros equipos pueden asistir en el
                                 mantenimiento, la reparación, la
                                 modernización y la puesta en
@@ -156,7 +156,7 @@ const Mecanization = () => {
             </div>
             <div className="automDetail">
                 <Tabs
-                    defaultActiveKey="industrial"
+                    defaultActiveKey="tanks"
                     id="justify-tab-example"
                     className="mb-3 tabTitle"
                     justify
@@ -210,7 +210,7 @@ const Mecanization = () => {
                             especialmente para las industrias química,
                             petroquímica y de ciencias de la vida.</p>
                     </Tab>
-                    <Tab eventKey="mant" title="Mantenimiento Industrial" className="tabContent">
+                    <Tab eventKey="mant" title="Mantenimiento tanks" className="tabContent">
                         <Image src={elec1} className='tabImage' />
                         <p> <strong> Ofrecemos una serie de servicios de
                             estudio y diseño para garantizar el éxito
