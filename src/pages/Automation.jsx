@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Button, Carousel, Image, Tab, Tabs, Modal } from "react-bootstrap"
+import { Button, Carousel, Image, Tab, Tabs, OverlayTrigger, Popover } from "react-bootstrap"
 
 import autom01 from '../img/autom01.png'
 import autom02 from '../img/autom02.png'
@@ -40,7 +40,15 @@ const Automation = () => {
         sectionButton.click();
     };
 
-
+    const popover = (
+        <Popover id="popover-basic">
+            <Popover.Header as="h3">Popover right</Popover.Header>
+            <Popover.Body>
+                And here's some <strong>amazing</strong> content. It's very engaging.
+                right?
+            </Popover.Body>
+        </Popover>
+    );
 
     return (
         <div className="autom">
@@ -181,7 +189,9 @@ const Automation = () => {
             </div>
             <div className="automProjects">
                 <div className="automProj">
-                    <div className="automProjImg auPrIm1"></div>
+                    <OverlayTrigger placement="right" overlay={popover}>
+                        <div className="automProjImg auPrIm1"></div>
+                    </OverlayTrigger>
                     <div className="automProjImg auPrIm2"></div>
                     <div className="automProjCartel">
                         <h3 className="automProjTitle">Nuestros proyectos más importantes</h3>

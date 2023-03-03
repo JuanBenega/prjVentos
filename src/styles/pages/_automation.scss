@@ -200,3 +200,18 @@
     }
 
 }
+
+.popover {
+    background: rgba(19, 163, 217, 0.8);
+    border: 9px solid rgba(231, 231, 231, 0.4);
+    box-shadow: inset 0px 0px 8px 12px $colorPrim;
+    border-radius: 22px;
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+.popover-header {
+    background: inherit;
+    font-weight: $fontWeightResp;
+    color: $colorWhite;
+}
