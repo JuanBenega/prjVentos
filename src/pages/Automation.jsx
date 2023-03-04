@@ -11,7 +11,10 @@ import marlew from '../img/marlew.png'
 import furukawa from '../img/furukawa.png'
 import schneider from '../img/schneider.png'
 import phoenix from '../img/phoenix.png'
-
+import linde from '../img/linde.png'
+import laboratoriosl from '../img/laboratoriosl.png'
+import tersuave from '../img/tersuave.png'
+import diaser from '../img/diaser.png'
 
 
 const Automation = () => {
@@ -40,15 +43,16 @@ const Automation = () => {
         sectionButton.click();
     };
 
-    const popover = (
-        <Popover id="popover-basic">
-            <Popover.Header as="h3">Popover right</Popover.Header>
-            <Popover.Body>
-                And here's some <strong>amazing</strong> content. It's very engaging.
-                right?
-            </Popover.Body>
-        </Popover>
-    );
+    const popover = (title, text) => {
+        return (
+            <Popover id="popover-basic">
+                <Popover.Header as="h3">{title}</Popover.Header>
+                <Popover.Body>
+                    {text}
+                </Popover.Body>
+            </Popover>
+        )
+    }
 
     return (
         <div className="autom">
@@ -189,16 +193,26 @@ const Automation = () => {
             </div>
             <div className="automProjects">
                 <div className="automProj">
-                    <OverlayTrigger placement="right" overlay={popover}>
-                        <div className="automProjImg auPrIm1"></div>
-                    </OverlayTrigger>
-                    <div className="automProjImg auPrIm2"></div>
+                    <div className="projRow">
+                        <OverlayTrigger placement="left" overlay={popover('Linde', 'Programación de sistema SCADA para laboratorio de análisis de gases. Avellaneda, 2019.')}>
+                            <Image src={linde} className="automProjImg" />
+                        </OverlayTrigger>
+                        <OverlayTrigger placement="right" overlay={popover}>
+                            <Image src={tersuave} className="automProjImg" />
+                        </OverlayTrigger>
+                    </div>
                     <div className="automProjCartel">
                         <h3 className="automProjTitle">Nuestros proyectos más importantes</h3>
                         <p className="automProjDescrip">Trabajando siempre para cumplir con la calidad en cada proyecto, poniendo prioridad en la necesidad el cliente.</p>
                     </div>
-                    <div className="automProjImg auPrIm3"></div>
-                    <div className="automProjImg auPrIm4"></div>
+                    <div className="projRow">
+                        <OverlayTrigger placement="left" overlay={popover}>
+                            <Image src={diaser} className="automProjImg" />
+                        </OverlayTrigger>
+                        <OverlayTrigger placement="right" overlay={popover}>
+                            <Image src={laboratoriosl} className="automProjImg" />
+                        </OverlayTrigger>
+                    </div>
                 </div>
             </div>
             <div className="partners">

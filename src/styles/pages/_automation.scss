@@ -116,37 +116,28 @@
         .automProj {
             @extend %flexWrap;
 
-            .automProjImg {
-                width: 45%;
-                height: 10rem;
-                border-radius: 20px;
-                margin: 0.5rem;
-                background-size: cover;
-                background-repeat: no-repeat;
+            .projRow {
+                width: 100%;
+                display: flex;
+                justify-content: center;
 
-                &:hover {
-                    @extend %hover110;
+                .automProjImg {
+                    width: auto;
+                    height: 10rem;
+                    border-radius: 20px;
+                    margin: 0.5rem;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+
+                    &:hover {
+                        @extend %hover110;
+                    }
                 }
-            }
 
-            .auPrIm1 {
-                background-image: url('../../img/automProj01.jpg');
-            }
-
-            .auPrIm2 {
-                background-image: url('../../img/automProj02.png');
-            }
-
-            .auPrIm3 {
-                background-image: url('../../img/automProj03.png');
-            }
-
-            .auPrIm4 {
-                background-image: url('../../img/automProj04.jpg');
             }
 
             .automProjCartel {
-                width: 70%;
+                width: 50%;
                 background: $colorBackProjCartel;
                 border: 5px solid $colorPrim;
                 border-radius: 22px;
@@ -203,15 +194,22 @@
 
 .popover {
     background: rgba(19, 163, 217, 0.8);
-    border: 9px solid rgba(231, 231, 231, 0.4);
+    //border: 9px solid rgba(231, 231, 231, 0.4);
     box-shadow: inset 0px 0px 8px 12px $colorPrim;
     border-radius: 22px;
     font-family: 'Poppins';
     font-style: normal;
+    padding: 1rem;
 }
 
 .popover-header {
-    background: inherit;
+    background:none;
     font-weight: $fontWeightResp;
     color: $colorWhite;
+    font-size: $fontSizeTitleSection;
+}
+
+.popover-body {
+    color: $colorWhite;
+    font-size: $fontSizeTextInfHeader;
 }
