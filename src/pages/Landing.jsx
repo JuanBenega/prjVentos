@@ -1,11 +1,13 @@
-
-import { Carousel, Image } from 'react-bootstrap'
+import { useNavigate } from "react-router-dom";
+import { Carousel, Image, Nav } from 'react-bootstrap'
 import ServiceCard from '../components/ServiceCard'
 import UsCard from '../components/UsCard'
 
-import landing1 from '../img/landing1.jpg'
-import landing2 from '../img/landing2.jpg'
-import landing3 from '../img/landing3.jpg'
+import landing1 from '../img/landing1.png'
+import landing2 from '../img/landing2.png'
+import landing3 from '../img/landing3.png'
+import landing4 from '../img/landing4.png'
+import landing5 from '../img/landing5.png'
 import autom from '../img/landAutom.png'
 import mecan from '../img/landMecan.png'
 import landIcon1 from '../img/landIcon1.png'
@@ -28,6 +30,7 @@ import Arrows from '../components/Arrows'
 
 const Landing = () => {
 
+    const navigate = useNavigate();
     const services = [
         {
             icon: landIcon1,
@@ -130,12 +133,26 @@ const Landing = () => {
                 <Carousel.Item className='carouItem'>
                     <img
                         className="d-block w-100"
-                        src={landing3}
+                        src={landing4}
                         alt="Third slide"
                     />
                     <Carousel.Caption className='carouText'>
                         <p className='carouTitle'>Trabajamos para darle lo mejor a nuestros clientes</p>
                     </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item className='carouItem'>
+                    <img
+                        className="d-block w-100"
+                        src={landing3}
+                        alt="Third slide"
+                    />
+                </Carousel.Item>
+                <Carousel.Item className='carouItem'>
+                    <img
+                        className="d-block w-100"
+                        src={landing5}
+                        alt="Third slide"
+                    />
                 </Carousel.Item>
             </Carousel>
             <div className="textMobile">
@@ -144,14 +161,14 @@ const Landing = () => {
             </div>
             <Arrows />
             <div className="landSegments">
-                <div className="landSeg">
+                <div className="landSeg"  onClick={()=>navigate('/autom')}>
                     <div className="landSegLeft">
                         <h3>AUTOMATIZACIÓN</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem aliquam non illum, odio obcaecati numquam qui. Animi, sit a inventore dolores perspiciatis earum minima sunt quidem culpa atque aut commodi.</p>
                     </div>
                     <Image src={autom} fluid />
                 </div>
-                <div className="landSeg">
+                <div className="landSeg" onClick={()=>navigate('/mecaniz')}>
                     <div className="landSegRight">
                         <h3>MECANIZACIÓN</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem aliquam non illum, odio obcaecati numquam qui. Animi, sit a inventore dolores perspiciatis earum minima sunt quidem culpa atque aut commodi.</p>
