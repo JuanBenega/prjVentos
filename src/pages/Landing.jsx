@@ -186,14 +186,22 @@ const Landing = () => {
                 <div className="landSeg" onClick={() => navigate('/autom')}>
                     <div className="landSegLeft">
                         <h3>AUTOMATIZACIÓN</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem aliquam non illum, odio obcaecati numquam qui. Animi, sit a inventore dolores perspiciatis earum minima sunt quidem culpa atque aut commodi.</p>
+                        <p>Diseño, montaje, cableado y conexionado de plantas industriales <br />
+                            Fabricación de tableros eléctricos de potencia y control. <br />
+                            Programación de PLC, HMI <br />
+                            Programación e implementación de sistemas SCADA <br />
+                            Programación de PLC, HMI</p>
                     </div>
                     <Image src={autom} fluid />
                 </div>
                 <div className="landSeg" onClick={() => navigate('/mecaniz')}>
                     <div className="landSegRight">
                         <h3>MECANIZACIÓN</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem aliquam non illum, odio obcaecati numquam qui. Animi, sit a inventore dolores perspiciatis earum minima sunt quidem culpa atque aut commodi.</p>
+                        <p>Fabricación de piping en Planta con soldadores certificados. <br />
+                         Sistema TIG y convencional. <br />
+                         Diseño y montaje de reactores para uso industrial, confeccionados en acero inoxidable. <br />
+                         Diseño y fabricación de tanques en acero inoxidable. <br />
+                         </p>
                     </div>
                     <Image src={mecan} fluid />
                 </div>
