@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { Carousel, Image, Nav } from 'react-bootstrap'
+import { Carousel, Image } from 'react-bootstrap'
 import ServiceCard from '../components/ServiceCard'
 import UsCard from '../components/UsCard'
 
@@ -116,8 +116,12 @@ const Landing = () => {
                         alt="First slide"
                     />
                     <Carousel.Caption className='carouText'>
-                        <p className='carouTitle'>Somos una empresa apasionada por lo que hacemos</p>
-                        <h4>Desarrollamos nuevos sistemas de automatizacion y mecanica para empresas relacionadas al rubro industrial con toda la tecnologia de vanguardia </h4>
+                        {/* <p className='carouTitle'>Somos una empresa Joven en constante Crecimiento que
+                            integra conocimientos de ingeniería, fabricación,
+                            construcción y mantenimiento.</p> */}
+                        <h1>Somos una empresa Joven en constante Crecimiento que
+                            integra conocimientos de ingeniería, fabricación,
+                            construcción y mantenimiento.</h1>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className='carouItem'>
@@ -127,7 +131,10 @@ const Landing = () => {
                         alt="Second slide"
                     />
                     <Carousel.Caption className='carouText'>
-                        <p className='carouTitle'>La innovación es nuestra premisa</p>
+                        {/* <p className='carouTitle'>La innovación es nuestra premisa</p> */}
+                        <h1>Nuestra Misión: es crear valor recurrente para todas las partes interesadas
+                            ofreciendo productos, servicios y soluciones industriales inteligentes y
+                            sostenibles.</h1>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className='carouItem'>
@@ -137,7 +144,9 @@ const Landing = () => {
                         alt="Third slide"
                     />
                     <Carousel.Caption className='carouText'>
-                        <p className='carouTitle'>Trabajamos para darle lo mejor a nuestros clientes</p>
+                        {/* <p className='carouTitle'>Trabajamos para darle lo mejor a nuestros clientes</p> */}
+                        <h1>Nos interesa descubrir y desarrollar con éxito equipos y procesos innovadores,
+                            donde nuestro compromiso se vea reflejado en la rentabilidad de nuestro cliente.</h1>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className='carouItem'>
@@ -146,6 +155,12 @@ const Landing = () => {
                         src={landing3}
                         alt="Third slide"
                     />
+                    <Carousel.Caption className='carouText'>
+                        {/* <p className='carouTitle'>Trabajamos para darle lo mejor a nuestros clientes</p> */}
+                        <h1>Nuestros equipos de expertos en procesos nos respaldan para diseñar sus
+                            instalaciones de producción, desde un solo equipo hasta la planta
+                            completa llave en mano.</h1>
+                    </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className='carouItem'>
                     <img
@@ -153,6 +168,13 @@ const Landing = () => {
                         src={landing5}
                         alt="Third slide"
                     />
+                    <Carousel.Caption className='carouText'>
+                        {/* <p className='carouTitle'>Trabajamos para darle lo mejor a nuestros clientes</p> */}
+                        <h1>Directamente en el sitio como en nuestros talleres ubicados
+                            en buenos aires, san Luis y Mendoza, nos ocupamos de todos
+                            sus trabajos de construcción industrial en general en nuevas
+                            unidades o en extensión de unidades existentes.</h1>
+                    </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
             <div className="textMobile">
@@ -161,14 +183,14 @@ const Landing = () => {
             </div>
             <Arrows />
             <div className="landSegments">
-                <div className="landSeg"  onClick={()=>navigate('/autom')}>
+                <div className="landSeg" onClick={() => navigate('/autom')}>
                     <div className="landSegLeft">
                         <h3>AUTOMATIZACIÓN</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem aliquam non illum, odio obcaecati numquam qui. Animi, sit a inventore dolores perspiciatis earum minima sunt quidem culpa atque aut commodi.</p>
                     </div>
                     <Image src={autom} fluid />
                 </div>
-                <div className="landSeg" onClick={()=>navigate('/mecaniz')}>
+                <div className="landSeg" onClick={() => navigate('/mecaniz')}>
                     <div className="landSegRight">
                         <h3>MECANIZACIÓN</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem aliquam non illum, odio obcaecati numquam qui. Animi, sit a inventore dolores perspiciatis earum minima sunt quidem culpa atque aut commodi.</p>
