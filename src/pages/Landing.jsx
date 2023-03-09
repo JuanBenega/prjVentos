@@ -71,38 +71,38 @@ const Landing = () => {
         {
             pic: landUs2,
             name: 'Franco Berrone',
-            job: 'CEO'
+            job: 'Gerente San Luis'
         },
         {
             pic: landUs3,
-            name: 'Danilo Quiroga',
-            job: 'CEO'
+            name: 'Nicolás Ortiz',
+            job: 'Gerente Mendoza'
         },
         {
             pic: landUs4,
-            name: 'Patricio Pulitano',
-            job: 'CEO'
+            name: 'Jorge Arias',
+            job: 'Gerente Buenos Aires'
         },
     ]
 
     const clients = [
         {
-            name: 'CARREFOUR',
+            name: 'TERSUAVE',
             pic: client1,
-            title: 'Automatización en depósitos',
-            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nobis veniam ab sint laboriosam quos amet inventore magnam cumque. Dolores eos veniam doloribus qui reiciendis, blanditiis vitae dolore perferendis quod.'
+            title: 'Nueva planta resinas',
+            text: 'Ingeniería, diseño, desarrollo y montaje eléctrico/mecánico de nueva planta resinas. Fabricación de tableros, programación de PLC, HMI Y SCADA, fabricación de piping, montaje de equipos, puesta en marcha, y pruebas Villa Mercedes. 2022'
         },
         {
-            name: 'COLOSHOP',
+            name: 'DIASER',
             pic: client2,
-            title: 'Fabrica de llave en mano',
-            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nobis veniam ab sint laboriosam quos amet inventore magnam cumque. Dolores eos veniam doloribus qui reiciendis, blanditiis vitae dolore perferendis quod.'
+            title: 'Actualización automatización',
+            text: 'Actualización y reformas en su SCADA general de planta donde llevo un año de desarrollo con el equipo de producción.'
         },
         {
-            name: 'FARMACITY',
+            name: 'LABORATORIOS SL',
             pic: client3,
-            title: 'Adecuación tableros eléctricos',
-            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nobis veniam ab sint laboriosam quos amet inventore magnam cumque. Dolores eos veniam doloribus qui reiciendis, blanditiis vitae dolore perferendis quod.'
+            title: 'Sistema de control de planta de polímeros',
+            text: 'Instalación de tableros, programación de SCADA, HMI y PLC. Malvinas Argentinas. 2018'
         },
     ]
 
@@ -198,10 +198,10 @@ const Landing = () => {
                     <div className="landSegRight">
                         <h3>MECANIZACIÓN</h3>
                         <p>Fabricación de piping en Planta con soldadores certificados. <br />
-                         Sistema TIG y convencional. <br />
-                         Diseño y montaje de reactores para uso industrial, confeccionados en acero inoxidable. <br />
-                         Diseño y fabricación de tanques en acero inoxidable. <br />
-                         </p>
+                            Sistema TIG y convencional. <br />
+                            Diseño y montaje de reactores para uso industrial, confeccionados en acero inoxidable. <br />
+                            Diseño y fabricación de tanques en acero inoxidable. <br />
+                        </p>
                     </div>
                     <Image src={mecan} fluid />
                 </div>
