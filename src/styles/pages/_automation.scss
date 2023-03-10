@@ -124,7 +124,6 @@
                 .automProjImg {
                     width: auto;
                     height: 10rem;
-                    border-radius: 20px;
                     margin: 0.5rem;
                     background-size: contain;
                     background-repeat: no-repeat;
@@ -203,7 +202,7 @@
 }
 
 .popover-header {
-    background:none;
+    background: none;
     font-weight: $fontWeightResp;
     color: $colorWhite;
     font-size: $fontSizeTitleSection;

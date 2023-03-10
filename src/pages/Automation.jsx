@@ -196,13 +196,13 @@ const Automation = () => {
                     <div className="projRow">
                         <OverlayTrigger 
                         placement="left" 
-                        overlay={popover('Linde', 'Programación de sistema SCADA para laboratorio de análisis de gases. Avellaneda, 2019.')}
+                        overlay={popover('Linde', 'Programación de sistema SCADA para laboratorio de análisis de gases. 2019.')}
                         >
                             <Image src={linde} className="automProjImg" />
                         </OverlayTrigger>
                         <OverlayTrigger 
                         placement="right" 
-                        overlay={popover('Linde', 'Programación de sistema SCADA para laboratorio de análisis de gases. Avellaneda, 2019.')}
+                        overlay={popover('Tersuave', 'Ingeniería, diseño y desarrollo de programación de PLC, HMI Y SCADA en nueva planta resinas. 2022')}
                         >
                             <Image src={tersuave} className="automProjImg" />
                         </OverlayTrigger>
@@ -214,13 +214,13 @@ const Automation = () => {
                     <div className="projRow">
                         <OverlayTrigger 
                         placement="left" 
-                        overlay={popover('Linde', 'Programación de sistema SCADA para laboratorio de análisis de gases. Avellaneda, 2019.')}
+                        overlay={popover('Diaser', 'Actualización y reformas en SCADA general de planta. 2019/2020')}
                         >
                             <Image src={diaser} className="automProjImg" />
                         </OverlayTrigger>
                         <OverlayTrigger 
                         placement="right" 
-                        overlay={popover('Linde', 'Programación de sistema SCADA para laboratorio de análisis de gases. Avellaneda, 2019.')}
+                        overlay={popover('Laboratorio SL', 'Sistema de control de planta de polímeros. Instalación de tableros, programación de SCADA, HMI y PLC. 2018')}
                         >
                             <Image src={laboratoriosl} className="automProjImg" />
                         </OverlayTrigger>
