@@ -202,8 +202,8 @@
             width: 100%;
             margin-top: 3rem;
             @extend %flexWrap;
-            column-gap: 5rem;
-            row-gap: 5rem;
+            column-gap:2rem;
+            row-gap: 2rem;
 
             @media screen and (max-width: $mobileScreen) {
                 width: 90%;

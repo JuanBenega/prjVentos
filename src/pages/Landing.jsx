@@ -93,17 +93,23 @@ const Landing = () => {
             text: 'Ingeniería, diseño, desarrollo y montaje eléctrico/mecánico de nueva planta resinas. Fabricación de tableros, programación de PLC, HMI Y SCADA, fabricación de piping, montaje de equipos, puesta en marcha, y pruebas Villa Mercedes. 2022'
         },
         {
+            name: 'TERSUAVE',
+            pic: client1,
+            title: 'Planta Tinters',
+            text: 'Diseño de ingeniería, desarrollo de programación de PLC, HMI Y SCADA, fabricación de tableros. Fabricación de tanques de vacío, fabricación de piping, montaje de equipos. Montaje eléctrico/mecánico, puesta en marcha, y pruebas Villa Mercedes. 2021'
+        },
+        {
             name: 'DIASER',
             pic: client2,
             title: 'Actualización automatización',
-            text: 'Actualización y reformas en su SCADA general de planta donde llevo un año de desarrollo con el equipo de producción.'
+            text: 'Actualización y reformas en su SCADA general de planta donde llevo un año de desarrollo con el equipo de producción. 2020'
         },
         {
             name: 'LABORATORIOS SL',
             pic: client3,
             title: 'Sistema de control de planta de polímeros',
             text: 'Instalación de tableros, programación de SCADA, HMI y PLC. Malvinas Argentinas. 2018'
-        },
+        }
     ]
 
     return (
