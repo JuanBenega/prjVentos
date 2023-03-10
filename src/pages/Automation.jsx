@@ -194,10 +194,16 @@ const Automation = () => {
             <div className="automProjects">
                 <div className="automProj">
                     <div className="projRow">
-                        <OverlayTrigger placement="left" overlay={popover('Linde', 'Programación de sistema SCADA para laboratorio de análisis de gases. Avellaneda, 2019.')}>
+                        <OverlayTrigger 
+                        placement="left" 
+                        overlay={popover('Linde', 'Programación de sistema SCADA para laboratorio de análisis de gases. Avellaneda, 2019.')}
+                        >
                             <Image src={linde} className="automProjImg" />
                         </OverlayTrigger>
-                        <OverlayTrigger placement="right" overlay={popover}>
+                        <OverlayTrigger 
+                        placement="right" 
+                        overlay={popover('Linde', 'Programación de sistema SCADA para laboratorio de análisis de gases. Avellaneda, 2019.')}
+                        >
                             <Image src={tersuave} className="automProjImg" />
                         </OverlayTrigger>
                     </div>
@@ -206,10 +212,16 @@ const Automation = () => {
                         <p className="automProjDescrip">Trabajando siempre para cumplir con la calidad en cada proyecto, poniendo prioridad en la necesidad el cliente.</p>
                     </div>
                     <div className="projRow">
-                        <OverlayTrigger placement="left" overlay={popover}>
+                        <OverlayTrigger 
+                        placement="left" 
+                        overlay={popover('Linde', 'Programación de sistema SCADA para laboratorio de análisis de gases. Avellaneda, 2019.')}
+                        >
                             <Image src={diaser} className="automProjImg" />
                         </OverlayTrigger>
-                        <OverlayTrigger placement="right" overlay={popover}>
+                        <OverlayTrigger 
+                        placement="right" 
+                        overlay={popover('Linde', 'Programación de sistema SCADA para laboratorio de análisis de gases. Avellaneda, 2019.')}
+                        >
                             <Image src={laboratoriosl} className="automProjImg" />
                         </OverlayTrigger>
                     </div>
