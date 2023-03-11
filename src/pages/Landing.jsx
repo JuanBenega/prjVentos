@@ -125,7 +125,7 @@ const Landing = () => {
                         {/* <p className='carouTitle'>Somos una empresa Joven en constante Crecimiento que
                             integra conocimientos de ingeniería, fabricación,
                             construcción y mantenimiento.</p> */}
-                        <h1>Somos una empresa Joven en constante Crecimiento que
+                        <h1>Somos una empresa Joven en constante crecimiento que
                             integra conocimientos de ingeniería, fabricación,
                             construcción y mantenimiento.</h1>
                     </Carousel.Caption>
@@ -138,7 +138,7 @@ const Landing = () => {
                     />
                     <Carousel.Caption className='carouText'>
                         {/* <p className='carouTitle'>La innovación es nuestra premisa</p> */}
-                        <h1>Nuestra Misión: es crear valor recurrente para todas las partes interesadas
+                        <h1>Nuestra Misión: crear valor recurrente para todas las partes interesadas
                             ofreciendo productos, servicios y soluciones industriales inteligentes y
                             sostenibles.</h1>
                     </Carousel.Caption>
@@ -184,8 +184,12 @@ const Landing = () => {
                 </Carousel.Item>
             </Carousel>
             <div className="textMobile">
-                <h2 className='carouTitle'>Somos una empresa apasionada por lo que hacemos</h2>
-                <h5>Desarrollamos nuevos sistemas de automatizacion y mecanica para empresas relacionadas al rubro industrial con toda la tecnologia de vanguardia </h5>
+                <h2 className='carouTitle'>Somos una empresa Joven en constante crecimiento que
+                            integra conocimientos de ingeniería, fabricación,
+                            construcción y mantenimiento.</h2>
+                <h5>Nuestra Misión: crear valor recurrente para todas las partes interesadas
+                            ofreciendo productos, servicios y soluciones industriales inteligentes y
+                            sostenibles.</h5>
             </div>
             <Arrows />
             <div className="landSegments">

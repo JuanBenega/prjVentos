@@ -7,6 +7,12 @@
     .automAnimation {
         background-image: url('../../img/autoAnimation.gif');
         @extend %sectionAnim;
+
+        @media screen and (max-width: $mobileScreen) {
+            background-size: contain;
+            height: 50vh;
+            background-repeat: no-repeat;
+        }
     }
 
     .mechAnimation {
@@ -15,7 +21,9 @@
     }
 
     .animCollapse {
-        height: 0;
+        height: 0vh;
+
+
     }
 
 
@@ -27,22 +35,37 @@
         .automCarousel {
             width: 80%;
 
-            .carousel-caption {
-                right: 50%;
-                left: 0%;
-                height: 100%;
-                top: 0;
-                bottom: auto;
-                text-align: start;
-                padding-top: 7rem;
-                padding-right: 5rem;
+            .automCarouItem {
+
+                .carousel-caption {
+                    right: 50%;
+                    left: 0%;
+                    height: 100%;
+                    top: 0;
+                    bottom: auto;
+                    text-align: start;
+                    padding-top: 7rem;
+                    padding-right: 5rem;
+
+                    @media screen and (max-width: $mobileScreen) {
+                        padding-top: 0;
+                    }
+
+                    .automCarouText {
+                        .automCarouTitle {
+                            font-size: $fontSizeTitleResp;
+                        }
+                    }
+
+                }
 
                 @media screen and (max-width: $mobileScreen) {
-                    display: none;
+                    height: 100vh;
                 }
             }
 
         }
+
     }
 
     .automDetail {
