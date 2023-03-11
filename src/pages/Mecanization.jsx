@@ -4,7 +4,9 @@ import { Button, Carousel, Image, Tab, Tabs, Modal } from "react-bootstrap"
 import mech01 from '../img/mech01.png'
 import mech02 from '../img/mech02.png'
 import mech03 from '../img/mech03.png'
-import industrial1 from '../img/industrial1.png'
+import mechanical1 from '../img/mechanical1.png'
+import mechanical2 from '../img/mechanical2.png'
+import mechanical3 from '../img/mechanical3.png'
 import scada1 from '../img/scada1.png'
 import elec1 from '../img/elec1.png'
 import marlew from '../img/marlew.png'
@@ -67,7 +69,7 @@ const Mecanization = () => {
                     <Carousel.Item className='automCarouItem'>
                         <img
                             className="d-block w-100"
-                            src={mech02}
+                            src={mech03}
                             alt="Second slide"
                         />
                         <Carousel.Caption className='automCarouText'>
@@ -87,11 +89,11 @@ const Mecanization = () => {
                     <Carousel.Item className='automCarouItem'>
                         <img
                             className="d-block w-100"
-                            src={mech03}
+                            src={mech02}
                             alt="Third slide"
                         />
                         <Carousel.Caption className='automCarouText'>
-                            <p className='automCarouTitle'>Mantenimiento tanks</p>
+                            <p className='automCarouTitle'>Mantenimiento industrial</p>
                             <h6>Nuestros equipos pueden asistir en el
                                 mantenimiento, la reparación, la
                                 modernización y la puesta en
@@ -112,7 +114,7 @@ const Mecanization = () => {
                     variant="tabs"
                 >
                     <Tab eventKey="tanks" title="Tanques & trabajos especiales" className="tabContent">
-                        <Image src={industrial1} className='tabImage' />
+                        <Image src={mechanical1} className='tabImage' />
                         <p> <strong>ProRecipientes de proceso y sistemas de agitación
                             (con o sin intercambio de calor) </strong><br />
                             - Reactores
@@ -140,7 +142,7 @@ const Mecanization = () => {
                             inoxidable</p>
                     </Tab>
                     <Tab eventKey="pipe" title="Pipping & Revamping" className="tabContent">
-                        <Image src={scada1} className='tabImage' />
+                        <Image src={mechanical2} className='tabImage' />
                         <p> - El Revamping no es una simple alternativa a
                             una nueva instalación, sino una oferta a la
                             medida adaptada a la instalación existente.
@@ -159,8 +161,8 @@ const Mecanization = () => {
                             especialmente para las industrias química,
                             petroquímica y de ciencias de la vida.</p>
                     </Tab>
-                    <Tab eventKey="mant" title="Mantenimiento tanks" className="tabContent">
-                        <Image src={elec1} className='tabImage' />
+                    <Tab eventKey="mant" title="Mantenimiento industrial" className="tabContent">
+                        <Image src={mechanical3} className='tabImage' />
                         <p> <strong> Ofrecemos una serie de servicios de
                             estudio y diseño para garantizar el éxito
                             de sus proyectos con total seguridad y en
