@@ -63,7 +63,7 @@ const Mecanization = () => {
         <div className="autom">
             <div className={animationDone ? "mechAnimation animCollapse" : "mechAnimation"}></div>
             <div className="automCarouselDiv">
-                <Carousel fade className='automCarousel'>
+                <Carousel fade className='mechCarousel'>
                     <Carousel.Item className='automCarouItem'>
                         <img
                             className="d-block w-100"
