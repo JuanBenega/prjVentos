@@ -191,38 +191,38 @@ const Automation = () => {
                     </Tab>
                 </Tabs>
             </div>
-            <div className="automProjects">
-                <div className="automProj">
+            <div className="sectionProjects">
+                <div className="sectionProj">
                     <div className="projRow">
                         <OverlayTrigger 
                         placement="left" 
                         overlay={popover('Linde', 'Programación de sistema SCADA para laboratorio de análisis de gases. 2019.')}
                         >
-                            <Image src={linde} className="automProjImg" />
+                            <Image src={linde} className="sectionProjImg" />
                         </OverlayTrigger>
                         <OverlayTrigger 
                         placement="right" 
                         overlay={popover('Tersuave', 'Ingeniería, diseño y desarrollo de programación de PLC, HMI Y SCADA en nueva planta resinas. 2022')}
                         >
-                            <Image src={tersuave} className="automProjImg" />
+                            <Image src={tersuave} className="sectionProjImg" />
                         </OverlayTrigger>
                     </div>
-                    <div className="automProjCartel">
-                        <h3 className="automProjTitle">Nuestros proyectos más importantes</h3>
-                        <p className="automProjDescrip">Trabajando siempre para cumplir con la calidad en cada proyecto, poniendo prioridad en la necesidad el cliente.</p>
+                    <div className="sectionProjCartel">
+                        <h3 className="sectionProjTitle">Nuestros proyectos más importantes</h3>
+                        <p className="sectionProjDescrip">Trabajando siempre para cumplir con la calidad en cada proyecto, poniendo prioridad en la necesidad el cliente.</p>
                     </div>
                     <div className="projRow">
                         <OverlayTrigger 
                         placement="left" 
                         overlay={popover('Diaser', 'Actualización y reformas en SCADA general de planta. 2019/2020')}
                         >
-                            <Image src={diaser} className="automProjImg" />
+                            <Image src={diaser} className="sectionProjImg" />
                         </OverlayTrigger>
                         <OverlayTrigger 
                         placement="right" 
                         overlay={popover('Laboratorio SL', 'Sistema de control de planta de polímeros. Instalación de tableros, programación de SCADA, HMI y PLC. 2018')}
                         >
-                            <Image src={laboratoriosl} className="automProjImg" />
+                            <Image src={laboratoriosl} className="sectionProjImg" />
                         </OverlayTrigger>
                     </div>
                 </div>

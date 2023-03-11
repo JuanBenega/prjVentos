@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Button, Carousel, Image, Tab, Tabs, Modal } from "react-bootstrap"
+import { Button, Carousel, Image, Tab, Tabs, OverlayTrigger, Popover } from "react-bootstrap"
 
 import mech01 from '../img/mech01.png'
 import mech02 from '../img/mech02.png'
@@ -7,12 +7,18 @@ import mech03 from '../img/mech03.png'
 import mechanical1 from '../img/mechanical1.png'
 import mechanical2 from '../img/mechanical2.png'
 import mechanical3 from '../img/mechanical3.png'
-import scada1 from '../img/scada1.png'
-import elec1 from '../img/elec1.png'
 import marlew from '../img/marlew.png'
 import furukawa from '../img/furukawa.png'
 import schneider from '../img/schneider.png'
 import phoenix from '../img/phoenix.png'
+import coca from '../img/coca.png'
+import uventech from '../img/uventech.png'
+import idenor from '../img/idenor.png'
+import jmb from '../img/jmb.png'
+import hemoderivados from '../img/hemoderivados.png'
+import later from '../img/later.png'
+import paty from '../img/paty.png'
+import prochem from '../img/prochem.png'
 
 
 const Mecanization = () => {
@@ -40,6 +46,17 @@ const Mecanization = () => {
 
 
     };
+
+    const popover = (title, text) => {
+        return (
+            <Popover id="popover-basic">
+                <Popover.Header as="h3">{title}</Popover.Header>
+                <Popover.Body>
+                    {text}
+                </Popover.Body>
+            </Popover>
+        )
+    }
 
 
     return (
@@ -197,16 +214,64 @@ const Mecanization = () => {
                     </Tab>
                 </Tabs>
             </div>
-            <div className="automProjects">
-                <div className="automProj">
-                    <div className="automProjImg auPrIm1"></div>
-                    <div className="automProjImg auPrIm2"></div>
-                    <div className="automProjCartel">
-                        <h3 className="automProjTitle">Nuestros proyectos más importantes</h3>
-                        <p className="automProjDescrip">Trabajando siempre para cumplir con la calidad en cada proyecto, poniendo prioridad en la necesidad el cliente.</p>
+            <div className="sectionProjects">
+                <div className="sectionProj">
+                    <div className="projRow">
+                        <OverlayTrigger 
+                        placement="top" 
+                        overlay={popover('Coca Cola', 'Instalación de sistema de osmosis inversa. Córdoba. 2023')}
+                        >
+                            <Image src={coca} className="sectionProjImg" />
+                        </OverlayTrigger>
+                        <OverlayTrigger 
+                        placement="top" 
+                        overlay={popover('Uventech', 'Instalación de equipos de aspirado de polvos. Bs As. 2022')}
+                        >
+                            <Image src={uventech} className="sectionProjImg" />
+                        </OverlayTrigger>
+                        <OverlayTrigger 
+                        placement="top" 
+                        overlay={popover('Idenor', 'Fabricación de tanques de acero inoxidable certificados. Mendoza. 2023')}
+                        >
+                            <Image src={idenor} className="sectionProjImg" />
+                        </OverlayTrigger>
+                        <OverlayTrigger 
+                        placement="top" 
+                        overlay={popover('JMB Ambientales', 'Instalación y puesta en marcha de planta procesadora de lodos. Santa Cruz. 2020')}
+                        >
+                            <Image src={jmb} className="sectionProjImg" />
+                        </OverlayTrigger>
                     </div>
-                    <div className="automProjImg auPrIm3"></div>
-                    <div className="automProjImg auPrIm4"></div>
+                    <div className="sectionProjCartel">
+                        <h3 className="sectionProjTitle">Nuestros proyectos más importantes</h3>
+                        <p className="sectionProjDescrip">Trabajando siempre para cumplir con la calidad en cada proyecto, poniendo prioridad en la necesidad el cliente.</p>
+                    </div>
+                    <div className="projRow">
+                        <OverlayTrigger 
+                        placement="bottom" 
+                        overlay={popover('Laboratorio Hemoderivados', 'Provisión de elementos y equipos varios de acero inoxidable certificados. Córdoba. 2023')}
+                        >
+                            <Image src={hemoderivados} className="sectionProjImg" />
+                        </OverlayTrigger>
+                        <OverlayTrigger 
+                        placement="bottom" 
+                        overlay={popover('Later-cer', 'Instalación de equipo de aspirado de polvos y montaje de cañerías de extracción. Bs As. 2022')}
+                        >
+                            <Image src={later} className="sectionProjImg" />
+                        </OverlayTrigger>
+                        <OverlayTrigger 
+                        placement="bottom" 
+                        overlay={popover('Paty', 'Instalación de sistema de osmosis inversa. San Luis. 2022')}
+                        >
+                            <Image src={paty} className="sectionProjImg" />
+                        </OverlayTrigger>
+                        <OverlayTrigger 
+                        placement="bottom" 
+                        overlay={popover('Prochem-bio', 'Instalación y montaje de conductos de acero inoxidable. Bs As. 2023')}
+                        >
+                            <Image src={prochem} className="sectionProjImg" />
+                        </OverlayTrigger>
+                    </div>
                 </div>
             </div>
             <div className="partners">

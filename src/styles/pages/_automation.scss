@@ -105,14 +105,14 @@
         }
     }
 
-    .automProjects {
+    .sectionProjects {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 5rem 0;
 
-        .automProj {
+        .sectionProj {
             @extend %flexWrap;
 
             .projRow {
@@ -120,12 +120,14 @@
                 display: flex;
                 justify-content: center;
 
-                .automProjImg {
-                    width: auto;
+                .sectionProjImg {
+                    width: fit-content;
                     height: 10rem;
                     margin: 0.5rem;
                     background-size: contain;
                     background-repeat: no-repeat;
+                    border-radius: 20px;
+
 
                     &:hover {
                         @extend %hover110;
@@ -134,7 +136,7 @@
 
             }
 
-            .automProjCartel {
+            .sectionProjCartel {
                 width: 50%;
                 background: $colorBackProjCartel;
                 border: 5px solid $colorPrim;
@@ -142,13 +144,13 @@
                 height: 10rem;
                 text-align: center;
 
-                .automProjTitle {
+                .sectionProjTitle {
                     font-weight: $fontWeightTitle;
                     margin-top: 2rem;
                     margin-left: 3rem;
                 }
 
-                .automProjDescrip {
+                .sectionProjDescrip {
                     margin-left: 3rem;
                     margin-right: 3rem;
                     margin-top: 1.5rem;
