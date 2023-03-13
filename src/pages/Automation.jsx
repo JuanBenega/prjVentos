@@ -110,6 +110,41 @@ const Automation = () => {
                     </Carousel.Item>
                 </Carousel>
             </div>
+            <div className="automCarouselDivMobile">
+                <Carousel fade className='automCarouselMobile'>
+                    <Carousel.Item className='automCarouItemMobile'>
+                        <img
+                            className="d-block w-100"
+                            src={autom01}
+                            alt="First slide"
+                        />
+                        <Carousel.Caption className='automCarouTextMobile'>
+                            <p className='automCarouTitleMobile'  onClick={() => scroll('industrial')}>Automatización Industrial</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item className='automCarouItemMobile'>
+                        <img
+                            className="d-block w-100"
+                            src={autom02}
+                            alt="Second slide"
+                        />
+                        <Carousel.Caption className='automCarouTextMobile'>
+                            <p className='automCarouTitleMobile' onClick={() => scroll('scada')}>Control de Procesos – SCADA - 
+                                Automatización</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item className='automCarouItemMobile'>
+                        <img
+                            className="d-block w-100"
+                            src={autom03}
+                            alt="Third slide"
+                        />
+                        <Carousel.Caption className='automCarouTextMobile'>
+                            <p className='automCarouTitleMobile' onClick={() => scroll('elec')}>Electricidad Industrial</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                </Carousel>
+            </div>
             <div className="automDetail">
                 <Tabs
                     defaultActiveKey="industrial"

@@ -47,24 +47,59 @@
                     padding-top: 7rem;
                     padding-right: 5rem;
 
-                    @media screen and (max-width: $mobileScreen) {
-                        padding-top: 0;
-                    }
-
-                    .automCarouText {
-                        .automCarouTitle {
-                            font-size: $fontSizeTitleResp;
-                        }
-                    }
-
                 }
 
-                @media screen and (max-width: $mobileScreen) {
-                    height: 100vh;
+                .automCarouText {
+                    background-color: rgb(44, 44, 44);
+
+                    .automCarouTitle {
+                        @extend %fontTitleSection;
+                    }
+
+                    h6 {
+                        color: $colorTextSection;
+                    }
+
+                    .sectionButton {
+                        margin-top: 3rem;
+                        background: linear-gradient(90.96deg, rgba(196, 196, 196, 0.8) 15.67%, rgba(255, 255, 255, 0.8) 46.39%, rgba(255, 255, 255, 0.8) 49.98%, rgba(255, 255, 255, 0.8) 53.56%, rgba(196, 196, 196, 0.8) 86.85%);
+                        border-radius: 40px;
+                        border: none;
+                        color: $colorBlack;
+                        margin-left: 18rem;
+                    }
+                }
+
+                .automCarouItem {
+                    height: 80%;
                 }
             }
 
         }
+
+        @media screen and (max-width: $mobileScreen) {
+            display: none;
+        }
+
+    }
+
+    .automCarouselDivMobile {
+        display: none;
+
+        .automCarouselMobile {
+            .automCarouItemMobile {
+                .automCarouTitleMobile {
+                    border-radius: 12px;
+                    background: $colorBackProjCartel;
+                    font-weight: $fontWeightTitle;
+                }
+            }
+        }
+
+        @media screen and (max-width: $mobileScreen) {
+            display: contents;
+        }
+
 
     }
 
@@ -189,30 +224,7 @@
         }
     }
 
-    .automCarouText {
-        background-color: rgb(44, 44, 44);
 
-        .automCarouTitle {
-            @extend %fontTitleSection;
-        }
-
-        h6 {
-            color: $colorTextSection;
-        }
-
-        .sectionButton {
-            margin-top: 3rem;
-            background: linear-gradient(90.96deg, rgba(196, 196, 196, 0.8) 15.67%, rgba(255, 255, 255, 0.8) 46.39%, rgba(255, 255, 255, 0.8) 49.98%, rgba(255, 255, 255, 0.8) 53.56%, rgba(196, 196, 196, 0.8) 86.85%);
-            border-radius: 40px;
-            border: none;
-            color: $colorBlack;
-            margin-left: 18rem;
-        }
-    }
-
-    .automCarouItem {
-        height: 80%;
-    }
 }
 
 .popover {
