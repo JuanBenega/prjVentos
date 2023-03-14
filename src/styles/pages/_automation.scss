@@ -107,14 +107,19 @@
         width: 100%;
         height: min-content;
         @extend %whiteGradient;
-        color: $colorWhite;
 
 
         .tabTitle {
             background: linear-gradient(180deg, #979393 0%, #CACACA 100%);
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            color: $colorWhite;
             font-weight: $fontWeightResp;
             font-size: $fontSizeHeader;
+
+            @media screen and (max-width: $mobileScreen) {
+                flex-direction: column;
+                font-size: $fontSizeTextInfHeader;
+            }
 
         }
 
@@ -135,6 +140,10 @@
                 margin-bottom: 2rem;
             }
 
+            @media screen and (max-width: $mobileScreen) {
+                width: 95%;
+                font-size: $fontSizeTextInfHeader;
+            }
 
         }
     }
@@ -247,4 +256,10 @@
 .popover-body {
     color: $colorWhite;
     font-size: $fontSizeTextInfHeader;
+}
+
+// Fuerzo el color del texto en los títulos de los TABS
+.nav {
+    --bs-nav-link-color: $colorWhite;
+    --bs-nav-link-hover-color: $colorPrim;
 }
