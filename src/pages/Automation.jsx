@@ -4,6 +4,9 @@ import { Button, Carousel, Image, Tab, Tabs, OverlayTrigger, Popover } from "rea
 import autom01 from '../img/autom01.png'
 import autom02 from '../img/autom02.png'
 import autom03 from '../img/autom03.png'
+import automMob01 from '../img/automMob01.png'
+import automMob02 from '../img/automMob02.png'
+import automMob03 from '../img/automMob03.png'
 import industrial1 from '../img/industrial1.png'
 import scada1 from '../img/scada1.png'
 import elec1 from '../img/elec1.png'
@@ -115,7 +118,7 @@ const Automation = () => {
                     <Carousel.Item className='automCarouItemMobile'>
                         <img
                             className="d-block w-100"
-                            src={autom01}
+                            src={automMob01}
                             alt="First slide"
                         />
                         <Carousel.Caption className='automCarouTextMobile'>
@@ -125,7 +128,7 @@ const Automation = () => {
                     <Carousel.Item className='automCarouItemMobile'>
                         <img
                             className="d-block w-100"
-                            src={autom02}
+                            src={automMob02}
                             alt="Second slide"
                         />
                         <Carousel.Caption className='automCarouTextMobile'>
@@ -136,7 +139,7 @@ const Automation = () => {
                     <Carousel.Item className='automCarouItemMobile'>
                         <img
                             className="d-block w-100"
-                            src={autom03}
+                            src={automMob03}
                             alt="Third slide"
                         />
                         <Carousel.Caption className='automCarouTextMobile'>
