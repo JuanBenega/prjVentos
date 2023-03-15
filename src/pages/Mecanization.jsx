@@ -4,6 +4,9 @@ import { Button, Carousel, Image, Tab, Tabs, OverlayTrigger, Popover } from "rea
 import mech01 from '../img/mech01.png'
 import mech02 from '../img/mech02.png'
 import mech03 from '../img/mech03.png'
+import mechMobile01 from '../img/mechMobile01.png'
+import mechMobile02 from '../img/mechMobile02.png'
+import mechMobile03 from '../img/mechMobile03.png'
 import mechanical1 from '../img/mechanical1.png'
 import mechanical2 from '../img/mechanical2.png'
 import mechanical3 from '../img/mechanical3.png'
@@ -118,6 +121,40 @@ const Mecanization = () => {
                                 producción para optimizar y
                                 aumentar su rendimiento.</h6>
                             <Button className="sectionButton" onClick={() => scroll('mant')}>Mas información...</Button>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                </Carousel>
+            </div>
+            <div className="automCarouselDivMobile">
+                <Carousel fade className='automCarouselMobile'>
+                    <Carousel.Item className='automCarouItemMobile'>
+                        <img
+                            className="d-block w-100"
+                            src={mechMobile01}
+                            alt="First slide"
+                        />
+                        <Carousel.Caption className='automCarouTextMobile'>
+                            <p className='automCarouTitleMobile'  onClick={() => scroll('tanks')}>Tanques & trabajos especiales</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item className='automCarouItemMobile'>
+                        <img
+                            className="d-block w-100"
+                            src={mechMobile02}
+                            alt="Second slide"
+                        />
+                        <Carousel.Caption className='automCarouTextMobile'>
+                            <p className='automCarouTitleMobile' onClick={() => scroll('pipe')}>Pipping & Revamping</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item className='automCarouItemMobile'>
+                        <img
+                            className="d-block w-100"
+                            src={mechMobile03}
+                            alt="Third slide"
+                        />
+                        <Carousel.Caption className='automCarouTextMobile'>
+                            <p className='automCarouTitleMobile' onClick={() => scroll('mant')}>Mantenimiento industrial</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>

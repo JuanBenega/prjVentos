@@ -15,10 +15,7 @@
         }
     }
 
-    .mechAnimation {
-        background-image: url('../../img/mecAnimation.gif');
-        @extend %sectionAnim;
-    }
+
 
     .animCollapse {
         height: 0vh;
@@ -49,30 +46,7 @@
 
                 }
 
-                .automCarouText {
-                    background-color: rgb(44, 44, 44);
-
-                    .automCarouTitle {
-                        @extend %fontTitleSection;
-                    }
-
-                    h6 {
-                        color: $colorTextSection;
-                    }
-
-                    .sectionButton {
-                        margin-top: 3rem;
-                        background: linear-gradient(90.96deg, rgba(196, 196, 196, 0.8) 15.67%, rgba(255, 255, 255, 0.8) 46.39%, rgba(255, 255, 255, 0.8) 49.98%, rgba(255, 255, 255, 0.8) 53.56%, rgba(196, 196, 196, 0.8) 86.85%);
-                        border-radius: 40px;
-                        border: none;
-                        color: $colorBlack;
-                        margin-left: 18rem;
-                    }
-                }
-
-                .automCarouItem {
-                    height: 80%;
-                }
+                
             }
 
         }
@@ -206,7 +180,7 @@
                 background: $colorBackProjCartel;
                 border: 5px solid $colorPrim;
                 border-radius: 22px;
-                height: 15rem;
+                height: 10rem;
                 text-align: center;
 
                 .sectionProjTitle {
@@ -231,15 +205,24 @@
                         margin-top: 1rem;
                         margin-left: 1rem;
                         margin-right: 1rem;
-                        margin-bottom: 0;
+                        margin-bottom: 1rem;
                     }
                 }
 
                 @media screen and (max-width: $mobileScreen) {
                     width: 90%;
+                    height: auto;
+
                 }
             }
         }
+
+        @media screen and (max-width: $mobileScreen) {
+            margin: 1rem 0;
+
+        }
+        
+
     }
 
     .partners {
@@ -253,6 +236,11 @@
             font-weight: $fontWeightTitle;
             padding-left: 8rem;
             margin-bottom: 5rem;
+
+            @media screen and (max-width: $mobileScreen) {
+                padding-left: 1rem;
+                margin-bottom: 0;
+            }
         }
 
         .partLogos {
@@ -268,11 +256,49 @@
                 &:hover {
                     @extend %hover110;
                 }
+
+                @media screen and (max-width: $mobileScreen) {
+                    margin: 0.5rem 0;
+                }
             }
+
+            @media screen and (max-width: $mobileScreen) {
+                padding-left: 1rem;
+            }
+        }
+
+        @media screen and (max-width: $mobileScreen) {
+            height: auto;
         }
     }
 
 
+}
+
+//saco afuera del div del carrusel para poder aplicarlo en mecanización también
+.automCarouText {
+    background-color: rgb(44, 44, 44);
+
+    .automCarouTitle {
+        @extend %fontTitleSection;
+    }
+
+    h6 {
+        color: $colorTextSection;
+    }
+
+    .sectionButton {
+        margin-top: 3rem;
+        background: linear-gradient(90.96deg, rgba(196, 196, 196, 0.8) 15.67%, rgba(255, 255, 255, 0.8) 46.39%, rgba(255, 255, 255, 0.8) 49.98%, rgba(255, 255, 255, 0.8) 53.56%, rgba(196, 196, 196, 0.8) 86.85%);
+        border-radius: 40px;
+        border: none;
+        color: $colorBlack;
+        margin-left: 18rem;
+    }
+}
+
+.automCarouItem {
+    height: 80%;
 }
 
 .popover {
