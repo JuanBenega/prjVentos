@@ -231,7 +231,7 @@ const Automation = () => {
             </div>
             <div className="sectionProjects">
                 <div className="sectionProj">
-                    <div className="projRow">
+                    <div className="projRow projRowDesktop">
                         <OverlayTrigger 
                         placement="top" 
                         overlay={popover('Linde', 'Programación de sistema SCADA para laboratorio de análisis de gases. 2019.')}
@@ -248,6 +248,20 @@ const Automation = () => {
                     <div className="sectionProjCartel">
                         <h3 className="sectionProjTitle">Nuestros proyectos más importantes</h3>
                         <p className="sectionProjDescrip">Trabajando siempre para cumplir con la calidad en cada proyecto, poniendo prioridad en la necesidad el cliente.</p>
+                    </div>
+                    <div className="projRow projRowMobile">
+                        <OverlayTrigger 
+                        placement="top" 
+                        overlay={popover('Linde', 'Programación de sistema SCADA para laboratorio de análisis de gases. 2019.')}
+                        >
+                            <Image src={linde} className="sectionProjImg" />
+                        </OverlayTrigger>
+                        <OverlayTrigger 
+                        placement="top" 
+                        overlay={popover('Tersuave', 'Ingeniería, diseño y desarrollo de programación de PLC, HMI Y SCADA en nueva planta resinas. 2022')}
+                        >
+                            <Image src={tersuave} className="sectionProjImg" />
+                        </OverlayTrigger>
                     </div>
                     <div className="projRow">
                         <OverlayTrigger 

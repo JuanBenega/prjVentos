@@ -175,8 +175,30 @@
                     &:hover {
                         @extend %hover110;
                     }
+
+                    @media screen and (max-width: $mobileScreen) {
+                        height: 5rem;
+                    }
                 }
 
+                @media screen and (max-width: $mobileScreen) {
+                    flex-wrap: wrap;
+                }
+
+            }
+
+            .projRowDesktop {
+                @media screen and (max-width: $mobileScreen) {
+                    display: none;
+                }
+            }
+
+            .projRowMobile {
+                display: none;
+
+                @media screen and (max-width: $mobileScreen) {
+                    display: contents;
+                }
             }
 
             .sectionProjCartel {
@@ -184,13 +206,19 @@
                 background: $colorBackProjCartel;
                 border: 5px solid $colorPrim;
                 border-radius: 22px;
-                height: 10rem;
+                height: 15rem;
                 text-align: center;
 
                 .sectionProjTitle {
                     font-weight: $fontWeightTitle;
                     margin-top: 2rem;
                     margin-left: 3rem;
+
+                    @media screen and (max-width: $mobileScreen) {
+                        margin-top: 1rem;
+                        margin-right: 1rem;
+                        margin-left: 1rem;
+                    }
                 }
 
                 .sectionProjDescrip {
@@ -198,6 +226,17 @@
                     margin-right: 3rem;
                     margin-top: 1.5rem;
                     margin-bottom: 3rem;
+
+                    @media screen and (max-width: $mobileScreen) {
+                        margin-top: 1rem;
+                        margin-left: 1rem;
+                        margin-right: 1rem;
+                        margin-bottom: 0;
+                    }
+                }
+
+                @media screen and (max-width: $mobileScreen) {
+                    width: 90%;
                 }
             }
         }
