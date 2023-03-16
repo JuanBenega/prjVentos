@@ -251,13 +251,13 @@ const Automation = () => {
                     </div>
                     <div className="projRow projRowMobile">
                         <OverlayTrigger 
-                        placement="top" 
+                        placement="bottom" 
                         overlay={popover('Linde', 'Programación de sistema SCADA para laboratorio de análisis de gases. 2019.')}
                         >
                             <Image src={linde} className="sectionProjImg" />
                         </OverlayTrigger>
                         <OverlayTrigger 
-                        placement="top" 
+                        placement="bottom" 
                         overlay={popover('Tersuave', 'Ingeniería, diseño y desarrollo de programación de PLC, HMI Y SCADA en nueva planta resinas. 2022')}
                         >
                             <Image src={tersuave} className="sectionProjImg" />

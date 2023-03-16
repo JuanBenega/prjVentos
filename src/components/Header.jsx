@@ -24,7 +24,7 @@ const Header = () => {
                     <Image src={locationIcon} />
                     <p>Perdriel 2875, La Tablada, Buenos Aires</p>
                     <Image src={phoneIcon} />
-                    <p>(011) 15-41743095</p>
+                    <p>(011) 15-6983-2386</p>
                 </div>
                 : <div className="blackDiv"></div>
             }

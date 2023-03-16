@@ -25,7 +25,7 @@ const Footer = () => {
                 <div className="contactFooter">
                     <h5 className="contactFooterTitle">Contactanos</h5>
                     <p>Perdriel 2875, La Tablada, Buenos Aires</p>
-                    <p>(011) 15-4174-3095</p>
+                    <p>(011) 15-6983-2386</p>
                 </div>
                 <div className="socialFooter">
                     <NavLink className="footerSocialIcon" href="https://www.facebook.com/profile.php?id=100083334182810" target="_blank"><Image src={facebook} /></NavLink>

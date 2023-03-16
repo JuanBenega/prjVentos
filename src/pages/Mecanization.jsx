@@ -100,7 +100,7 @@ const Mecanization = () => {
                                 distintos equipos que funcionan en conjunto.
                                 Un sistema de tuberías bien diseñado es, por
                                 tanto, crucial para cualquier instalación
-                                tanks y su creación requiere un análisis
+                                de tanques y su creación requiere un análisis
                                 sistémico y experiencia en diversos métodos de
                                 ingeniería.</h6>
                             <Button className="sectionButton" onClick={() => scroll('pipe')}>Mas información...</Button>
@@ -134,7 +134,7 @@ const Mecanization = () => {
                             alt="First slide"
                         />
                         <Carousel.Caption className='automCarouTextMobile'>
-                            <p className='automCarouTitleMobile'  onClick={() => scroll('tanks')}>Tanques & trabajos especiales</p>
+                            <p className='automCarouTitleMobile' onClick={() => scroll('tanks')}>Tanques & trabajos especiales</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item className='automCarouItemMobile'>
@@ -253,28 +253,28 @@ const Mecanization = () => {
             </div>
             <div className="sectionProjects">
                 <div className="sectionProj">
-                    <div className="projRow">
-                        <OverlayTrigger 
-                        placement="top" 
-                        overlay={popover('Coca Cola', 'Instalación de sistema de osmosis inversa. Córdoba. 2023')}
+                    <div className="projRow projRowDesktop">
+                        <OverlayTrigger
+                            placement="top"
+                            overlay={popover('Coca Cola', 'Instalación de sistema de osmosis inversa. Córdoba. 2023')}
                         >
                             <Image src={coca} className="sectionProjImg" />
                         </OverlayTrigger>
-                        <OverlayTrigger 
-                        placement="top" 
-                        overlay={popover('Uventech', 'Instalación de equipos de aspirado de polvos. Bs As. 2022')}
+                        <OverlayTrigger
+                            placement="top"
+                            overlay={popover('Uventech', 'Instalación de equipos de aspirado de polvos. Bs As. 2022')}
                         >
                             <Image src={uventech} className="sectionProjImg" />
                         </OverlayTrigger>
-                        <OverlayTrigger 
-                        placement="top" 
-                        overlay={popover('Idenor', 'Fabricación de tanques de acero inoxidable certificados. Mendoza. 2023')}
+                        <OverlayTrigger
+                            placement="top"
+                            overlay={popover('Idenor', 'Fabricación de tanques de acero inoxidable certificados. Mendoza. 2023')}
                         >
                             <Image src={idenor} className="sectionProjImg" />
                         </OverlayTrigger>
-                        <OverlayTrigger 
-                        placement="top" 
-                        overlay={popover('JMB Ambientales', 'Instalación y puesta en marcha de planta procesadora de lodos. Santa Cruz. 2020')}
+                        <OverlayTrigger
+                            placement="top"
+                            overlay={popover('JMB Ambientales', 'Instalación y puesta en marcha de planta procesadora de lodos. Santa Cruz. 2020')}
                         >
                             <Image src={jmb} className="sectionProjImg" />
                         </OverlayTrigger>
@@ -283,28 +283,55 @@ const Mecanization = () => {
                         <h3 className="sectionProjTitle">Nuestros proyectos más importantes</h3>
                         <p className="sectionProjDescrip">Trabajando siempre para cumplir con la calidad en cada proyecto, poniendo prioridad en la necesidad el cliente.</p>
                     </div>
+                    <div className="projRow projRowMobile">
+                        <OverlayTrigger
+                            placement="top"
+                            overlay={popover('Coca Cola', 'Instalación de sistema de osmosis inversa. Córdoba. 2023')}
+                        >
+                            <Image src={coca} className="sectionProjImg" />
+                        </OverlayTrigger>
+                        <OverlayTrigger
+                            placement="top"
+                            overlay={popover('Uventech', 'Instalación de equipos de aspirado de polvos. Bs As. 2022')}
+                        >
+                            <Image src={uventech} className="sectionProjImg" />
+                        </OverlayTrigger>
+                        <OverlayTrigger
+                            placement="top"
+                            overlay={popover('Idenor', 'Fabricación de tanques de acero inoxidable certificados. Mendoza. 2023')}
+                        >
+                            <Image src={idenor} className="sectionProjImg" />
+                        </OverlayTrigger>
+                        <OverlayTrigger
+                            placement="top"
+                            overlay={popover('JMB Ambientales', 'Instalación y puesta en marcha de planta procesadora de lodos. Santa Cruz. 2020')}
+                        >
+                            <Image src={jmb} className="sectionProjImg" />
+                        </OverlayTrigger>
+                    </div>
+
                     <div className="projRow">
-                        <OverlayTrigger 
-                        placement="bottom" 
-                        overlay={popover('Laboratorio Hemoderivados', 'Provisión de elementos y equipos varios de acero inoxidable certificados. Córdoba. 2023')}
+                        <OverlayTrigger
+                            placement="bottom"
+                            overlay={popover('Laboratorio Hemoderivados', 'Provisión de elementos y equipos varios de acero inoxidable certificados. Córdoba. 2023')}
                         >
                             <Image src={hemoderivados} className="sectionProjImg" />
                         </OverlayTrigger>
-                        <OverlayTrigger 
-                        placement="bottom" 
-                        overlay={popover('Later-cer', 'Instalación de equipo de aspirado de polvos y montaje de cañerías de extracción. Bs As. 2022')}
+                        <OverlayTrigger
+                            placement="bottom"
+                            overlay={popover('Later-cer', 'Instalación de equipo de aspirado de polvos y montaje de cañerías de extracción. Bs As. 2022')}
                         >
                             <Image src={later} className="sectionProjImg" />
                         </OverlayTrigger>
-                        <OverlayTrigger 
-                        placement="bottom" 
-                        overlay={popover('Paty', 'Instalación de sistema de osmosis inversa. San Luis. 2022')}
+                        <OverlayTrigger
+                            placement="bottom"
+                            overlay={popover('Paty', 'Instalación de sistema de osmosis inversa. San Luis. 2022')}
                         >
                             <Image src={paty} className="sectionProjImg" />
                         </OverlayTrigger>
-                        <OverlayTrigger 
-                        placement="bottom" 
-                        overlay={popover('Prochem-bio', 'Instalación y montaje de conductos de acero inoxidable. Bs As. 2023')}
+                        <OverlayTrigger
+                            placement="bottom"
+                            overlay={popover('Prochem-bio', 'Instalación y montaje de conductos de acero inoxidable. Bs As. 2023')}
                         >
                             <Image src={prochem} className="sectionProjImg" />
                         </OverlayTrigger>
