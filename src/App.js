@@ -11,6 +11,7 @@ import Sidebar from './components/Sidebar';
 
 
 import './styles/App.scss';
+import Chatbot from './components/Chatbot';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path='/autom' element={<Automation />} />
         <Route path='/mecaniz' element={<Mecanization />} />
       </Routes>
+      <Chatbot />
       <Footer />
     </BrowserRouter>
   );
