@@ -1,0 +1,27 @@
+.mechAnimation {
+    background-image: url('../../img/mecAnimation.gif');
+    @extend %sectionAnim;
+
+    @media screen and (max-width: $mobileScreen) {
+        background-size: contain;
+        height: 50vh;
+        background-repeat: no-repeat;
+    }
+}
+
+.mechCarousel {
+    width: 80%;
+
+    .carousel-caption {
+        right: 0%;
+        left: 50%;
+        height: 100%;
+        top: 0;
+        bottom: auto;
+        text-align: start;
+        padding-top: 7rem;
+        padding-left: 5rem;
+    }
+
+    
+}

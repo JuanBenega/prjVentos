@@ -25,7 +25,7 @@ const Contact = () => {
                         <Image src={contactGps} />
                         <h6>Perdriel 2875, La Tablada, Buenos Aires</h6>
                         <Image src={contactPhone} />
-                        <h6>(011) 15-4174-3095</h6>
+                        <h6>(011) 15-6983-2386</h6>
                         <Image src={contactMail} />
                         <h6>info@ventos.com.ar</h6>
                         <i></i>
@@ -37,7 +37,7 @@ const Contact = () => {
                         <Image src={contactGps} />
                         <h6>Arenales 872, Villa Mercedes, San Luis</h6>
                         <Image src={contactPhone} />
-                        <h6>(011) 15-41743095</h6>
+                        <h6>(011) 3112-9539</h6>
                         <Image src={contactMail} />
                         <h6>abc@ventos.com.ar</h6>
                         <i></i>
@@ -49,7 +49,7 @@ const Contact = () => {
                         <Image src={contactGps} />
                         <h6>Callejón Vidoza 55, Maipú, Mendoza</h6>
                         <Image src={contactPhone} />
-                        <h6>(011) 15-41743095</h6>
+                        <h6>(02612) 15-08-1375</h6>
                         <Image src={contactMail} />
                         <h6>abc@ventos.com.ar</h6>
                         <i></i>

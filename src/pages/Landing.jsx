@@ -1,11 +1,13 @@
-
+import { useNavigate } from "react-router-dom";
 import { Carousel, Image } from 'react-bootstrap'
 import ServiceCard from '../components/ServiceCard'
 import UsCard from '../components/UsCard'
 
-import landing1 from '../img/landing1.jpg'
-import landing2 from '../img/landing2.jpg'
-import landing3 from '../img/landing3.jpg'
+import landing1 from '../img/landing1.png'
+import landing2 from '../img/landing2.png'
+import landing3 from '../img/landing3.png'
+import landing4 from '../img/landing4.png'
+import landing5 from '../img/landing5.png'
 import autom from '../img/landAutom.png'
 import mecan from '../img/landMecan.png'
 import landIcon1 from '../img/landIcon1.png'
@@ -28,6 +30,7 @@ import Arrows from '../components/Arrows'
 
 const Landing = () => {
 
+    const navigate = useNavigate();
     const services = [
         {
             icon: landIcon1,
@@ -68,39 +71,45 @@ const Landing = () => {
         {
             pic: landUs2,
             name: 'Franco Berrone',
-            job: 'CEO'
+            job: 'Gerente San Luis'
         },
         {
             pic: landUs3,
-            name: 'Danilo Quiroga',
-            job: 'CEO'
+            name: 'Nicolás Ortiz',
+            job: 'Gerente Mendoza'
         },
         {
             pic: landUs4,
-            name: 'Patricio Pulitano',
-            job: 'CEO'
+            name: 'Jorge Arias',
+            job: 'Gerente Buenos Aires'
         },
     ]
 
     const clients = [
         {
-            name: 'CARREFOUR',
+            name: 'TERSUAVE',
             pic: client1,
-            title: 'Automatización en depósitos',
-            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nobis veniam ab sint laboriosam quos amet inventore magnam cumque. Dolores eos veniam doloribus qui reiciendis, blanditiis vitae dolore perferendis quod.'
+            title: 'Nueva planta resinas',
+            text: 'Ingeniería, diseño, desarrollo y montaje eléctrico/mecánico de nueva planta resinas. Fabricación de tableros, programación de PLC, HMI Y SCADA, fabricación de piping, montaje de equipos, puesta en marcha, y pruebas Villa Mercedes. 2022'
         },
         {
-            name: 'COLOSHOP',
+            name: 'TERSUAVE',
+            pic: client1,
+            title: 'Planta Tinters',
+            text: 'Diseño de ingeniería, desarrollo de programación de PLC, HMI Y SCADA, fabricación de tableros. Fabricación de tanques de vacío, fabricación de piping, montaje de equipos. Montaje eléctrico/mecánico, puesta en marcha, y pruebas Villa Mercedes. 2021'
+        },
+        {
+            name: 'DIASER',
             pic: client2,
-            title: 'Fabrica de llave en mano',
-            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nobis veniam ab sint laboriosam quos amet inventore magnam cumque. Dolores eos veniam doloribus qui reiciendis, blanditiis vitae dolore perferendis quod.'
+            title: 'Actualización automatización',
+            text: 'Actualización y reformas en su SCADA general de planta donde llevo un año de desarrollo con el equipo de producción. 2020'
         },
         {
-            name: 'FARMACITY',
+            name: 'LABORATORIOS SL',
             pic: client3,
-            title: 'Adecuación tableros eléctricos',
-            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nobis veniam ab sint laboriosam quos amet inventore magnam cumque. Dolores eos veniam doloribus qui reiciendis, blanditiis vitae dolore perferendis quod.'
-        },
+            title: 'Sistema de control de planta de polímeros',
+            text: 'Instalación de tableros, programación de SCADA, HMI y PLC. Malvinas Argentinas. 2018'
+        }
     ]
 
     return (
@@ -113,8 +122,12 @@ const Landing = () => {
                         alt="First slide"
                     />
                     <Carousel.Caption className='carouText'>
-                        <p className='carouTitle'>Somos una empresa apasionada por lo que hacemos</p>
-                        <h4>Desarrollamos nuevos sistemas de automatizacion y mecanica para empresas relacionadas al rubro industrial con toda la tecnologia de vanguardia </h4>
+                        {/* <p className='carouTitle'>Somos una empresa Joven en constante Crecimiento que
+                            integra conocimientos de ingeniería, fabricación,
+                            construcción y mantenimiento.</p> */}
+                        <h1>Somos una empresa Joven en constante crecimiento que
+                            integra conocimientos de ingeniería, fabricación,
+                            construcción y mantenimiento.</h1>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className='carouItem'>
@@ -124,7 +137,22 @@ const Landing = () => {
                         alt="Second slide"
                     />
                     <Carousel.Caption className='carouText'>
-                        <p className='carouTitle'>La innovación es nuestra premisa</p>
+                        {/* <p className='carouTitle'>La innovación es nuestra premisa</p> */}
+                        <h1>Nuestra Misión: crear valor recurrente para todas las partes interesadas
+                            ofreciendo productos, servicios y soluciones industriales inteligentes y
+                            sostenibles.</h1>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item className='carouItem'>
+                    <img
+                        className="d-block w-100"
+                        src={landing4}
+                        alt="Third slide"
+                    />
+                    <Carousel.Caption className='carouText'>
+                        {/* <p className='carouTitle'>Trabajamos para darle lo mejor a nuestros clientes</p> */}
+                        <h1>Nos interesa descubrir y desarrollar con éxito equipos y procesos innovadores,
+                            donde nuestro compromiso se vea reflejado en la rentabilidad de nuestro cliente.</h1>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className='carouItem'>
@@ -134,27 +162,56 @@ const Landing = () => {
                         alt="Third slide"
                     />
                     <Carousel.Caption className='carouText'>
-                        <p className='carouTitle'>Trabajamos para darle lo mejor a nuestros clientes</p>
+                        {/* <p className='carouTitle'>Trabajamos para darle lo mejor a nuestros clientes</p> */}
+                        <h1>Nuestros equipos de expertos en procesos nos respaldan para diseñar sus
+                            instalaciones de producción, desde un solo equipo hasta la planta
+                            completa llave en mano.</h1>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item className='carouItem'>
+                    <img
+                        className="d-block w-100"
+                        src={landing5}
+                        alt="Third slide"
+                    />
+                    <Carousel.Caption className='carouText'>
+                        {/* <p className='carouTitle'>Trabajamos para darle lo mejor a nuestros clientes</p> */}
+                        <h1>Directamente en el sitio como en nuestros talleres ubicados
+                            en buenos aires, san Luis y Mendoza, nos ocupamos de todos
+                            sus trabajos de construcción industrial en general en nuevas
+                            unidades o en extensión de unidades existentes.</h1>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
             <div className="textMobile">
-                <h2 className='carouTitle'>Somos una empresa apasionada por lo que hacemos</h2>
-                <h5>Desarrollamos nuevos sistemas de automatizacion y mecanica para empresas relacionadas al rubro industrial con toda la tecnologia de vanguardia </h5>
+                <h2 className='carouTitle'>Somos una empresa Joven en constante crecimiento que
+                            integra conocimientos de ingeniería, fabricación,
+                            construcción y mantenimiento.</h2>
+                <h5>Nuestra Misión: crear valor recurrente para todas las partes interesadas
+                            ofreciendo productos, servicios y soluciones industriales inteligentes y
+                            sostenibles.</h5>
             </div>
             <Arrows />
             <div className="landSegments">
-                <div className="landSeg">
+                <div className="landSeg" onClick={() => navigate('/autom')}>
                     <div className="landSegLeft">
                         <h3>AUTOMATIZACIÓN</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem aliquam non illum, odio obcaecati numquam qui. Animi, sit a inventore dolores perspiciatis earum minima sunt quidem culpa atque aut commodi.</p>
+                        <p>Diseño, montaje, cableado y conexionado de plantas industriales <br />
+                            Fabricación de tableros eléctricos de potencia y control. <br />
+                            Programación de PLC, HMI <br />
+                            Programación e implementación de sistemas SCADA <br />
+                            Programación de PLC, HMI</p>
                     </div>
                     <Image src={autom} fluid />
                 </div>
-                <div className="landSeg">
+                <div className="landSeg" onClick={() => navigate('/mecaniz')}>
                     <div className="landSegRight">
                         <h3>MECANIZACIÓN</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem aliquam non illum, odio obcaecati numquam qui. Animi, sit a inventore dolores perspiciatis earum minima sunt quidem culpa atque aut commodi.</p>
+                        <p>Fabricación de piping en Planta con soldadores certificados. <br />
+                            Sistema TIG y convencional. <br />
+                            Diseño y montaje de reactores para uso industrial, confeccionados en acero inoxidable. <br />
+                            Diseño y fabricación de tanques en acero inoxidable. <br />
+                        </p>
                     </div>
                     <Image src={mecan} fluid />
                 </div>

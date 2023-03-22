@@ -1,0 +1,330 @@
+.autom {
+    @extend %imageBackground;
+    font-family: $font;
+    color: $colorWhite;
+
+
+    .automAnimation {
+        background-image: url('../../img/autoAnimation.gif');
+        @extend %sectionAnim;
+
+        @media screen and (max-width: $mobileScreen) {
+            background-size: contain;
+            height: 50vh;
+            background-repeat: no-repeat;
+        }
+    }
+
+
+
+    .animCollapse {
+        height: 0vh;
+
+
+    }
+
+
+    .automCarouselDiv {
+        background-color: rgb(44, 44, 44);
+        display: flex;
+        justify-content: center;
+
+        .automCarousel {
+            width: 80%;
+
+            .automCarouItem {
+
+                .carousel-caption {
+                    right: 50%;
+                    left: 0%;
+                    height: 100%;
+                    top: 0;
+                    bottom: auto;
+                    text-align: start;
+                    padding-top: 7rem;
+                    padding-right: 5rem;
+
+                }
+
+                
+            }
+
+        }
+
+        @media screen and (max-width: $mobileScreen) {
+            display: none;
+        }
+
+    }
+
+    .automCarouselDivMobile {
+        display: none;
+
+        .automCarouselMobile {
+            .automCarouItemMobile {
+                .automCarouTitleMobile {
+                    border-radius: 12px;
+                    background: $colorBackProjCartel;
+                    font-weight: $fontWeightTitle;
+                }
+            }
+        }
+
+        @media screen and (max-width: $mobileScreen) {
+            display: contents;
+        }
+
+
+    }
+
+    .automDetail {
+        width: 100%;
+        height: min-content;
+        @extend %whiteGradient;
+
+
+        .tabTitle {
+            background: linear-gradient(180deg, #979393 0%, #CACACA 100%);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            color: $colorWhite;
+            font-weight: $fontWeightResp;
+            font-size: $fontSizeHeader;
+
+            @media screen and (max-width: $mobileScreen) {
+                flex-direction: column;
+                font-size: $fontSizeTextInfHeader;
+            }
+
+        }
+
+        //centro el contenido de los tabs
+        .tab-content {
+            display: flex;
+            justify-content: center;
+        }
+
+
+        .tabContent {
+            text-align: center;
+            width: 70%;
+            margin: 2rem 0;
+
+            .tabImage {
+                width: 100%;
+                margin-bottom: 2rem;
+            }
+
+            @media screen and (max-width: $mobileScreen) {
+                width: 95%;
+                font-size: $fontSizeTextInfHeader;
+            }
+
+        }
+    }
+
+    .sectionProjects {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5rem 0;
+
+        .sectionProj {
+            @extend %flexWrap;
+
+            .projRow {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                .sectionProjImg {
+                    width: fit-content;
+                    height: 10rem;
+                    margin: 0.5rem;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    border-radius: 20px;
+
+
+                    &:hover {
+                        @extend %hover110;
+                    }
+
+                    @media screen and (max-width: $mobileScreen) {
+                        height: 5rem;
+                    }
+                }
+
+                @media screen and (max-width: $mobileScreen) {
+                    flex-wrap: wrap;
+                }
+
+            }
+
+            .projRowDesktop {
+                @media screen and (max-width: $mobileScreen) {
+                    display: none;
+                }
+            }
+
+            .projRowMobile {
+                display: none;
+
+                @media screen and (max-width: $mobileScreen) {
+                    display: contents;
+                }
+            }
+
+            .sectionProjCartel {
+                width: 50%;
+                background: $colorBackProjCartel;
+                border: 5px solid $colorPrim;
+                border-radius: 22px;
+                height: 10rem;
+                text-align: center;
+
+                .sectionProjTitle {
+                    font-weight: $fontWeightTitle;
+                    margin-top: 2rem;
+                    margin-left: 3rem;
+
+                    @media screen and (max-width: $mobileScreen) {
+                        margin-top: 1rem;
+                        margin-right: 1rem;
+                        margin-left: 1rem;
+                    }
+                }
+
+                .sectionProjDescrip {
+                    margin-left: 3rem;
+                    margin-right: 3rem;
+                    margin-top: 1.5rem;
+                    margin-bottom: 3rem;
+
+                    @media screen and (max-width: $mobileScreen) {
+                        margin-top: 1rem;
+                        margin-left: 1rem;
+                        margin-right: 1rem;
+                        margin-bottom: 1rem;
+                    }
+                }
+
+                @media screen and (max-width: $mobileScreen) {
+                    width: 90%;
+                    height: auto;
+
+                }
+            }
+        }
+
+        @media screen and (max-width: $mobileScreen) {
+            margin: 1rem 0;
+
+        }
+        
+
+    }
+
+    .partners {
+        width: 100%;
+        height: 20rem;
+        color: $colorBlack;
+        padding-top: 2rem;
+        @extend %whiteGradient;
+
+        h3 {
+            font-weight: $fontWeightTitle;
+            padding-left: 8rem;
+            margin-bottom: 5rem;
+
+            @media screen and (max-width: $mobileScreen) {
+                padding-left: 1rem;
+                margin-bottom: 0;
+            }
+        }
+
+        .partLogos {
+            width: 90%;
+            padding-left: 10rem;
+            @extend %flexWrap;
+            align-items: center;
+
+            .partImage {
+                margin: 0 2rem;
+                width: 13rem;
+
+                &:hover {
+                    @extend %hover110;
+                }
+
+                @media screen and (max-width: $mobileScreen) {
+                    margin: 0.5rem 0;
+                }
+            }
+
+            @media screen and (max-width: $mobileScreen) {
+                padding-left: 1rem;
+            }
+        }
+
+        @media screen and (max-width: $mobileScreen) {
+            height: auto;
+        }
+    }
+
+
+}
+
+//saco afuera del div del carrusel para poder aplicarlo en mecanización también
+.automCarouText {
+    background-color: rgb(44, 44, 44);
+
+    .automCarouTitle {
+        @extend %fontTitleSection;
+    }
+
+    h6 {
+        color: $colorTextSection;
+    }
+
+    .sectionButton {
+        margin-top: 3rem;
+        background: linear-gradient(90.96deg, rgba(196, 196, 196, 0.8) 15.67%, rgba(255, 255, 255, 0.8) 46.39%, rgba(255, 255, 255, 0.8) 49.98%, rgba(255, 255, 255, 0.8) 53.56%, rgba(196, 196, 196, 0.8) 86.85%);
+        border-radius: 40px;
+        border: none;
+        color: $colorBlack;
+        margin-left: 18rem;
+    }
+}
+
+.automCarouItem {
+    height: 80%;
+}
+
+.popover {
+    background: rgba(19, 163, 217, 0.8);
+    //border: 9px solid rgba(231, 231, 231, 0.4);
+    box-shadow: inset 0px 0px 8px 12px $colorPrim;
+    border-radius: 22px;
+    font-family: 'Poppins';
+    font-style: normal;
+    padding: 1rem;
+}
+
+.popover-header {
+    background: none;
+    font-weight: $fontWeightTitle;
+    color: $colorWhite;
+    font-size: $fontSizeHeader;
+}
+
+.popover-body {
+    color: $colorWhite;
+    font-size: $fontSizeTextInfHeader;
+}
+
+// Fuerzo el color del texto en los títulos de los TABS
+.nav {
+    --bs-nav-link-color: $colorWhite;
+    --bs-nav-link-hover-color: $colorPrim;
+}

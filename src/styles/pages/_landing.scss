@@ -1,11 +1,7 @@
 .landing {
     font-family: $font;
     color: $colorWhite;
-    background-image: url("../../img/fondo.png");
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 100vh;
-    padding-top: 10rem;
+    @extend %imageBackground;
     @extend %flexColumnCenter;
 
     .landCarousel {
@@ -15,7 +11,7 @@
         .carousel-caption {
             right: 50%;
             left: 5%;
-            top: 8rem;
+            top: 5rem;
             bottom: auto;
             text-align: start;
             padding-left: 1.25rem;
@@ -26,11 +22,11 @@
         }
 
         .carouText {
-            background-color: $colorBackCarouTitle;
+            background-color: $colorBackProjCartel;
             border-radius: 22px;
 
-            .carouTitle {
-                @extend %fontTitle;
+            h1 {
+                font-weight: $fontWeightTitle;
                 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             }
         }
@@ -41,7 +37,7 @@
         margin: 2rem;
 
         h2 {
-            font-size: $fontSizeTitleResp;
+            //font-size: $fontSizeTitleResp;
             font-weight: $fontWeightTitle;
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         }
@@ -206,8 +202,8 @@
             width: 100%;
             margin-top: 3rem;
             @extend %flexWrap;
-            column-gap: 5rem;
-            row-gap: 5rem;
+            column-gap:2rem;
+            row-gap: 2rem;
 
             @media screen and (max-width: $mobileScreen) {
                 width: 90%;
@@ -219,7 +215,7 @@
     }
 
     @media screen and (max-width: $mobileScreen) {
-        padding-top: 5rem;
+        padding-top: 7rem;
     }
 
 }
