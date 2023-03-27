@@ -1,4 +1,4 @@
-import { Image } from "react-bootstrap";
+import { Image, Nav } from "react-bootstrap";
 import ChatBot from 'react-simple-chatbot';
 import { ThemeProvider } from 'styled-components';
 
@@ -71,12 +71,21 @@ const Chatbot = () => {
     },
     {
       id: '8',
-      message: 'Te mostraré Servicios de Automatización',
-      trigger: () => navigate('/autom'),
-      triggerNextStep: '5',
+      message: 'Los servicios de Automatización que brindamos son: Automatización Industrial, Control de procesos a través del sistema SCADA y electricidad Industrial',
+      trigger: '9',
     },
     {
       id: '9',
+      message: 'Si información ampliada hacé click abajo',
+      trigger: '10',
+    },
+    {
+      id: '10',
+      component: <Nav.Link href="/autom" className="link">Automatización</Nav.Link>,
+      trigger: '5',
+    },
+    {
+      id: '11',
       message: 'Te mostraré Servicios de Automatización',
       trigger: () => navigate('/mecaniz'),
     },
