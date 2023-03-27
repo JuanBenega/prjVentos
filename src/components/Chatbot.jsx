@@ -4,16 +4,14 @@ import { ThemeProvider } from 'styled-components';
 
 import chatbot from '../img/chatbot.png';
 import avatarBot from '../img/avatarBot.png'
-import { useNavigate } from "react-router-dom";
 
 const Chatbot = () => {
-
-  const navigate = useNavigate();
 
   const styleFloat =
   {
     background: 'transparent',
   }
+
 
   const theme = {
     background: 'rgba(255, 255, 255, 0.6);',
@@ -40,7 +38,8 @@ const Chatbot = () => {
       id: '2',
       message: '¿Cuál es tu nombre?',
       trigger: '3',
-    }, {
+    },
+    {
       id: '3',
       user: true,
       trigger: '4',
@@ -60,23 +59,23 @@ const Chatbot = () => {
       options: [
         { value: 1, label: 'Conocer Ventos', trigger: '7' },
         { value: 2, label: 'Servicios de Automatización', trigger: '8' },
-        { value: 3, label: 'Servicios de Mecanización', trigger: '9' },
+        { value: 3, label: 'Servicios de Mecanización', trigger: '11' },
+        { value: 4, label: 'Contactarme', trigger: 'contact' },
       ],
     },
     {
       id: '7',
       message: 'Ventos es una empresa pensada y creada para innovar en soluciones tecnológicas para la industria.',
-      delay: 2000,
       trigger: '5',
     },
     {
       id: '8',
-      message: 'Los servicios de Automatización que brindamos son: Automatización Industrial, Control de procesos a través del sistema SCADA y electricidad Industrial',
+      message: 'Los servicios de Automatización que brindamos son: Automatización Industrial, Control de procesos a través del sistema SCADA y Electricidad Industrial',
       trigger: '9',
     },
     {
       id: '9',
-      message: 'Si información ampliada hacé click abajo',
+      message: 'Si querés información ampliada hacé click abajo',
       trigger: '10',
     },
     {
@@ -86,10 +85,62 @@ const Chatbot = () => {
     },
     {
       id: '11',
-      message: 'Te mostraré Servicios de Automatización',
-      trigger: () => navigate('/mecaniz'),
+      message: 'Los servicios de Automatización que brindamos son: Tanques y trabajos especioales, Pipping & Revamping y Mantenimiento Industrial',
+      trigger: '12',
     },
-
+    {
+      id: '12',
+      message: 'Si querés información ampliada hacé click abajo',
+      trigger: '13',
+    },
+    {
+      id: '13',
+      component: <Nav.Link href="/mecaniz" className="link">Mecanización</Nav.Link>,
+      trigger: '5',
+    },
+    {
+      id: 'contact',
+      message: 'Ayudame a darte la mejor solución, de que zona estás más cerca:',
+      trigger: 'zoneContact',
+    },
+    {
+      id: 'zoneContact',
+      options: [
+        { value: 1, label: 'Buenos Aires', trigger: 'contactBA' },
+        { value: 2, label: 'Mendoza', trigger: 'contactMEN' },
+        { value: 3, label: 'San Luis', trigger: 'contactSL' },
+      ],
+    },
+    {
+      id: 'contactBA',
+      message: 'Nuestro contacto en Buenos Aires es Jorge, cel: +54-911-6983-2386',
+      trigger: 'baWhatsapp',
+    },
+    {
+      id: 'baWhatsapp',
+      component: <Nav.Link href="https://wa.me/541169832386" target='_blank'>Hablame por WhatsApp</Nav.Link>,
+      trigger: '5',
+    },
+    {
+      id: 'contactMEN',
+      message: 'Nuestro contacto en Buenos Aires es Nicolás, cel: +54-92612-08-1375',
+      trigger: 'menWhatsapp',
+    },
+    {
+      id: 'menWhatsapp',
+      component: <Nav.Link href="https://wa.me/5492612081375" target='_blank'>Hablame por WhatsApp</Nav.Link>,
+      trigger: '5',
+    },
+    {
+      id: 'contactSL',
+      message: 'Nuestro contacto en Buenos Aires es Franco, cel: +54-911-3112-9539',
+      trigger: 'slWhatsapp',
+    },
+    {
+      id: 'slWhatsapp',
+      component: <Nav.Link href="https://wa.me/541131129539" target='_blank'>Hablame por WhatsApp</Nav.Link>,
+      trigger: '5',
+    },
   ]
 
 
