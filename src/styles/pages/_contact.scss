@@ -49,8 +49,8 @@
 
             //z-index: 2;
             @media screen and (max-width: $mobileScreen) {
-                left: -5.5rem;
-                top: 11rem;
+                left: -4.3rem;
+                top: 9.75rem;
             }
         }
 
@@ -101,8 +101,8 @@
             align-items: center;
 
             @media screen and (max-width: $mobileScreen) {
-                top: 250%;
-                left: -80%;
+                top: 9rem;
+                left: -75px;
                 width: 15rem;
             }
         }
@@ -193,14 +193,6 @@
             flex-direction: column-reverse;
         }
 
-    }
-
-    .contactChat {
-        padding: 4rem 0;
-
-        @media screen and (max-width: $mobileScreen) {
-            padding: 4rem 2rem;
-        }
     }
 
     @media screen and (max-width: $mobileScreen) {
