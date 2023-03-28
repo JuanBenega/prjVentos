@@ -172,6 +172,7 @@
                 justify-content: center;
                 column-gap: 1rem;
                 margin-left: 1rem;
+                padding-bottom: 1rem;
                 //border-bottom: 1px solid #C2C2C2;
             }
         }
@@ -191,7 +192,6 @@
 
         @media screen and (max-width: $mobileScreen) {
             flex-direction: column-reverse;
-
         }
 
     }

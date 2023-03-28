@@ -10,7 +10,6 @@ import contactTwit from '../img/contactTwit.png'
 import contactLinkedin from '../img/contactLinkedin.png'
 import contactLinkGps from '../img/contactLinkGps.png'
 import contactLinkPhone from '../img/contactLinkPhone.png'
-import contactChat from '../img/contactChat.png'
 
 
 const Contact = () => {
@@ -72,9 +71,6 @@ const Contact = () => {
                     <Image src={contactLinkGps} />
                     <h6>Perdriel 2875, La Tablada, Buenos Aires</h6>
                 </div>
-            </div>
-            <div className="contactChat">
-                <Image fluid src={contactChat} />
             </div>
         </div>
     )
