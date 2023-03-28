@@ -113,32 +113,32 @@ const Chatbot = () => {
     },
     {
       id: 'contactBA',
-      message: 'Nuestro contacto en Buenos Aires es Jorge, cel: +54-911-6983-2386',
+      message: 'Nuestro contacto en Buenos Aires es Jorge, Cel: +54-911-6983-2386',
       trigger: 'baWhatsapp',
     },
     {
       id: 'baWhatsapp',
-      component: <Nav.Link href="https://wa.me/541169832386" target='_blank'>Hablame por WhatsApp</Nav.Link>,
+      component: <Nav.Link href="https://wa.me/541169832386" target='_blank'>Hablá con él por WhatsApp</Nav.Link>,
       trigger: '5',
     },
     {
       id: 'contactMEN',
-      message: 'Nuestro contacto en Buenos Aires es Nicolás, cel: +54-92612-08-1375',
+      message: 'Nuestro contacto en Buenos Aires es Nicolás, Cel: +54-92612-08-1375',
       trigger: 'menWhatsapp',
     },
     {
       id: 'menWhatsapp',
-      component: <Nav.Link href="https://wa.me/5492612081375" target='_blank'>Hablame por WhatsApp</Nav.Link>,
+      component: <Nav.Link href="https://wa.me/5492612081375" target='_blank'>Hablá con él por WhatsApp</Nav.Link>,
       trigger: '5',
     },
     {
       id: 'contactSL',
-      message: 'Nuestro contacto en Buenos Aires es Franco, cel: +54-911-3112-9539',
+      message: 'Nuestro contacto en Buenos Aires es Franco, Cel: +54-911-3112-9539',
       trigger: 'slWhatsapp',
     },
     {
       id: 'slWhatsapp',
-      component: <Nav.Link href="https://wa.me/541131129539" target='_blank'>Hablame por WhatsApp</Nav.Link>,
+      component: <Nav.Link href="https://wa.me/541131129539" target='_blank'>Hablá con él por WhatsApp</Nav.Link>,
       trigger: '5',
     },
   ]
@@ -156,8 +156,6 @@ const Chatbot = () => {
         placeholder='Escribí acá'
         width='400px'
       />
-      {/* <Image src={chatbot} onClick={handleChat} /> */}
-
     </ThemeProvider>
   )
 }
