@@ -122,9 +122,6 @@ const Landing = () => {
                         alt="First slide"
                     />
                     <Carousel.Caption className='carouText'>
-                        {/* <p className='carouTitle'>Somos una empresa Joven en constante Crecimiento que
-                            integra conocimientos de ingeniería, fabricación,
-                            construcción y mantenimiento.</p> */}
                         <h1>Somos una empresa Joven en constante crecimiento que
                             integra conocimientos de ingeniería, fabricación,
                             construcción y mantenimiento.</h1>
@@ -137,7 +134,6 @@ const Landing = () => {
                         alt="Second slide"
                     />
                     <Carousel.Caption className='carouText'>
-                        {/* <p className='carouTitle'>La innovación es nuestra premisa</p> */}
                         <h1>Nuestra Misión: crear valor recurrente para todas las partes interesadas
                             ofreciendo productos, servicios y soluciones industriales inteligentes y
                             sostenibles.</h1>
@@ -150,7 +146,6 @@ const Landing = () => {
                         alt="Third slide"
                     />
                     <Carousel.Caption className='carouText'>
-                        {/* <p className='carouTitle'>Trabajamos para darle lo mejor a nuestros clientes</p> */}
                         <h1>Nos interesa descubrir y desarrollar con éxito equipos y procesos innovadores,
                             donde nuestro compromiso se vea reflejado en la rentabilidad de nuestro cliente.</h1>
                     </Carousel.Caption>
@@ -162,7 +157,6 @@ const Landing = () => {
                         alt="Third slide"
                     />
                     <Carousel.Caption className='carouText'>
-                        {/* <p className='carouTitle'>Trabajamos para darle lo mejor a nuestros clientes</p> */}
                         <h1>Nuestros equipos de expertos en procesos nos respaldan para diseñar sus
                             instalaciones de producción, desde un solo equipo hasta la planta
                             completa llave en mano.</h1>
@@ -175,9 +169,8 @@ const Landing = () => {
                         alt="Third slide"
                     />
                     <Carousel.Caption className='carouText'>
-                        {/* <p className='carouTitle'>Trabajamos para darle lo mejor a nuestros clientes</p> */}
                         <h1>Directamente en el sitio como en nuestros talleres ubicados
-                            en buenos aires, san Luis y Mendoza, nos ocupamos de todos
+                            en Buenos Aires, San Luis y Mendoza, nos ocupamos de todos
                             sus trabajos de construcción industrial en general en nuevas
                             unidades o en extensión de unidades existentes.</h1>
                     </Carousel.Caption>
@@ -199,8 +192,7 @@ const Landing = () => {
                         <p>Diseño, montaje, cableado y conexionado de plantas industriales <br />
                             Fabricación de tableros eléctricos de potencia y control. <br />
                             Programación de PLC, HMI <br />
-                            Programación e implementación de sistemas SCADA <br />
-                            Programación de PLC, HMI</p>
+                            Programación e implementación de sistemas SCADA</p>
                     </div>
                     <Image src={autom} fluid />
                 </div>

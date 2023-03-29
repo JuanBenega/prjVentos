@@ -90,8 +90,7 @@ const Automation = () => {
                             <h6>Nuestros sistemas posibilitan la integración y la
                                 comunicación de todos los procesos industriales a
                                 través de dispositivos que controlan la lógica del
-                                funcionamiento de la maquina / planta / Pulse y
-                                displays proceso</h6>
+                                funcionamiento de la maquina / planta o proceso</h6>
                             <Button className="sectionButton" onClick={() => scroll('scada')}>Mas información...</Button>
                         </Carousel.Caption>
                     </Carousel.Item>
@@ -210,7 +209,7 @@ const Automation = () => {
                             <strong> Montajes</strong> <br />
                             • Montaje de FM en Líneas de producción<br />
                             • Instalaciones en baja y media tensión<br />
-                            • Sistemas de Iluminación interior y extreriorv
+                            • Sistemas de Iluminación interior y extrerior <br />
                             • Montajes de sistemas de Detección de Incendio,
                             Control de Acceso, Voz y Datos.<br />
                             <strong>Tableros</strong> <br />
