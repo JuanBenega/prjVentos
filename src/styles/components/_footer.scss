@@ -88,5 +88,6 @@
     @media screen and (max-width: $mobileScreen) {
         background-color: $colorFooterResp;
         height: auto;
+        padding-bottom: 1rem;
     }
 }
