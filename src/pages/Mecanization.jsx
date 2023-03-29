@@ -258,7 +258,7 @@ const Mecanization = () => {
                             placement="top"
                             overlay={popover('Coca Cola', 'Instalación de sistema de osmosis inversa. Córdoba. 2023')}
                         >
-                            <Image src={coca} className="sectionProjImg" />
+                            <Image src={coca} className="sectionProjImg" fluid/>
                         </OverlayTrigger>
                         <OverlayTrigger
                             placement="top"
