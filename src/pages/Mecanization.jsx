@@ -169,7 +169,7 @@ const Mecanization = () => {
                 >
                     <Tab eventKey="tanks" title="Tanques & trabajos especiales" className="tabContent">
                         <Image src={mechanical1} className='tabImage' />
-                        <p> <strong>ProRecipientes de proceso y sistemas de agitación
+                        <p> <strong>Recipientes de proceso y sistemas de agitación
                             (con o sin intercambio de calor) </strong><br />
                             - Reactores
                             - Biorreactores<br />
@@ -212,8 +212,8 @@ const Mecanization = () => {
                             equipos hasta la modernización completa
                             de su centro de producción. También
                             realizamos paradas de unidades,
-                            especialmente para las industrias química,
-                            petroquímica y de ciencias de la vida.</p>
+                            especialmente para las industrias química y
+                            petroquímica.</p>
                     </Tab>
                     <Tab eventKey="mant" title="Mantenimiento industrial" className="tabContent">
                         <Image src={mechanical3} className='tabImage' />
@@ -258,7 +258,7 @@ const Mecanization = () => {
                             placement="top"
                             overlay={popover('Coca Cola', 'Instalación de sistema de osmosis inversa. Córdoba. 2023')}
                         >
-                            <Image src={coca} className="sectionProjImg" />
+                            <Image src={coca} className="sectionProjImg" fluid/>
                         </OverlayTrigger>
                         <OverlayTrigger
                             placement="top"

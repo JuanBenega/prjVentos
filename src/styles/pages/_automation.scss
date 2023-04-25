@@ -136,10 +136,11 @@
                 width: 100%;
                 display: flex;
                 justify-content: center;
+                align-items: center;
 
                 .sectionProjImg {
-                    width: fit-content;
-                    height: 10rem;
+                    height: fit-content;
+                    width: 15rem;
                     margin: 0.5rem;
                     background-size: contain;
                     background-repeat: no-repeat;
@@ -152,6 +153,7 @@
 
                     @media screen and (max-width: $mobileScreen) {
                         height: 5rem;
+                        width: 10rem;
                     }
                 }
 

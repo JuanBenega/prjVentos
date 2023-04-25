@@ -10,7 +10,6 @@ import contactTwit from '../img/contactTwit.png'
 import contactLinkedin from '../img/contactLinkedin.png'
 import contactLinkGps from '../img/contactLinkGps.png'
 import contactLinkPhone from '../img/contactLinkPhone.png'
-import contactChat from '../img/contactChat.png'
 
 
 const Contact = () => {
@@ -27,7 +26,7 @@ const Contact = () => {
                         <Image src={contactPhone} />
                         <h6>(011) 15-6983-2386</h6>
                         <Image src={contactMail} />
-                        <h6>info@ventos.com.ar</h6>
+                        <h6>bsas@ventos.com.ar</h6>
                         <i></i>
                     </div>
                 </div>
@@ -39,7 +38,7 @@ const Contact = () => {
                         <Image src={contactPhone} />
                         <h6>(011) 3112-9539</h6>
                         <Image src={contactMail} />
-                        <h6>abc@ventos.com.ar</h6>
+                        <h6>vm@ventos.com.ar</h6>
                         <i></i>
                     </div>
                 </div>
@@ -51,7 +50,7 @@ const Contact = () => {
                         <Image src={contactPhone} />
                         <h6>(02612) 15-08-1375</h6>
                         <Image src={contactMail} />
-                        <h6>abc@ventos.com.ar</h6>
+                        <h6>mdz@ventos.com.ar</h6>
                         <i></i>
                     </div>
                 </div>
@@ -66,15 +65,12 @@ const Contact = () => {
                 </div>
                 <div className="contactItem">
                     <Image src={contactLinkPhone} />
-                    <h6>(011) 15-4174-3095</h6>
+                    <h6>(011) 15-6983-2386</h6>
                 </div>
                 <div className="contactItem2">
                     <Image src={contactLinkGps} />
                     <h6>Perdriel 2875, La Tablada, Buenos Aires</h6>
                 </div>
-            </div>
-            <div className="contactChat">
-                <Image fluid src={contactChat} />
             </div>
         </div>
     )
