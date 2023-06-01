@@ -17,6 +17,7 @@ import landIcon4 from '../img/landIcon4.png'
 import landIcon5 from '../img/landIcon5.png'
 import landIcon6 from '../img/landIcon6.png'
 import landIcon7 from '../img/landIcon7.png'
+import landIcon8 from '../img/landIcon8.png'
 import landUs1 from '../img/landUs1.png'
 import landUs2 from '../img/landUs2.png'
 import landUs3 from '../img/landUs3.png'
@@ -59,6 +60,10 @@ const Landing = () => {
         {
             icon: landIcon7,
             descrip: 'Electricidad industrial'
+        },
+        {
+            icon: landIcon8,
+            descrip: 'Reparaciones equipos industriales, mecanicos y electricos'
         }
     ];
 
