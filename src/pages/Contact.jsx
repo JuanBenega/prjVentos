@@ -73,9 +73,6 @@ const Contact = () => {
                     <h6>Perdriel 2875, La Tablada, Buenos Aires</h6>
                 </div>
             </div>
-            <div className="contactChat">
-                <Image fluid src={contactChat} />
-            </div>
         </div>
     )
 }
