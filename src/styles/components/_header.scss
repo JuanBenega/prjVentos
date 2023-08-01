@@ -141,7 +141,7 @@
     .thin {
         height: 42px;
         border: none;
-        z-index: 200;
+        z-index: 1;
 
 
         @media screen and (max-width: $mobileScreen) {
