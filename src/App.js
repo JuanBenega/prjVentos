@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 
 import Contact from './pages/Contact';
 import Automation from './pages/Automation';
@@ -15,7 +15,7 @@ import Chatbot from './components/Chatbot';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter >
       <Header />
       <Sidebar />
       <Routes>
@@ -26,7 +26,7 @@ function App() {
       </Routes>
       <Chatbot />
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
