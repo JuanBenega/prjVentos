@@ -19,10 +19,10 @@ function App() {
       <Header />
       <Sidebar />
       <Routes>
-        <Route path='/' element={<Landing />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path='/autom' element={<Automation />} />
-        <Route path='/mecaniz' element={<Mecanization />} />
+        <Route exact path='/' Component={Landing} />
+        <Route exact path='/contact' Component={Contact} />
+        <Route exact path='/autom' Component={Automation} />
+        <Route exact path='/mecaniz' Component={Mecanization} />
       </Routes>
       <Chatbot />
       <Footer />
